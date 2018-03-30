@@ -1,48 +1,78 @@
 <template>
   <div id="app">
-    <img src="./assets/header-panda.jpg" class="header-img">
-    <div class="left">
-      <div class="cat">
-        <div class="ears1">
-        </div>
-        <div class="head1">
-          <div class="eyes1">
+    <div class="header-container">
+    <div class="row full-height">
+      <div class="col-lg-6 col-sm-12 white-half">
+        <appPandaChat></appPandaChat>
+      </div>
+      <div class="col-lg-6 col-sm-12 black-half">
+        <div class="chat-container">
+          <div class="chat-1" id="chat1">
+            <p>{{ chatOneText }}</p>
           </div>
-          <div class="nose1">
-          </div>
-        </div>
-        <div class="body1">
-          <div class="left-paw1">
-          </div>
-          <div class="right-paw1">
-          </div>
-        </div>
-        <div class="tail1">
-        </div>
-        <div class="PRlaptop">
-          <div class="PRscreen">
-          </div>
-          <div class="PRkeyboard">
+          <div class="chat-2">
+
           </div>
         </div>
       </div>
+
     </div>
-    <HelloWorld/>
+
+    </div>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import PandaChat from './components/PandaChat'
+import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 
+// Import bootstrap
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+Vue.use(BootstrapVue);
+
+Vue.use(BootstrapVue);
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    appPandaChat: PandaChat
+  },
+  data: {
+    textOne: {
+      false: "hello",
+      true: "..."
+    }
+  },
+  computed: {
+    chatOneText() {
+       "..."
+    }
+  },
+  watch: {
+   // Here we specifify that we're watching the value data object, and setting a timer to reset it
+   value:
+     function() {
+       var vm = this
+       setTimeout(function(){
+       vm.value = 0
+     }, 2000)
+   }
+ }
 }
 </script>
 
 <style lang="less">
+
+
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -51,6 +81,70 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.header-container {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.white-half {
+  background-color: white;
+  margin: 0px;
+  background-size: cover;
+}
+
+.black-half {
+  background-color: black;
+  margin: 0px;
+  background-size: cover;
+}
+
+.chat-container {
+  height: 100%;
+  position: relative;
+}
+
+.chat-1 {
+  position: absolute;
+  top: 43px;
+  left: 20px;
+  width: 60px;
+  height: 42px;
+  border-radius: 18px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-timing-function: ease-out;
+  animation: apearText 6s ease-in forwards;
+  // opacity: 0;
+  p {
+    color: black;
+  }
+}
+@keyframes apearText {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+      transform: scale(1);
+    }
+    60% {
+      width: 60px;
+    }
+    100% {
+      width: 180px;
+    }
+}
+
+.chat-2 {
+
 }
 
 @media (min-width: 480px) {
@@ -58,11 +152,27 @@ export default {
     height: 100px;
     width: 100px;
   }
+
+  .white-half {
+    height: 40%;
+  }
+
+  .black-half {
+    height: 60%;
+  }
 }
 @media (min-width: 767px) {
   .header-img {
     height: 250px;
     width: 250px;
+  }
+
+  .white-half {
+    height: 100%;
+  }
+
+  .black-half {
+    height: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -70,428 +180,6 @@ export default {
     height: 250px;
     width: 250px;
   }
-}
-
-@peach: #FFCA95;
-@grape: #7C85AB;
-@darkpurple: #475881;
-@navy: #20314E;
-@pink: #FFA5C0;
-@cream: #FBF1D8;
-@orange: #FFA852;
-@darkorange: #F07E42;
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.left {
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  background: white;
-}
-
-.right {
-  position: absolute;
-  left: 50%;
-  height: 100%;
-  width: 50%;
-  background: @navy;
-}
-
-.cat {
-  height: 182px;
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  right: 145px;
-  transform: translate(0, -50%);
-  .ears1 {
-    height: 0;
-    width: 0;
-    position: relative;
-    left: 90px;
-    border-bottom: 27px solid @darkpurple;
-    border-left: 10px solid transparent;
-    border-right: 23px solid transparent;
-    &::before {
-      display: block;
-      content: "";
-      height: 0;
-      width: 0;
-      position: relative;
-      left: 24px;
-      border-bottom: 27px solid @darkpurple;
-      border-left: 10px solid transparent;
-      border-right: 23px solid transparent;
-    }
-  }
-  .head1 {
-    height: 74px;
-    width: 135px;
-    position: relative;
-    left: 65px;
-    z-index: 2;
-    box-shadow: -8px 0 0 @darkpurple;
-    border-radius: 37px;
-    background: @grape;
-    .eyes1 {
-      height: 12px;
-      width: 12px;
-      position: relative;
-      top: 37px;
-      left: 64px;
-      border-radius: 100%;
-      animation: 9s catRead infinite;
-      background: black;
-      &::before {
-        display: block;
-        content: "";
-        height: 12px;
-        width: 12px;
-        position: relative;
-        left: 18px;
-        border-radius: 100%;
-        background: black;
-      }
-    }
-    .nose1 {
-      height: 22px;
-      width: 22px;
-      position: relative;
-      top: 40px;
-      left: 60px;
-      border-radius: 20px;
-      background: @cream;
-      &::before {
-        display: block;
-        content: "";
-        height: 22px;
-        width: 22px;
-        position: relative;
-        left: 22px;
-        border-radius: 20px;
-        background: @cream;
-      }
-      &::after {
-        display: block;
-        content: "";
-        height: 0;
-        width: 0;
-        position: relative;
-        top: -22px;
-        left: 12px;
-        border-radius: 10px;
-        border-top: 10px solid @pink;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-      }
-    }
-  }
-  .body1 {
-    height: 110px;
-    width: 200px;
-    position: relative;
-    top: -30px;
-    z-index: 1;
-    border-radius: 55px;
-    background: @grape;
-    .left-paw1 {
-      height: 25px;
-      width: 37px;
-      position: relative;
-      top: 70px;
-      left: 95px;
-      border-radius: 12px;
-      animation: 9s catLeftType infinite;
-      background: @cream;
-    }
-    .right-paw1 {
-      height: 25px;
-      width: 37px;
-      position: relative;
-      top: 45px;
-      left: 142px;
-      border-radius: 12px;
-      animation: 9s catRightType infinite;
-      background: @cream;
-    }
-  }
-  .tail1 {
-    height: 24px;
-    width: 80px;
-    position: relative;
-    top: -54px;
-    left: -31px;
-    z-index: 0;
-    border-radius: 17px 0 0 17px;
-    background: @darkpurple;
-  }
-  .PRlaptop {
-    position: relative;
-    top: -151px;
-    left: 170px;
-    z-index: 2;
-    .PRscreen {
-      height: 85px;
-      width: 130px;
-      border-radius: 8px;
-      transform: skew(-18deg);
-      background: @navy;
-      &::before{
-        display: block;
-        content: "";
-        height: 17px;
-        width: 10px;
-        position: relative;
-        top: 38px;
-        left: 56px;
-        border-radius: 6px;
-        background: @darkpurple;
-      }
-      &::after{
-        display: block;
-        content: "";
-        height: 17px;
-        width: 10px;
-        position: relative;
-        top: 21px;
-        left: 70px;
-        border-radius: 6px;
-        background: @darkpurple;
-      }
-    }
-    .PRkeyboard {
-      height: 12px;
-      width: 132px;
-      position: relative;
-      left: -14px;
-      border-radius: 0 6px 6px 0;
-      background: @darkpurple;
-      &::before {
-        display: block;
-        content: "";
-        height: 12px;
-        width: 72px;
-        position: relative;
-        left: -68px;
-        border-radius: 6px;
-        background: @navy;
-      }
-    }
-  }
-}
-
-.dog {
-  height: 182px;
-  position: absolute;
-  top: 50%;
-  left: 145px;
-  transform: translate(0, -50%);
-  .ears2 {
-    height: 0;
-    width: 0;
-    position: relative;
-    left: 30px;
-    border-bottom: 27px solid @darkorange;
-    border-left: 23px solid transparent;
-    border-right: 10px solid transparent;
-    &::before {
-      display: block;
-      content: "";
-      height: 0;
-      width: 0;
-      position: relative;
-      left: 33px;
-      border-bottom: 27px solid @darkorange;
-      border-left: 10px solid transparent;
-      border-right: 23px solid transparent;
-    }
-  }
-  .head2 {
-    height: 74px;
-    width: 140px;
-    position: relative;
-    z-index: 2;
-    box-shadow: 8px 0 0 @darkorange;
-    border-radius: 35px;
-    background: @orange;
-    .eyes2 {
-      height: 12px;
-      width: 12px;
-      position: relative;
-      top: 37px;
-      left: 50px;
-      border-radius: 100%;
-      animation: 9s dogRead infinite;
-      background: black;
-      &::before {
-        display: block;
-        content: "";
-        height: 12px;
-        width: 12px;
-        position: relative;
-        left: 18px;
-        border-radius: 100%;
-        background: black;
-      }
-    }
-    .nose2 {
-      height: 30px;
-      width: 45px;
-      position: relative;
-      top: 40px;
-      left: 37px;
-      border-radius: 20px;
-      background: @cream;
-      &::before {
-        display: block;
-        content: "";
-        height: 0;
-        width: 0;
-        position: relative;
-        top: 3px;
-        left: 9px;
-        border-radius: 10px;
-        border-top: 10px solid black;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-      }
-    }
-  }
-  .body2 {
-    height: 110px;
-    width: 200px;
-    position: relative;
-    top: -30px;
-    z-index: 1;
-    border-radius: 55px;
-    background: @orange;
-    .left-paw2 {
-      height: 25px;
-      width: 37px;
-      position: relative;
-      top: 70px;
-      left: 15px;
-      border-radius: 12px;
-      animation: 9s dogLeftType infinite;
-      background: @cream;
-    }
-    .right-paw2 {
-      height: 25px;
-      width: 37px;
-      position: relative;
-      top: 45px;
-      left: 60px;
-      border-radius: 12px;
-      animation: 9s dogRightType infinite;
-      background: @cream;
-    }
-  }
-  .tail2 {
-    height: 34px;
-    width: 70px;
-    position: relative;
-    top: -64px;
-    left: 150px;
-    z-index: 0;
-    border-radius: 0 17px 17px 0;
-    background: @darkorange;
-  }
-  .ORlaptop {
-    position: relative;
-    top: -161px;
-    left: -103px;
-    z-index: 2;
-    .ORscreen {
-      height: 85px;
-      width: 130px;
-      border-radius: 8px;
-      transform: skew(18deg);
-      background: @peach;
-      &::before{
-        display: block;
-        content: "";
-        height: 17px;
-        width: 10px;
-        position: relative;
-        top: 38px;
-        left: 50px;
-        border-radius: 6px;
-        background: @darkorange;
-      }
-      &::after{
-        display: block;
-        content: "";
-        height: 17px;
-        width: 10px;
-        position: relative;
-        top: 21px;
-        left: 64px;
-        border-radius: 6px;
-        background: @darkorange;
-      }
-    }
-    .ORkeyboard {
-      height: 12px;
-      width: 132px;
-      position: relative;
-      left: 14px;
-      border-radius: 6px 0 0 6px;
-      background: @darkorange;
-      &::before {
-        display: block;
-        content: "";
-        height: 12px;
-        width: 72px;
-        position: relative;
-        left: 128px;
-        border-radius: 6px;
-        background: @peach;
-      }
-    }
-  }
-}
-
-@keyframes catLeftType {
-  2%  {transform: translateY(-8px)}
-  6%  {transform: none}
-  8%  {transform: translateY(-8px)}
-  10% {transform: none}
-  14% {transform: translateY(-8px)}
-  16% {transform: none}
-  18% {transform: translateY(-8px)}
-  20% {transform: none}
-  22% {transform: translateY(-8px)}
-  26% {transform: none}
-}
-
-@keyframes catRightType {
-  6%  {transform: translateY(-8px)}
-  8%  {transform: none}
-  10% {transform: translateY(-8px)}
-  12% {transform: none}
-  16% {transform: translateY(-8px)}
-  18% {transform: none}
-  20% {transform: translateY(-8px)}
-  22% {transform: none}
-  24% {transform: translateY(-8px)}
-  28% {transform: none}
-}
-
-@keyframes catRead {
-  55% {transform: none}
-  62% {transform: translateX(-2px)}
-  70% {
-    transition-timing-function: ease-out;
-    transform: translateX(3px)}
-  82% {transform: translateX(-2px)}
-  90% {
-    transition-timing-function: ease-out;
-    transform: translateX(3px)}
-  100%{transform: none}
 }
 
 </style>
