@@ -103,12 +103,13 @@ export default {
     }
     .ear1 {
       position: relative;
-      left: 85px;
+      left: 94px;
       height: @earsize;
       width: @earsize * 2;
       border-top-left-radius: @earsize * 2;
       border-top-right-radius: @earsize * 2;
       background-color: black;
+      transform: rotate(-2deg);
       &::before {
         display: block;
         content: "";
@@ -137,13 +138,14 @@ export default {
     }
     .head {
       height: 85px;
-      width: 135px;
+      width: 114px;
       position: relative;
-      left: 65px;
+      left: 77px;
       z-index: 2;
-      box-shadow: -8px 0 0 @laptop;
+      -webkit-box-shadow: -8px 0 0 #4f5b66;
+      box-shadow: -8px 0 0 #4f5b66;
       border-radius: 37px;
-      background: @pandawhite;
+      background: #f5f5f5;
       .eyes {
         display: flex;
         .eye-container {
@@ -234,21 +236,21 @@ export default {
     }
     .panda-body {
       height: 110px;
-       width: 173px;
-       position: relative;
-       top: -30px;
-       z-index: 1;
-       border-radius: 55px;
-       background: #f5f5f5;
-       -webkit-box-shadow: -8px 0 0 @laptop;
-       box-shadow: -8px 0 0 @laptop;
-       left: 33px;
+      width: 120px;
+      position: relative;
+      top: -30px;
+      z-index: 1;
+      border-radius: 55px;
+      background: #f5f5f5;
+      -webkit-box-shadow: -8px 0 0 #4f5b66;
+      box-shadow: -8px 0 0 #4f5b66;
+      left: 60px;
        .left-paw {
          height: 25px;
          width: 37px;
          position: relative;
          top: 70px;
-         left: 75px;
+         left: 29px;
          border-radius: 12px;
          animation: 9s LeftType infinite;
          background: black;
@@ -258,7 +260,7 @@ export default {
          width: 37px;
          position: relative;
          top: 45px;
-         left: 120px;
+         left: 75px;
          border-radius: 12px;
          animation: 9s RightType infinite;
          background: black;
@@ -269,7 +271,7 @@ export default {
        width: 48px;
        position: relative;
        top: -54px;
-       left: 22px;
+       left: 55px;
        z-index: 0;
        border-radius: 17px 0 0 17px;
        background: black;
