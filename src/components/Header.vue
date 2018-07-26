@@ -2,10 +2,12 @@
   <section class="header">
     <div class="header__container">
       <div class="header__operations" id="strategy">
+
         <div class="balloon_1">
           <p>Growth & Marketing</p>
         </div>
-        <div class="header__block">Strategy
+        <div class="header__block">
+          Strategy
         </div>
         <div class="balloon_2">
           <p>Branding & UX </p>
@@ -27,11 +29,9 @@
       </div>
       <div class="triangle-topleft">
       </div>
-
-      <!-- <div class="header__banner">
-
-      </div> -->
     </div>
+  </div>
+
   </section>
 
 </template>
@@ -41,7 +41,8 @@
 export default {
   data: function () {
     return {
-
+      show: true,
+      panel: 1
     };
   },
 }
@@ -91,6 +92,7 @@ export default {
 
   #strategy {
     right: 5%;
+
   }
 
   #product {
@@ -111,12 +113,14 @@ export default {
     }
 
     .balloon_1 {
-      margin-bottom: 90px;
-      animation: movedown 2s ease-in-out;
-      webkit-animation: movedown 2s ease-in-out;
-      animation-fill-mode: forwards;
-      &:after {
+      animation: 4s bounceIn linear;
+      -webkit-animation: 4s bounceIn linear;
+      position: absolute;
+      &::after {
         content: '';
+        margin-bottom: 90px;
+        animation: 4s bounceIn linear;
+        -webkit-animation: 4s bounceIn linear;
         width: 1px;
         height: 85px;
         background: white;
@@ -126,7 +130,37 @@ export default {
         left: 50%;
         margin-left: -2px;
         color: white;
+
       }
+    }
+
+    @keyframes bounceIn {
+      2%  {transform: translateY(-100px)}
+      // 6%  {transform: none}
+      // 8%  {transform: translateY(-90px)}
+      // // 10% {transform: none}
+      // 20% {transform: translateY(-80px)}
+      // // 30% {transform: none}
+      // 40% {transform: translateY(-70px)}
+      // 60% {transform: none}
+      80% {transform: translateY(-8px)}
+      // 100% {transform: none}
+    }
+
+
+
+
+    @keyframes pandaRead {
+      10% {transform: none}
+      62% {transform: translateX(-2px)}
+      70% {
+        transition-timing-function: ease-out;
+        transform: translateX(3px)}
+      82% {transform: translateX(-2px)}
+      90% {
+        transition-timing-function: ease-out;
+        transform: translateX(3px)}
+      100%{transform: none}
     }
 
     .balloon_2 {
@@ -157,29 +191,6 @@ export default {
     }
   }
 
-  @keyframes movedown {
-    from {
-      top:-200px;
-      left: 10px;
-      opacity: 0;
-     }
-    to {
-      top:10px;
-      left: 100px;
-      opacity: 1
-    }
-  }
-
-  @-webkit-keyframes movedown  {
-  from {
-    top: -200px;
-    opacity: 0;
-  }
-  to {
-    top: 50px;
-    opacity: 1;
-    }
-  }
 
   @media (max-width: 950px) {
     .header__strategy {
