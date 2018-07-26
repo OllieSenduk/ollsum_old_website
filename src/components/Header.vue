@@ -18,8 +18,10 @@
         <p>digital product development <br> & <br> Growth Strategy </p>
       </div>
       <div class="header__operations" id="product">
-        <div class="balloon_1">
+        <div class="text_balloon_1">
           <p>Code & Design</p>
+        </div>
+        <div class="balloon_1">
         </div>
         <div class="header__block">Product
         </div>
@@ -112,26 +114,35 @@ export default {
       font-size: 17px
     }
 
-    .balloon_1 {
-      animation: 4s bounceIn linear;
-      -webkit-animation: 4s bounceIn linear;
+    .text_balloon_1 {
       position: absolute;
+      top: -90%;
+      animation: 1s bounceInText linear;
+      -webkit-animation: 0.5s bounceInText linear;
+    }
+
+    .balloon_1 {
+
       &::after {
         content: '';
         margin-bottom: 90px;
-        animation: 4s bounceIn linear;
-        -webkit-animation: 4s bounceIn linear;
+        animation: 0.5s bounceIn linear;
+        -webkit-animation: 0.5s bounceIn linear;
         width: 1px;
         height: 85px;
         background: white;
         border-style: unset;
         position: absolute;
-        bottom: 61%;
+        bottom: 51%;
         left: 50%;
         margin-left: -2px;
         color: white;
 
       }
+    }
+
+    @keyframes bounceInText {
+      2%  {transform: translateY(-100px)}
     }
 
     @keyframes bounceIn {
@@ -147,21 +158,6 @@ export default {
       // 100% {transform: none}
     }
 
-
-
-
-    @keyframes pandaRead {
-      10% {transform: none}
-      62% {transform: translateX(-2px)}
-      70% {
-        transition-timing-function: ease-out;
-        transform: translateX(3px)}
-      82% {transform: translateX(-2px)}
-      90% {
-        transition-timing-function: ease-out;
-        transform: translateX(3px)}
-      100%{transform: none}
-    }
 
     .balloon_2 {
       top: 1px;
