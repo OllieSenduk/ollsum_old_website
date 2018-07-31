@@ -2,34 +2,34 @@
   <section class="header">
     <div class="header__container">
       <div class="header__operations" id="strategy">
-
+        <div class="text_balloon_top">
+          <p>Marketing & Social</p>
+        </div>
         <div class="balloon_1">
-          <p>Growth & Marketing</p>
         </div>
         <div class="header__block">
-          Strategy
-        </div>
-        <div class="balloon_2">
-          <p>Branding & UX </p>
+          Growth
         </div>
       </div>
       <div class="header__content">
-        <h1>GUERILLA <br>STRAWBERRY</h1>
+        <h1 id="title">GUERILLA <br>STRAWBERRY</h1>
         <p>digital product development <br> & <br> Growth Strategy </p>
       </div>
       <div class="header__operations" id="product">
-        <div class="text_balloon_1">
+        <div class="text_balloon_top">
           <p>Code & Design</p>
         </div>
         <div class="balloon_1">
         </div>
         <div class="header__block">Product
         </div>
-        <div class="balloon_2">
-          <p>Scrum & Agile</p>
-        </div>
+
       </div>
       <div class="triangle-topleft">
+      </div>
+      <div class="header__action">
+        <i class="fas fa-sort-down moving-arrow"></i>
+        <p>What we do?</p>
       </div>
     </div>
   </div>
@@ -51,6 +51,53 @@ export default {
 </script>
 
 <style lang="less">
+
+
+  #strategy {
+    right: 5%;
+
+  }
+
+  #product {
+    left: 5%
+  }
+
+  #title {
+     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+         -ms-animation: fadein 4s; /* Internet Explorer */
+          -o-animation: fadein 4s; /* Opera < 14.1 */
+             animation: fadein 4s;
+ }
+
+ @keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
+
+ /* Firefox < 16 */
+ @-moz-keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
+
+ /* Safari, Chrome and Opera > 12.1 */
+ @-webkit-keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
+
+ /* Internet Explorer */
+ @-ms-keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
+
+ /* Opera < 12.1 */
+ @-o-keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
 
   .header__container {
     height: 100vh;
@@ -92,16 +139,6 @@ export default {
     }
   }
 
-  #strategy {
-    right: 5%;
-
-  }
-
-  #product {
-    left: 5%
-  }
-
-
   .header__operations {
     position: absolute;
     color: white;
@@ -114,11 +151,11 @@ export default {
       font-size: 17px
     }
 
-    .text_balloon_1 {
+    .text_balloon_top {
       position: absolute;
-      top: -90%;
-      animation: 1s bounceInText linear;
-      -webkit-animation: 0.5s bounceInText linear;
+      top: -284%;
+      animation: 1s bounceInTextTop linear;
+      -webkit-animation: 0.5s bounceInTop linear;
     }
 
     .balloon_1 {
@@ -126,14 +163,14 @@ export default {
       &::after {
         content: '';
         margin-bottom: 90px;
-        animation: 0.5s bounceIn linear;
-        -webkit-animation: 0.5s bounceIn linear;
+        animation: 0.5s bounceInTop linear;
+        -webkit-animation: 0.5s bounceInTop linear;
         width: 1px;
         height: 85px;
         background: white;
         border-style: unset;
         position: absolute;
-        bottom: 51%;
+        bottom: -63%;
         left: 50%;
         margin-left: -2px;
         color: white;
@@ -141,40 +178,9 @@ export default {
       }
     }
 
-    @keyframes bounceInText {
+    @keyframes bounceInTop {
       2%  {transform: translateY(-100px)}
-    }
-
-    @keyframes bounceIn {
-      2%  {transform: translateY(-100px)}
-      // 6%  {transform: none}
-      // 8%  {transform: translateY(-90px)}
-      // // 10% {transform: none}
-      // 20% {transform: translateY(-80px)}
-      // // 30% {transform: none}
-      // 40% {transform: translateY(-70px)}
-      // 60% {transform: none}
       80% {transform: translateY(-8px)}
-      // 100% {transform: none}
-    }
-
-
-    .balloon_2 {
-      top: 1px;
-      margin-top: 90px;
-
-      &:before {
-        content: '';
-        width: 1px;
-        height: 85px;
-        background: white;
-        border-style: unset;
-        position: absolute;
-        bottom: 8%;
-        left: 50%;
-        margin-left: -2px;
-        color: white;
-      }
     }
 
     .header__block {
@@ -187,10 +193,33 @@ export default {
     }
   }
 
+  .header__action {
+    position: absolute;
+    bottom: 5%;
+
+    p {
+      color: white;
+    }
+  }
+
+  .moving-arrow {
+    color: white;
+    font-size: 34px;
+    animation: 4s arrowDown infinite;
+  }
+
+  @keyframes arrowDown {
+   0%   {color:red; left:0px; top:0px;}
+   25%  {color:yellow; left:200px; top:0px;}
+   50%  {color:#ED5759; left:200px; top:200px;}
+   75%  {color:green; left:0px; top:200px;}
+   100% {color:red; left:0px; top:0px;}
+  }
 
   @media (max-width: 950px) {
-    .header__strategy {
-      display: none;
+    .header__operations {
+      position: absolute;
+      top: 22%;
     }
   }
 
