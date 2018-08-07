@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <appLoading v-if="isLoading"></appLoading>
-      <appHeader></appHeader>
+      <appHeader v-else></appHeader>
       <appAbout></appAbout>
       <appPandaChat></appPandaChat>
   </div>
@@ -33,31 +33,22 @@ export default {
     }, 3000)
   },
   methods: {
-    // finishLoad: function() {
-    //   var self = this;
-    //    setTimeout(function(){
-    //     console.log(self)
-    //     console.log("hello")
-    //     self.isLoading = false;
-    //   }, 3000);
-    // }
   },
   computed: {
 
   },
   watch: {
-   // Here we specifify that we're watching the value data object, and setting a timer to reset it
  }
 }
 </script>
 
 <style lang="less">
 
-// * { padding: 0; margin: 0; }
-// html, body, #fullheight {
-//     min-height: 100% !important;
-//     height: 100%;
-// }
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
