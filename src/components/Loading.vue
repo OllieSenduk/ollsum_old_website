@@ -171,17 +171,16 @@ export default {
     padding: 0;
     background-color:#1d1d1d;
     overflow:hidden;
-    display: flex
-
+    display: flex;
+    justify-content: center;
   }
 
   .space-guy__container {
-      width:600px;
+      width:60vw;
       height:90vh;
       margin: 0;
       padding: 0;
   }
-
 
   .astronaut1, .astronautglass, .badge1 {
     animation: dance 0.05s 3 alternate;
@@ -238,7 +237,7 @@ export default {
   @keyframes flyUp {
     2%  {transform: translateY(0px)}
     100% {
-      transform: translateY(-900px);
+      transform: translateY(-800px);
     }
   }
 

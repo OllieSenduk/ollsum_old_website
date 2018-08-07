@@ -1,9 +1,12 @@
 <template>
   <div id="app">
       <appLoading v-if="isLoading"></appLoading>
-      <appHeader v-else></appHeader>
-      <appAbout></appAbout>
-      <appPandaChat></appPandaChat>
+      <div v-else>
+        <appHeader></appHeader>
+        <appAbout></appAbout>
+        <appPandaChat></appPandaChat>
+      </div>
+
   </div>
 </template>
 
