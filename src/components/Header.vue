@@ -13,7 +13,12 @@
       </div>
       <div class="header__content">
         <h1 id="title">GUERILLA <br>STRAWBERRY</h1>
-        <p>digital product development <br> & <br> Growth Strategy </p>
+        <!-- <p>digital product development <br> & <br> Growth Strategy </p>
+        <p>Results and Customer driven product & marketing strategy</p>
+        <p>Let's get your business to the moon</p> -->
+        <p>Let's scale that business <br> of yours</p>
+        <img src="@/assets/rocket.svg" alt="" style="width: 100px; height: 100px;">
+
       </div>
       <div class="header__operations" id="product">
         <div class="text_balloon_top">
@@ -32,8 +37,6 @@
         <p>What we do?</p>
       </div>
     </div>
-  </div>
-
   </section>
 
 </template>
@@ -51,7 +54,6 @@ export default {
 </script>
 
 <style lang="less">
-
 
   #strategy {
     right: 5%;
@@ -209,17 +211,22 @@ export default {
   }
 
   @keyframes arrowDown {
-   0%   {color:red; left:0px; top:0px;}
+   0%   {color:#414789; left:0px; top:0px;}
    25%  {color:yellow; left:200px; top:0px;}
    50%  {color:#ED5759; left:200px; top:200px;}
    75%  {color:green; left:0px; top:200px;}
-   100% {color:red; left:0px; top:0px;}
+   100% {color:#414789; left:0px; top:0px;}
+  }
+
+  #svg-cloud {
+    display: none;
   }
 
   @media (max-width: 950px) {
     .header__operations {
-      position: absolute;
-      top: 22%;
+      display: none;
+      // position: absolute;
+      // top: 22%;
     }
   }
 

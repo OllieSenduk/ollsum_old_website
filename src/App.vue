@@ -1,24 +1,49 @@
 <template>
   <div id="app">
-    <appHeader></appHeader>
-    <appPandaChat></appPandaChat>
+      <appLoading v-if="isLoading"></appLoading>
+      <appHeader></appHeader>
+      <appAbout></appAbout>
+      <appPandaChat></appPandaChat>
   </div>
 </template>
 
 <script>
 import PandaChat from './components/PandaChat'
 import Header from './components/Header'
+import About from './components/About'
+import Loading from './components/Loading'
 import Vue from 'vue';
 
 export default {
   name: 'App',
   components: {
     appPandaChat: PandaChat,
-    appHeader: Header
+    appHeader: Header,
+    appAbout: About,
+    appLoading: Loading
   },
-  data: {
+  data: function () {
+    return {
+      isLoading: true
+    };
+  },
+  mounted () {
+    setTimeout(() => {
+      this.isLoading = false
+    }, 3000)
+  },
+  methods: {
+    // finishLoad: function() {
+    //   var self = this;
+    //    setTimeout(function(){
+    //     console.log(self)
+    //     console.log("hello")
+    //     self.isLoading = false;
+    //   }, 3000);
+    // }
   },
   computed: {
+
   },
   watch: {
    // Here we specifify that we're watching the value data object, and setting a timer to reset it
@@ -28,11 +53,11 @@ export default {
 
 <style lang="less">
 
-* { padding: 0; margin: 0; }
-html, body, #fullheight {
-    min-height: 100% !important;
-    height: 100%;
-}
+// * { padding: 0; margin: 0; }
+// html, body, #fullheight {
+//     min-height: 100% !important;
+//     height: 100%;
+// }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -41,7 +66,6 @@ html, body, #fullheight {
   text-align: center;
   color: #2c3e50;
   position: relative;
-  height: 100%;
 }
 
 

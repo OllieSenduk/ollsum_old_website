@@ -17,7 +17,7 @@ export default {
 <style lang="css">
 
 .chat-container {
-  height: 100%;
+  height: 100vh;
   position: relative;
   margin-left: 20px;
 }
