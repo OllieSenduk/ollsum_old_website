@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <appLoading v-if="isLoading"></appLoading>
-      <div v-else>
+      <!-- <appLoading v-if="isLoading"></appLoading> -->
+      <div >
         <appHeader></appHeader>
         <appAbout></appAbout>
         <appPandaChat></appPandaChat>

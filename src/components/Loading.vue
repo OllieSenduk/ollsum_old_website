@@ -327,7 +327,7 @@ export default {
        transform: scale(1);
      }
      100% {
-       transform: scale(900);
+       transform: scale(2000);
      }
    }
 

@@ -1,5 +1,8 @@
 <template lang="html">
   <section class="header">
+    <div class="screenEnters">
+
+    </div>
     <div class="header__container">
       <div class="header__operations" id="strategy">
         <div class="text_balloon_top">
@@ -100,6 +103,21 @@ export default {
      from { opacity: 0; }
      to   { opacity: 1; }
  }
+
+ .header {
+   // animation: createScreen 2s 1 ease-in-out;
+   // width: 1px;
+   // height: 1px;
+   // border-radius: 50%;
+   animation: displayScreen 2s 1 ease-in-out;
+ }
+
+ // .screenEnters {
+ //   width: 100vw;
+ //   height: 100vh;
+ //   background-color: white;
+ //   animation: displayScreen 2s 1 ease-in-out;
+ // }
 
 
   .header__container {
@@ -218,6 +236,40 @@ export default {
    75%  {color:green; left:0px; top:200px;}
    100% {color:#414789; left:0px; top:0px;}
   }
+
+  // @keyframes displayScreen {
+  //   0%{
+  //     -webkit-transform: translate(0%);
+  //     background-color: white;
+  //   }
+  //   25%{-webkit-transform: translate(100%);
+  //   background-color: black;
+  // }
+  // 50% {
+  //   -webkit-transform: translate(100%);
+  //   background-color: white
+  // }
+  //   100%{-webkit-transform: translate(100%);
+  //     display: none
+  //     ;}
+  // }
+
+  // @keyframes createScreen {
+  //   0% {
+  //     opacity: 0;
+  //     transform: scale(0.01);
+  //     border-radius: 50%;
+  //   }
+  //   50% {
+  //     opacity: 1;
+  //     transform: scale(0.01);
+  //     border-radius: 50%;
+  //   }
+  //   100% {
+  //     transform: scale(1);
+  //     border-radius: 50%;
+  //   }
+  // }
 
   #svg-cloud {
     display: none;
