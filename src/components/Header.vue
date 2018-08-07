@@ -101,6 +101,7 @@ export default {
      to   { opacity: 1; }
  }
 
+
   .header__container {
     height: 100vh;
     overflow: hidden;
