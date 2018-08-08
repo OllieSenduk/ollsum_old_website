@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-      <!-- <appLoading v-if="isLoading"></appLoading> -->
-      <div >
+      <!-- <appTransitionText></TransitionText> -->
+      <div v-if="isLoading">
+        <appLoading v-if="isLoading"></appLoading>
+      </div>
+      <!-- <div v-else>
         <appHeader></appHeader>
         <appAbout></appAbout>
         <appPandaChat></appPandaChat>
-      </div>
+      </div> -->
 
   </div>
 </template>
@@ -15,6 +18,7 @@ import PandaChat from './components/PandaChat'
 import Header from './components/Header'
 import About from './components/About'
 import Loading from './components/Loading'
+import TransitionText from './components/TransitionText'
 import Vue from 'vue';
 
 export default {
@@ -23,7 +27,8 @@ export default {
     appPandaChat: PandaChat,
     appHeader: Header,
     appAbout: About,
-    appLoading: Loading
+    appLoading: Loading,
+    appTransitionText: TransitionText
   },
   data: function () {
     return {
@@ -31,9 +36,9 @@ export default {
     };
   },
   mounted () {
-    setTimeout(() => {
-      this.isLoading = false
-    }, 4000)
+    // setTimeout(() => {
+    //   this.isLoading = false
+    // }, 8000)
   },
   methods: {
   },
