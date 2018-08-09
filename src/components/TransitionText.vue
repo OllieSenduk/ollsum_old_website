@@ -3,7 +3,7 @@
     <div class="transitionText__content">
       <h1>
         <div>
-          <span id="flickerText" >{{word}}</span>
+          <span id="flickerText" :class="[ flickerOn ? '' : 'glitch' ]">{{word}}</span>
         </div>
       </h1>
     </div>
@@ -11,10 +11,7 @@
 </template>
 
 <script>
-// we have 5 words
-// they all share the same flicker function
-// the word changes every 3 seconds into the next one
-// the App.js stops the component
+
 export default {
   data: function () {
     return {
@@ -26,14 +23,21 @@ export default {
   },
   methods: {
     newWord: function() {
+      this.flicker()
       var self = this
       this.words.forEach(function(word){
         let newWord = self.words[self.wordCount]
         self.word = newWord
       })
     },
-    changeFlicker: function() {
-      this.flickerOn = true
+    flicker: function() {
+      var self = this
+      const times = 5;
+      for(var i=0; i < times; i++){
+        setInterval(function(){
+          self.flickerOn = !self.flickerOn
+        }, 400)
+      }
     }
   },
   mounted: function() {
@@ -42,26 +46,10 @@ export default {
       setInterval(function() {
         self.wordCount += 1
         self.newWord()
-      }, 1500)
+      }, 1000)
     }
-    // this.newWord()
   },
-  // mounted: function() {
-  //   var self = this
-  //   setInterval(function() {
-  //     self.changeFlicker()
-  //   }, 500)
-  // },
   watch: {
-    // word: function() {
-    //   var self = this
-    //   this.words.forEach(function(word){
-    //     setInterval(function (word) {
-    //       console.log(word)
-    //       return word
-    //     }, 1000)
-    //   })
-    // }
   }
 }
 </script>
