@@ -3,7 +3,7 @@
     <div class="transitionText__content">
       <h1>
         <div>
-          <!-- <span id="flickerText">{flickerText}</span> -->
+          <span id="flickerText" >{{word}}</span>
         </div>
       </h1>
     </div>
@@ -18,14 +18,50 @@
 export default {
   data: function () {
     return {
-      words: true,
-      panel: 1
+      words: ["hello", "world", "powerStruggle", "loveLife"],
+      word: "hello",
+      wordCount: -1,
+      flickerOn: false
     };
   },
-  computed: {
-    flickerText: function() {
-
+  methods: {
+    newWord: function() {
+      var self = this
+      this.words.forEach(function(word){
+        let newWord = self.words[self.wordCount]
+        self.word = newWord
+      })
+    },
+    changeFlicker: function() {
+      this.flickerOn = true
     }
+  },
+  mounted: function() {
+    var self = this
+    if (this.wordCount < 5) {
+      setInterval(function() {
+        self.wordCount += 1
+        self.newWord()
+      }, 1500)
+    }
+    // this.newWord()
+  },
+  // mounted: function() {
+  //   var self = this
+  //   setInterval(function() {
+  //     self.changeFlicker()
+  //   }, 500)
+  // },
+  watch: {
+    // word: function() {
+    //   var self = this
+    //   this.words.forEach(function(word){
+    //     setInterval(function (word) {
+    //       console.log(word)
+    //       return word
+    //     }, 1000)
+    //   })
+    // }
   }
 }
 </script>
