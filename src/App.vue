@@ -3,6 +3,7 @@
       <!-- <appTransitionText></TransitionText> -->
       <div v-if="isLoading">
         <appLoading v-if="isLoading"></appLoading>
+        <appPandaChat></appPandaChat>
       </div>
       <!-- <div v-else>
         <appHeader></appHeader>

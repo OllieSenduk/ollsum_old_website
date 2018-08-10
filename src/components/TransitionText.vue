@@ -3,10 +3,16 @@
     <div class="transitionText__content">
       <h1>
         <div>
-          <span id="flickerText" :class="[ flickerOn ? '' : 'glitch' ]">{{word}}</span>
+          <span id="flickerText" :class="[ flickerOn ? '' : 'glitch' ]" v-bind:style="{ color: pickColor(['#9593D9', '#FF9F1C', '#22007C', '#C2EABA']), background: pickColor(['black', '#2EC4B6', 'grey', 'pink'])}">{{word}}</span>
+          <!-- <div class="image_top">
+            <img src="@/assets/video-camera.svg" alt="" style="width: 100px; height: 100px;">
+          </div> -->
         </div>
       </h1>
     </div>
+    <!-- <div class="image_bottom">
+      <img src="@/assets/rocket.svg" alt="" style="width: 100px; height: 100px;">
+    </div> -->
   </div>
 </template>
 
@@ -15,46 +21,58 @@
 export default {
   data: function () {
     return {
-      words: ["hello", "world", "powerStruggle", "loveLife"],
-      word: "hello",
+      words: ["Campaigns", "That", "Wow"],
+      word: "Creating",
       wordCount: -1,
-      flickerOn: false
+      flickerOn: false,
+      showHeader: false
     };
   },
   methods: {
     newWord: function() {
-      this.flicker()
       var self = this
       this.words.forEach(function(word){
         let newWord = self.words[self.wordCount]
         self.word = newWord
       })
     },
+    pickColor: function(colors) {
+      const color = colors[this.wordCount + 1];
+      return color
+    },
     flicker: function() {
       var self = this
-      const times = 5;
+      const times = 3;
       for(var i=0; i < times; i++){
         setInterval(function(){
           self.flickerOn = !self.flickerOn
-        }, 400)
+        }, 250)
       }
-    }
+    },
   },
   mounted: function() {
     var self = this
+    this.flicker()
+
     if (this.wordCount < 5) {
       setInterval(function() {
         self.wordCount += 1
         self.newWord()
-      }, 1000)
+      }, 1200)
+    } else {
+      this.header = true
     }
   },
   watch: {
+  },
+  computed: {
   }
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+
 
   .transitionText__container {
     background-color: white;
@@ -71,9 +89,26 @@ export default {
     color: black;
   }
 
+  #flickerText {
+    padding: 100px;
+  }
+
   .glitch {
     color: black;
-    font-size: 200%;
+    font-size: 300%;
+    font-family: 'Londrina Outline', cursive;
+  }
+
+  .image_bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .image_top {
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 
 
