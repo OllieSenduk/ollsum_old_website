@@ -179,7 +179,7 @@ export default {
     setTimeout(() => {
       this.loaderDone = true
       console.log(this.loaderDone)
-    }, 2500)
+    }, 3000)
   },
 }
 </script>

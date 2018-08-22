@@ -1,286 +1,162 @@
 <template lang="html">
-  <section class="header">
-    <div class="screenEnters">
-
-    </div>
-    <div class="header__container">
-      <div class="header__operations" id="strategy">
-        <div class="text_balloon_top">
-          <p>Marketing & Social</p>
-        </div>
-        <div class="balloon_1">
-        </div>
-        <div class="header__block">
-          Growth
-        </div>
+  <div class = "header">
+      <div class="tagline">
+        <h1>Guerrilla Strawberry</h1>
+        <p>We are a fast paced and hyper ambitious Creative Agency based in Amsterdam & Barcelona.
+        </p>
       </div>
-      <div class="header__content">
-        <h1 id="title">GUERILLA <br>STRAWBERRY</h1>
-        <!-- <p>digital product development <br> & <br> Growth Strategy </p>
-        <p>Results and Customer driven product & marketing strategy</p>
-        <p>Let's get your business to the moon</p> -->
-        <p>Let's scale that business <br> of yours</p>
-        <img src="@/assets/rocket.svg" alt="" style="width: 100px; height: 100px;">
-
-      </div>
-      <div class="header__operations" id="product">
-        <div class="text_balloon_top">
-          <p>Code & Design</p>
-        </div>
-        <div class="balloon_1">
-        </div>
-        <div class="header__block">Product
-        </div>
-
-      </div>
-      <div class="triangle-topleft">
-      </div>
-      <div class="header__action">
-        <i class="fas fa-sort-down moving-arrow"></i>
-        <p>What we do?</p>
-      </div>
-    </div>
-  </section>
+   </div>
+</div>
 
 </template>
 
 <script>
-
 export default {
-  data: function () {
-    return {
-      show: true,
-      panel: 1
-    };
-  },
 }
 </script>
 
-<style lang="less">
+<style lang="css" scoped>
 
-  #strategy {
-    right: 5%;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  }
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+  padding: 100px 0;
+  background: #11807F;
+  height: 10vh;
+  z-index: -3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: 5% 40% 10% 40% 5%;
+  grid-template-rows: 10% 50% 40%; */
+  animation: pageEnter 1.3s ease forwards;
+}
 
-  #product {
-    left: 5%
-  }
-
-  #title {
-     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 4s; /* Firefox < 16 */
-         -ms-animation: fadein 4s; /* Internet Explorer */
-          -o-animation: fadein 4s; /* Opera < 14.1 */
-             animation: fadein 4s;
- }
-
- @keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
-
- /* Firefox < 16 */
- @-moz-keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
-
- /* Safari, Chrome and Opera > 12.1 */
- @-webkit-keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
-
- /* Internet Explorer */
- @-ms-keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
-
- /* Opera < 12.1 */
- @-o-keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
-
- .header {
-   // animation: createScreen 2s 1 ease-in-out;
-   // width: 1px;
-   // height: 1px;
-   // border-radius: 50%;
-   animation: displayScreen 2s 1 ease-in-out;
- }
-
- // .screenEnters {
- //   width: 100vw;
- //   height: 100vh;
- //   background-color: white;
- //   animation: displayScreen 2s 1 ease-in-out;
- // }
-
-
-  .header__container {
-    height: 100vh;
-    overflow: hidden;
-    background-color: #ED5759;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .triangle-topleft {
-    -webkit-clip-path: polygon(0 8%, 0% 100%, 100% 100%);
-    clip-path: polygon(0 8%, 0% 100%, 100% 100%);
-    background: black;
-    height: 100vh;
-    width: 100vw;
-  }
-
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 800px) {
   .header__content {
-    position: absolute;
-    z-index: 2;
-
-    h1 {
-      color: white;
-      font-family: LeagueGothic-Regular;
-      font-size: 80px;
-      letter-spacing: 5px;
-    }
-
-    p {
-      margin-top: 60px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      letter-spacing: 5px;
-      color: yellow;
-      font-weight: bold;
-    }
   }
 
-  .header__operations {
-    position: absolute;
-    color: white;
-    font-size: 18px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
+}
 
-    p {
-      font-size: 17px
+.quote span {
+  display:block;
+}
+
+.quote {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+	/* text-align: center; */
+	color: #F5C4B6;
+  line-height:0.85;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+.quote span:nth-child(1) {
+  font-size: 68px;
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+.quote span:nth-child(2) {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 68px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 5px 0 0 #F94F6A,
+				-5px 0 0 #F94F6A,
+				0 5px 0 #F94F6A,
+				0 -5px 0 #F94F6A,
+				4px 4px #F94F6A,
+				-4px -4px 0 #F94F6A,
+				4px -4px 0 #F94F6A,
+				-4px 4px 0 #F94F6A;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  color:#fff;
+  margin-top: 10px;
+  margin-bottom: 33px;
+}
+
+.quote span:nth-child(3) {
+  font-size: 68px;
+  margin-top:-12px;
+}
+
+.tagline {
+  color: white;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+
+  @keyframes moveLogo {
+    0% {
+      top: 50%;
     }
-
-    .text_balloon_top {
-      position: absolute;
-      top: -284%;
-      animation: 1s bounceInTextTop linear;
-      -webkit-animation: 0.5s bounceInTop linear;
-    }
-
-    .balloon_1 {
-
-      &::after {
-        content: '';
-        margin-bottom: 90px;
-        animation: 0.5s bounceInTop linear;
-        -webkit-animation: 0.5s bounceInTop linear;
-        width: 1px;
-        height: 85px;
-        background: white;
-        border-style: unset;
-        position: absolute;
-        bottom: -63%;
-        left: 50%;
-        margin-left: -2px;
-        color: white;
-
+    100% {
+        top: 5%;
+        font-size: 30px;
+        margin-left: 20px;
+        left: 10%;
       }
+  }
+
+
+@media (max-width: 950px) {
+  @keyframes moveLogo {
+    0% {
+      top: 50%;
     }
-
-    @keyframes bounceInTop {
-      2%  {transform: translateY(-100px)}
-      80% {transform: translateY(-8px)}
-    }
-
-    .header__block {
-      border-color: white;
-      border-width: 2px;
-      border-style: solid;
-      padding: 10px 10px 10px 10px;
-      font-weight: 800;
-      color: yellow;
-    }
+    100% {
+        top: 5%;
+        font-size: 30px;
+        margin-left: 20px;
+        left: 30%;
+        position: fixed;
+      }
   }
+}
 
-  .header__action {
-    position: absolute;
-    bottom: 5%;
-
-    p {
-      color: white;
-    }
+@keyframes pageEnter {
+  50% {
+    -webkit-transform: translateZ(-250px) rotateY(60deg);
   }
-
-  .moving-arrow {
-    color: white;
-    font-size: 34px;
-    animation: 4s arrowDown infinite;
+  75% {
+    -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+    // opacity: .6;
   }
-
-  @keyframes arrowDown {
-   0%   {color:#414789; left:0px; top:0px;}
-   25%  {color:yellow; left:200px; top:0px;}
-   50%  {color:#ED5759; left:200px; top:200px;}
-   75%  {color:green; left:0px; top:200px;}
-   100% {color:#414789; left:0px; top:0px;}
+  79% {
+    // opacity: .7;
   }
+  83% {
 
-  // @keyframes displayScreen {
-  //   0%{
-  //     -webkit-transform: translate(0%);
-  //     background-color: white;
-  //   }
-  //   25%{-webkit-transform: translate(100%);
-  //   background-color: black;
-  // }
-  // 50% {
-  //   -webkit-transform: translate(100%);
-  //   background-color: white
-  // }
-  //   100%{-webkit-transform: translate(100%);
-  //     display: none
-  //     ;}
-  // }
-
-  // @keyframes createScreen {
-  //   0% {
-  //     opacity: 0;
-  //     transform: scale(0.01);
-  //     border-radius: 50%;
-  //   }
-  //   50% {
-  //     opacity: 1;
-  //     transform: scale(0.01);
-  //     border-radius: 50%;
-  //   }
-  //   100% {
-  //     transform: scale(1);
-  //     border-radius: 50%;
-  //   }
-  // }
-
-  #svg-cloud {
-    display: none;
   }
-
-  @media (max-width: 950px) {
-    .header__operations {
-      display: none;
-      // position: absolute;
-      // top: 22%;
-    }
+  100% {
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+    opacity: 1;
   }
+}
+
 
 </style>

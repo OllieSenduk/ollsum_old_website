@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="transitionText__container">
+  <div class="transitionText__container" v-bind:style="{ color: pickColor(['#9593D9', '#FF9F1C', '#22007C', '#C2EABA']), background: pickColor(['black', '#2EC4B6', 'grey', 'pink'])}">
     <div class="transitionText__content">
       <h1>
         <div>
@@ -83,6 +83,9 @@ export default {
     align-items: center;
   }
 
+  .transitionText__content {
+  }
+
   span {
     letter-spacing: 0.75em;
     text-shadow: 0 0 0px white;
@@ -95,7 +98,7 @@ export default {
 
   .glitch {
     color: black;
-    font-size: 300%;
+    font-size: 110%;
     font-family: 'Londrina Outline', cursive;
   }
 

@@ -78,12 +78,6 @@ export default {
   }
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .panda-container {
-    left: 10%;
-  }
-}
 
   .panda-container {
     height: 50vh;

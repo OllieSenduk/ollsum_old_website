@@ -3,13 +3,13 @@
       <!-- <appTransitionText></TransitionText> -->
       <div v-if="isLoading">
         <appLoading v-if="isLoading"></appLoading>
-        <appPandaChat></appPandaChat>
       </div>
-      <!-- <div v-else>
+      <div v-else>
         <appHeader></appHeader>
         <appAbout></appAbout>
         <appPandaChat></appPandaChat>
-      </div> -->
+        <!-- <appPandaChat></appPandaChat> -->
+      </div>
 
   </div>
 </template>
@@ -33,13 +33,13 @@ export default {
   },
   data: function () {
     return {
-      isLoading: true
+      isLoading: false
     };
   },
   mounted () {
-    // setTimeout(() => {
-    //   this.isLoading = false
-    // }, 8000)
+    setTimeout(() => {
+      this.isLoading = false
+    }, 7500)
   },
   methods: {
   },
@@ -81,6 +81,14 @@ html, body, #fullheight {
   font-style: normal;
 }
 
-@import (css) url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+font-family: 'Sifonn-Basic';
+font-style: normal;
+font-weight: normal;
+src: url('./assets/fonts/SIFONN_BASIC.otf');
+}
 
+@import (css) url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import (css) url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
+@import (css) url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 </style>
