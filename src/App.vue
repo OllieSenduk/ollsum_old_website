@@ -51,10 +51,14 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 
-* { padding: 0; margin: 0; }
-html, body, #fullheight {
+
+$yellow: #fc3;
+
+$bg-classroom: #232323;
+
+body {
     min-height: 100% !important;
     height: 100%;
 }
@@ -68,9 +72,27 @@ html, body, #fullheight {
   position: relative;
 }
 
+// GLOBAL CSS
+.tagline__underline {
+  width: 50%;
+  height: 3px;
+  margin: 0;
+  border: none;
+  text-align: left;
+  -webkit-transition: width .2s;
+  transition: width .2s;
+}
+
+.tagline__underline_yellow {
+  background: $yellow;
+}
+
+.yellow {
+  color: $yellow
+}
+
 
 // FONTS
-
 @font-face {
   font-family: 'LeagueGothic-Regular';
   src: url('./assets/fonts/LeagueGothic-Regular.otf');
@@ -88,7 +110,21 @@ font-weight: normal;
 src: url('./assets/fonts/SIFONN_BASIC.otf');
 }
 
-@import (css) url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import (css) url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
-@import (css) url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
+@font-face {
+  font-family: 'TungstenNarrow-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/TungstenNarrow-bold.otf');
+}
+
+@font-face {
+  font-family: 'TungstenNarrow-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/TungstenNarrow-Semibold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 </style>

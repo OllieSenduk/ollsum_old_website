@@ -1,49 +1,130 @@
 <template lang="html">
   <div class = "header">
+    <div class="header__strawberry">
+      <img src="@/assets/str.png" alt="" class="deco-img-home">
+    </div>
+
       <div class="tagline">
-        <h1>Guerrilla Strawberry</h1>
-        <p>We are a fast paced and hyper ambitious Creative Agency based in Amsterdam & Barcelona.
+        <h4>Guerrilla Strawberry</h4>
+        <h1>LET'S CREATE SOMETHING AWESOME</h1>
+        <hr class="tagline__underline tagline__underline_yellow">
+
+        </hr>
+        <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
+          digital and real world strategies to get your users to love you even more than
+          they already do.
         </p>
+        <h6 class="yellow"> About us </h6>
       </div>
-   </div>
-</div>
+
+      <!-- <div class="big-clickme">
+     <div class="btn">
+       <a href="#" class="callTo ">
+
+       </a>
+     </div>
+   </div> -->
+ </div>
 
 </template>
 
 <script>
 export default {
+  data: function () {
+    return {
+      textShadow: false,
+      css_class: 'add_text_shadow_red'
+    };
+  },
+  methods: {
+    addTextShadow: function() {
+      let self = this;
+      const setFontShadow = function () {
+        self.textShadow = !self.textShadow
+      }
+      window.setInterval(setFontShadow, 1000);
+    }
+  },
+  mounted () {
+    // let self = this;
+    // setInterval(function() {
+    //   console.log("hje;;o")
+      this.addTextShadow()
+      if (self.TextShadow === true) {
+        self.css_class = 'add_text_shadow_blue'
+        console.log(self.TextShadow === true)
+        console.log(self.TextShadow === true)
+
+      } else {
+        self.css_class = 'add_text_shadow_red'
+      }
+    // }, 1500)
+  },
 }
 </script>
 
 <style lang="css" scoped>
 
+
+.header {
+  background: black;
+  height: 100vh;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  animation: pageEnter 1.3s ease forwards;
+}
+
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: TungstenNarrow-Semibold;
+  /* letter-spacing: 3px; */
+  font-weight: 500;
+  font-size: 80px;
   margin-bottom: 20px;
+  line-height: 77px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h4 {
   margin-top: 20px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+h6 {
+  display: inline-block;
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
+.add_text_shadow_red {
+  text-shadow: 2px 2px red;
+}
+
+.add_text_shadow_blue {
+  text-shadow: 2px 2px blue;
+}
+
+.add_text_shadow_pink {
+  text-shadow: 2px 2px pink;
 }
 
 p {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.header {
-  padding: 100px 0;
-  background: #11807F;
-  height: 10vh;
-  z-index: -3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* grid-template-columns: 5% 40% 10% 40% 5%;
-  grid-template-rows: 10% 50% 40%; */
-  animation: pageEnter 1.3s ease forwards;
-}
+    line-height: 30px;
+  }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 800px) {
   .header__content {
   }
 
+}
+
+.deco-img-home {
+  width: 100px;
+  opacity: 0.6;
 }
 
 .quote span {
@@ -98,6 +179,209 @@ p {
 
 .tagline {
   color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a { text-decoration: none;  }
+
+.big-clickme {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  max-width: 20em;
+  width: 100%;
+  height: 10em;
+  margin: 0 0 0px -150px;
+  text-align: center;
+  margin-top: 10%;
+  transition: growBerry 2s linear;
+}
+
+.callTo {
+      font-family: 'Exo 2', sans-serif;
+  box-shadow: 0 5px 5px #e85543, 0 9px 0 #992113, 0px 9px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: #e85543;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 1.5em;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+  transition: letter-spacing 0.2s linear;
+}
+
+.callTo:hover {
+
+
+
+}
+
+.callTo:active {
+	 top: 7px;
+  box-shadow: 0 2px 0 #e85543, 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+.btn{
+  width: 300px;
+  height: 50px;
+
+
+  border-radius: 8px;
+  color: #fff;
+
+  font-size: 22px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+   box-shadow: 0 0 1px transparent;
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.btn:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 150%;
+  left: 5%;
+  height: 20px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+  opacity: .4;
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  transform: translateY(6px);
+  -webkit-animation-name: hover-shadow;
+  animation-name: hover-shadow;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.btn:hover {
+
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@-webkit-keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+@keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
 }
 
 @keyframes slide {
@@ -155,6 +439,30 @@ p {
   100% {
     -webkit-transform: translateZ(-500px) rotateY(0deg);
     opacity: 1;
+  }
+}
+
+@keyframes growBerry {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+    // transform: scale(1);
+  }
+  100% {
+    transform: translateY(0);
+    // width: 60px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__strawberry {
+    width: 20px;
+  }
+  .header {
+    flex-direction: column;
   }
 }
 

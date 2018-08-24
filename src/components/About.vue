@@ -6,24 +6,18 @@
         <img src="@/assets/deco2.png" alt="" class="deco-img2">
         <div class="about__main">
           <div class="about__main-text">
-            <h3 style="text-align: center;">What we do</h3>
+            <h3 style="text-align: center;">From Strawberry with love</h3>
             <p>
-              Our main focus is to create connect with your desired audience and
-              get the message accross in a way that ressonates with them. More so,
-              in todays day and age, where people get ..
-
-              We go the extra mile
-
-              Whether it through an (interactive) video, an app or website.
+              Here at Guerrilla Strawberry we're fortunate enough
+              to work with a wide network of international superstars, varying
+              from growth hackers to designers and developers to social media experts.
+              This enables us to look at every case individually and pick the best approach
+              to reach your users.
             </p>
           </div>
           <div class="arrow-steps">
             <img src="@/assets/next.png" alt="" class="arrow">
           </div>
-          <div class="">
-            <img src="@/assets/mind_map.png" alt="" class="mind_map">
-          </div>
-
         </div>
 
 
@@ -85,7 +79,7 @@ export default {
   .about__container {
     height: 100vh;
     width: 100vw;
-    background-color: #413a90;
+    background-color: #414789;
     display: flex;
     animation: pageEnter 1.3s ease forwards;
   }
@@ -192,6 +186,18 @@ export default {
           left: 30%;
           position: fixed;
         }
+    }
+
+    .about__main {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 10% 50% 1fr 1fr ;
+      grid-template-rows: 10% 50% 1fr 1fr;
+    }
+
+    .arrow-steps {
+      display: none;
     }
   }
 </style>
