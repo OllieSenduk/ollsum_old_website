@@ -3,20 +3,21 @@
     <div class="header__strawberry">
       <img src="@/assets/str.png" alt="" class="deco-img-home">
     </div>
-
-      <div class="tagline">
-        <h4>Guerrilla Strawberry</h4>
-        <h1>LET'S CREATE SOMETHING AWESOME</h1>
-        <hr class="tagline__underline tagline__underline_yellow">
-
-        </hr>
-        <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
-          digital and real world strategies to get your users to love you even more than
-          they already do.
-        </p>
+    <div class="tagline">
+      <h4>Guerrilla Strawberry</h4>
+      <h1>LET'S CREATE SOMETHING AWESOME</h1>
+      <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
+      </hr>
+      <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
+        digital and real world strategies to get your users to love you even more than
+        they already do.
+      </p>
+      <a href="#about">
         <h6 class="yellow"> About us </h6>
-      </div>
-
+      </a>
+      <hr class="tagline__underline tagline__underline_grey">
+      </hr>
+    </div>
       <!-- <div class="big-clickme">
      <div class="btn">
        <a href="#" class="callTo ">
@@ -25,40 +26,17 @@
      </div>
    </div> -->
  </div>
-
 </template>
 
 <script>
 export default {
   data: function () {
     return {
-      textShadow: false,
-      css_class: 'add_text_shadow_red'
     };
   },
   methods: {
-    addTextShadow: function() {
-      let self = this;
-      const setFontShadow = function () {
-        self.textShadow = !self.textShadow
-      }
-      window.setInterval(setFontShadow, 1000);
-    }
   },
   mounted () {
-    // let self = this;
-    // setInterval(function() {
-    //   console.log("hje;;o")
-      this.addTextShadow()
-      if (self.TextShadow === true) {
-        self.css_class = 'add_text_shadow_blue'
-        console.log(self.TextShadow === true)
-        console.log(self.TextShadow === true)
-
-      } else {
-        self.css_class = 'add_text_shadow_red'
-      }
-    // }, 1500)
   },
 }
 </script>
@@ -113,7 +91,6 @@ h6 {
 p {
     line-height: 30px;
   }
-
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 800px) {

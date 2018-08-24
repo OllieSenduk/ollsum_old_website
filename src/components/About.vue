@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__container">
 
         <img src="@/assets/deco.png" alt="" class="deco-img">

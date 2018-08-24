@@ -56,7 +56,7 @@ export default {
 
 $yellow: #fc3;
 
-$bg-classroom: #232323;
+$grey: #393939;
 
 body {
     min-height: 100% !important;
@@ -74,23 +74,30 @@ body {
 
 // GLOBAL CSS
 .tagline__underline {
-  width: 50%;
   height: 3px;
   margin: 0;
+  width:  10%;
   border: none;
   text-align: left;
   -webkit-transition: width .2s;
   transition: width .2s;
-}
 
-.tagline__underline_yellow {
-  background: $yellow;
+  &_large {
+    width: 50%;
+  }
+
+  &_yellow {
+   background: $yellow;
+  }
+
+  &_grey {
+    background: $grey;
+  }
 }
 
 .yellow {
   color: $yellow
 }
-
 
 // FONTS
 @font-face {
