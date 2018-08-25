@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 
 h2 {
   font-family: TungstenNarrow-Semibold;
@@ -68,7 +68,9 @@ h2 {
 h1 {
   margin-top: 20px;
   margin-bottom: 5px;
-  opacity: 0.8;
+  opacity: 1;
+  font-weight: 800;
+  font-size: 10px;
 }
 
 h6 {

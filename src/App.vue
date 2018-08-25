@@ -80,7 +80,7 @@ a {
 // GLOBAL CSS
 
 .container {
-  padding-top: 30%;
+  padding-top: 20%;
 }
 
 .tagline__underline {
