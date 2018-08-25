@@ -69,6 +69,10 @@ h1 {
   margin-top: 20px;
   margin-bottom: 5px;
   opacity: 0.8;
+  font-size: 20px;
+  font-family: TungstenNarrow-Semibold;
+  letter-spacing: 7px;
+  font-weight: 100;
 }
 
 h6 {
@@ -89,6 +93,7 @@ p {
 .header {
   background: black;
   height: 100vh;
+  width: 100vw;
   display: flex;
   text-align: left;
   flex-direction: row;
@@ -117,33 +122,19 @@ p {
   .header__container {
     margin-left: 50px;
     margin-right: 50px;
-  }
-
-  .deco-img-home {
-    /* position: absolute;
-    right: 40px;
-    top40%; */
-  }
-
-  .header {
-    background: none;
+    margin-top: 6%;
   }
 
   .header__message {
     width: 400px;
   }
 
-  .header::after {
-    content: "";
-    background-image: url('../assets/background.jpg');
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: -450px;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  .header__tagline {
+    color: white;
+    margin-left: 20%;
+    margin-right: 10%;
   }
+
 }
 
 

@@ -56,7 +56,8 @@ export default {
 
 $yellow: #fc3;
 
-$grey: #393939;
+$grey: #989898;
+
 
 body {
     min-height: 100% !important;
