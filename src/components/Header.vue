@@ -5,7 +5,7 @@
     </div>
     <div class="header__container">
       <div class="header__tagline">
-        <h1>Guerrilla Strawberry</h1>
+        <h1>GUERRILLA STRAWBERRY</h1>
         <h2>
           LET'S CREATE
           <br>
@@ -68,10 +68,10 @@ h2 {
 h1 {
   margin-top: 20px;
   margin-bottom: 5px;
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 20px;
   font-family: TungstenNarrow-Semibold;
-  letter-spacing: 7px;
+  letter-spacing: 2px;
   font-weight: 100;
 }
 
@@ -119,6 +119,10 @@ p {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 800px) {
+
+  h1 {
+    letter-spacing: 1px;
+  }
   .header__container {
     margin-left: 50px;
     margin-right: 50px;
@@ -134,7 +138,6 @@ p {
     margin-left: 20%;
     margin-right: 10%;
   }
-
 }
 
 
