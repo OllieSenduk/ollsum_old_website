@@ -1,19 +1,18 @@
 <template lang="html">
   <section id="header" class="header">
+    <div class="header__strawberry">
+      <img src="@/assets/str.png" alt="" class="deco-img-home">
+    </div>
     <div class="header__container">
-
-      <div class="header__strawberry">
-        <img src="@/assets/str.png" alt="" class="deco-img-home">
-      </div>
       <div class="header__tagline">
         <h1>Guerrilla Strawberry</h1>
-        <h4>
+        <h2>
           LET'S CREATE
           <br>
           SOMETHING
           <br>
           AWESOME
-        </h4>
+        </h2>
         <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
         </hr>
         <div class="header__message">
@@ -55,7 +54,7 @@ export default {
 
 <style lang="css" scoped>
 
-h4 {
+h2 {
   font-family: TungstenNarrow-Semibold;
   /* letter-spacing: 3px; */
   font-weight: 500;
@@ -83,6 +82,10 @@ p {
   letter-spacing: 1px;
 }
 
+.header__container {
+  margin-top: 30%;
+}
+
 .header {
   background: black;
   height: 100vh;
@@ -102,6 +105,7 @@ p {
 .deco-img-home {
   width: 100px;
   opacity: 0.6;
+  position: absolute;
 }
 
 .header__message {
@@ -141,6 +145,27 @@ p {
     z-index: -1;
   }
 }
+
+
+  @keyframes pageEnter {
+  	50% {
+  		-webkit-transform: translateZ(90px) rotateY(90deg);
+  	}
+  	75% {
+  		-webkit-transform: translateZ(-372.5px) rotateY(15deg);
+  		// opacity: .9;
+  	}
+    79% {
+      // opacity: .7;
+    }
+    83% {
+
+    }
+  	100% {
+  		-webkit-transform: translateZ(-500px) rotateY(0deg);
+  		opacity: 1;
+  	}
+  }
 
 /*
 .quote span {
