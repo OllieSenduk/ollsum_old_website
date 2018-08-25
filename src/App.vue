@@ -79,6 +79,11 @@ a {
 }
 
 // GLOBAL CSS
+
+.container {
+  padding-top: 20%;
+}
+
 .tagline__underline {
   height: 3px;
   margin: 0;
