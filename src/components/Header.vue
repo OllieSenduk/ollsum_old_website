@@ -3,7 +3,6 @@
     <div class="header__strawberry">
       <img src="@/assets/str.png" alt="" class="deco-img-home">
     </div>
-    <div class="container">
       <div class="content__container">
         <div class="header__tagline">
           <h1>GUERRILLA STRAWBERRY</h1>
@@ -37,7 +36,6 @@
          </a>
        </div>
      </div> -->
-   </div>
  </section>
 </template>
 
@@ -102,6 +100,7 @@ p {
 
 .header__tagline {
   color: white;
+  margin-top: 140px;
 }
 
 .deco-img-home {
@@ -132,8 +131,8 @@ p {
 
   .header__tagline {
     color: white;
-    margin-left: 20%;
     margin-right: 10%;
+    margin-top: 95px;
   }
 }
 
