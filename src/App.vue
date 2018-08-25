@@ -84,6 +84,11 @@ a {
   padding-top: 20%;
 }
 
+.content__container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .tagline__underline {
   height: 3px;
   margin: 0;

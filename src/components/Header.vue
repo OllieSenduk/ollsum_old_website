@@ -4,29 +4,31 @@
       <img src="@/assets/str.png" alt="" class="deco-img-home">
     </div>
     <div class="container">
-      <div class="header__tagline">
-        <h1>GUERRILLA STRAWBERRY</h1>
-        <h2>
-          LET'S CREATE
-          <br>
-          SOMETHING
-          <br>
-          AWESOME
-        </h2>
-        <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
-        </hr>
-        <div class="header__message">
-          <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
-              digital and real world strategies to get your users to <b>love</b>  you even more than
-            they already do.
-          </p>
-        </div>
+      <div class="content__container">
+        <div class="header__tagline">
+          <h1>GUERRILLA STRAWBERRY</h1>
+          <h2>
+            LET'S CREATE
+            <br>
+            SOMETHING
+            <br>
+            AWESOME
+          </h2>
+          <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          </hr>
+          <div class="header__message">
+            <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
+                digital and real world strategies to get your users to <b>love</b>  you even more than
+              they already do.
+            </p>
+          </div>
 
-        <a href="#about">
-          <h6 class="yellow"> About us </h6>
-        </a>
-        <hr class="tagline__underline tagline__underline_grey">
-        </hr>
+          <a href="#about">
+            <h6 class="yellow"> About us </h6>
+          </a>
+          <hr class="tagline__underline tagline__underline_grey">
+          </hr>
+        </div>
       </div>
         <!-- <div class="big-clickme">
        <div class="btn">
@@ -100,8 +102,6 @@ p {
 
 .header__tagline {
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .deco-img-home {
