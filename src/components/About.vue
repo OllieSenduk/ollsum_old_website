@@ -1,6 +1,8 @@
 <template lang="html">
+
   <section section id="about" class="about">
-    <div class="about__container">
+    <div class="container">
+
       <div class="about__tagline">
         <h2>hello world</h2>
       </div>
@@ -19,7 +21,9 @@
 
       </div>
     </div>
+
   </section>
+
 </template>
 
 <script>
@@ -40,7 +44,11 @@ export default {
 
 <style lang="scss" scoped>
 
-  .about__container {
+  h2 {
+    margin-top: 0px;
+  }
+
+  .about{
     height: 100vh;
     width: 100vw;
     background-color: pink;

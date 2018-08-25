@@ -3,7 +3,7 @@
     <div class="header__strawberry">
       <img src="@/assets/str.png" alt="" class="deco-img-home">
     </div>
-    <div class="header__container">
+    <div class="container">
       <div class="header__tagline">
         <h1>Guerrilla Strawberry</h1>
         <h2>
@@ -82,13 +82,10 @@ p {
   letter-spacing: 1px;
 }
 
-.header__container {
-  margin-top: 30%;
-}
-
 .header {
   background: black;
   height: 100vh;
+  width: 100vw;
   display: flex;
   text-align: left;
   flex-direction: row;
