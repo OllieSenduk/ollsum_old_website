@@ -1,31 +1,43 @@
 <template lang="html">
-  <div class = "header">
-    <div class="header__strawberry">
-      <img src="@/assets/str.png" alt="" class="deco-img-home">
-    </div>
-    <div class="tagline">
-      <h4>Guerrilla Strawberry</h4>
-      <h1>LET'S CREATE SOMETHING AWESOME</h1>
-      <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
-      </hr>
-      <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
-        digital and real world strategies to get your users to love you even more than
-        they already do.
-      </p>
-      <a href="#about">
-        <h6 class="yellow"> About us </h6>
-      </a>
-      <hr class="tagline__underline tagline__underline_grey">
-      </hr>
-    </div>
-      <!-- <div class="big-clickme">
-     <div class="btn">
-       <a href="#" class="callTo ">
+  <section id="header" class="header">
+    <div class="header__container">
 
-       </a>
-     </div>
-   </div> -->
- </div>
+      <div class="header__strawberry">
+        <img src="@/assets/str.png" alt="" class="deco-img-home">
+      </div>
+      <div class="header__tagline">
+        <h1>Guerrilla Strawberry</h1>
+        <h4>
+          LET'S CREATE
+          <br>
+          SOMETHING
+          <br>
+          AWESOME
+        </h4>
+        <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
+        </hr>
+        <div class="header__message">
+          <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
+              digital and real world strategies to get your users to <b>love</b>  you even more than
+            they already do.
+          </p>
+        </div>
+
+        <a href="#about">
+          <h6 class="yellow"> About us </h6>
+        </a>
+        <hr class="tagline__underline tagline__underline_grey">
+        </hr>
+      </div>
+        <!-- <div class="big-clickme">
+       <div class="btn">
+         <a href="#" class="callTo ">
+
+         </a>
+       </div>
+     </div> -->
+   </div>
+ </section>
 </template>
 
 <script>
@@ -43,17 +55,7 @@ export default {
 
 <style lang="css" scoped>
 
-
-.header {
-  background: black;
-  height: 100vh;
-  display: flex;
-  text-align: left;
-  flex-direction: row;
-  animation: pageEnter 1.3s ease forwards;
-}
-
-h1 {
+h4 {
   font-family: TungstenNarrow-Semibold;
   /* letter-spacing: 3px; */
   font-weight: 500;
@@ -64,10 +66,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-h4 {
+h1 {
   margin-top: 20px;
   margin-bottom: 5px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 h6 {
@@ -76,27 +78,25 @@ h6 {
   font-size: 16px;
 }
 
-.add_text_shadow_red {
-  text-shadow: 2px 2px red;
-}
-
-.add_text_shadow_blue {
-  text-shadow: 2px 2px blue;
-}
-
-.add_text_shadow_pink {
-  text-shadow: 2px 2px pink;
-}
-
 p {
-    line-height: 30px;
-  }
+  line-height: 20px;
+  letter-spacing: 1px;
+}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 800px) {
-  .header__content {
-  }
+.header {
+  background: black;
+  height: 100vh;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  animation: pageEnter 1.3s ease forwards;
 
+}
+
+.header__tagline {
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .deco-img-home {
@@ -104,6 +104,45 @@ p {
   opacity: 0.6;
 }
 
+.header__message {
+  width: 90%;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 800px) {
+  .header__container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .deco-img-home {
+    /* position: absolute;
+    right: 40px;
+    top40%; */
+  }
+
+  .header {
+    background: none;
+  }
+
+  .header__message {
+    width: 400px;
+  }
+
+  .header::after {
+    content: "";
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: -450px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/*
 .quote span {
   display:block;
 }
@@ -114,7 +153,7 @@ p {
   grid-row-start: 2;
   grid-row-end: 3; */
 	/* text-align: center; */
-	color: #F5C4B6;
+	/* color: #F5C4B6;
   line-height:0.85;
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: bold;
@@ -152,17 +191,10 @@ p {
 .quote span:nth-child(3) {
   font-size: 68px;
   margin-top:-12px;
-}
+}  */
 
-.tagline {
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
-a { text-decoration: none;  }
-
-.big-clickme {
+/* .big-clickme {
   position: absolute;
   left: 50%;
   bottom: 10%;
@@ -212,7 +244,7 @@ a { text-decoration: none;  }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
+/*
 
 .btn{
   width: 300px;
@@ -441,7 +473,7 @@ a { text-decoration: none;  }
   .header {
     flex-direction: column;
   }
-}
+} */
 
 
 </style>

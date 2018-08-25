@@ -63,6 +63,11 @@ body {
     height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -76,14 +81,14 @@ body {
 .tagline__underline {
   height: 3px;
   margin: 0;
-  width:  10%;
+  width:  30px;
   border: none;
   text-align: left;
   -webkit-transition: width .2s;
   transition: width .2s;
 
   &_large {
-    width: 50%;
+    width: 125px;
   }
 
   &_yellow {
