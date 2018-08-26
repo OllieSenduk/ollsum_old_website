@@ -86,6 +86,10 @@ export default {
 
   .panda {
     max-width: 20vw;
+    max-height: 20vh;
+    position: absolute;
+    bottom: 128px;
+    left: -8px;
     .ears-container {
       display: flex;
     }

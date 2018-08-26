@@ -162,6 +162,12 @@ export default {
     color: white;
   }
 
+  .panda__component {
+    // position: absolute;
+    // bottom: -46px;
+    // left: -20px;
+  }
+
   @media only screen and (min-width : 800px) {
 
     input {
