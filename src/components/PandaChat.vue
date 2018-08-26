@@ -81,7 +81,7 @@ export default {
   .panda-container {
     background-color: #fc3;
     position: absolute;
-    bottom: 20px;
+    bottom: -40px;
     left: -2px;
   }
 
