@@ -128,6 +128,10 @@ a {
   font-size: 16px;
 }
 
+.main_message {
+  font-size: 12px;
+}
+
 // FONTS
 @font-face {
   font-family: 'LeagueGothic-Regular';
