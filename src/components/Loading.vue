@@ -178,7 +178,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.loaderDone = true
-    }, 3000)
+    }, 4000)
   },
 }
 </script>
@@ -199,9 +199,11 @@ export default {
 
   .space-guy__container {
       width:60vw;
-      height:90vh;
+      height:200vh;
       margin: 0;
       padding: 0;
+      display: flex;
+      align-items: center;
   }
 
   .dot {
@@ -215,8 +217,7 @@ export default {
     top: 50vh;
     left: 50%;
     transform: translate(-50%, 0);
-    animation: growDot 6s 1 ease-in-out;
-    -webkit-animation: growDot 6s 1 ease-in-out;
+    -webkit-animation: growDot 9s 1 ease-in-out;
     -webkit-transform: scale(.01);
     -moz-transform: scale(.01);
     -ms-transform: scale(.01);
@@ -245,37 +246,38 @@ export default {
 
   .rocketManSVG {
     animation: flyUp 1s 3 ease-in-out;
-    animation-delay: 0.6s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    height: 500px;
   }
 
   #speedLine0 {
-    animation: line-animation1 0.4s 3 ease-in-out;
+    animation: line-animation1 0.4s 8 ease-in-out;
   }
 
   #speedLine1 {
-    animation: line-animation2 0.4s 3 ease-in-out;
+    animation: line-animation2 0.4s 8 ease-in-out;
   }
 
   #speedLine2 {
-    animation: line-animation3 0.4s 3 ease-in-out;
+    animation: line-animation3 0.4s 8 ease-in-out;
   }
 
   #speedLine3 {
-    animation: line-animation1 0.4s 3 ease-in-out;
+    animation: line-animation1 0.4s 8 ease-in-out;
   }
 
   #speedLine4 {
-    animation: line-animation1 0.7s 3 ease-in-out;
+    animation: line-animation1 0.7s 8 ease-in-out;
   }
 
   #speedLine5 {
-    animation: line-animation1 0.4s 3 ease-in-out;
+    animation: line-animation1 0.4s 8 ease-in-out;
   }
 
   #speedLine6 {
-    animation: line-animation1 0.5s 3 ease-in-out;
+    animation: line-animation1 0.5s 8 ease-in-out;
   }
 
   @keyframes flyUp {
