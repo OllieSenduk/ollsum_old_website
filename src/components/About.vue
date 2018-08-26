@@ -149,6 +149,7 @@ export default {
   .about__message {
     font-family: TungstenNarrow-Semibold;
     vertical-align:middle;
+    font-size: 40px
   }
 
   .about__message_icon {
