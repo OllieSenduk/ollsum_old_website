@@ -32,7 +32,7 @@ export default {
   },
   data: function () {
     return {
-      isLoading: true
+      isLoading: false
     };
   },
   mounted () {

@@ -28,20 +28,20 @@
               <p>Name</p>
               <input type="text" name="name">
             </div>
-            <div class="input_line">
-            </div>
+            <!-- <div class="input_line">
+            </div> -->
             <div class="field field_small">
               <p>Email</p>
               <input type="text" name="_replyto">
             </div>
-            <div class="input_line">
-            </div>
+            <!-- <div class="input_line">
+            </div> -->
             <div class="field field_large">
               <p>Your message</p>
-              <input type="text" name="message">
+              <textarea name="name" rows="8" cols="80"></textarea>
             </div>
-            <div class="input_line">
-            </div>
+            <!-- <div class="input_line">
+            </div> -->
             <input type="submit" value="Send" class="form__button">
           </form>
           <div class="panda__component">
@@ -96,11 +96,14 @@ export default {
     padding-left: 5px;
   }
 
-  .field_large {
-    input {
-      min-height: 220px;
-    }
+  textarea {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0px solid white;
+    width: 80%;
+    font-size: 20px;
+    padding-left: 5px;
   }
+
 
   .input_line {
     height: 6px;
@@ -118,6 +121,24 @@ export default {
       font-stretch: expanded;
       letter-spacing: 2px;
       margin-bottom: 1px;
+      font-size: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    input[type="text"]
+    {
+    font-size: 20px;
+    font-family: TungstenNarrow-Semibold;
+    letter-spacing: 20px;
+    letter-spacing: 3px;
+    }
+
+    textarea {
+      font-size: 20px;
+      font-family: TungstenNarrow-Semibold;
+      letter-spacing: 20px;
+      letter-spacing: 3px;
     }
   }
 
