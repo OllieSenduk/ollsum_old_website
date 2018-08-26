@@ -188,8 +188,8 @@ export default {
 
     .panda__component {
       position: absolute;
-      top: 205px;
-      right: 492px;
+      top: 455px;
+      right: 560px;
       width: 0px;
     }
 
