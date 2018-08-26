@@ -7,15 +7,14 @@
       <div v-else>
         <appHeader></appHeader>
         <appAbout></appAbout>
-        <appPandaChat></appPandaChat>
-        <!-- <appPandaChat></appPandaChat> -->
+        <appEmailForm></appEmailForm>
       </div>
 
   </div>
 </template>
 
 <script>
-import PandaChat from './components/PandaChat'
+import EmailForm from './components/Form'
 import Header from './components/Header'
 import About from './components/About'
 import Loading from './components/Loading'
@@ -25,11 +24,11 @@ import Vue from 'vue';
 export default {
   name: 'App',
   components: {
-    appPandaChat: PandaChat,
     appHeader: Header,
     appAbout: About,
     appLoading: Loading,
-    appTransitionText: TransitionText
+    appTransitionText: TransitionText,
+    appEmailForm: EmailForm
   },
   data: function () {
     return {
@@ -84,6 +83,12 @@ a {
   padding-top: 20%;
 }
 
+.content__container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 70px;
+}
+
 .tagline__underline {
   height: 3px;
   margin: 0;
@@ -104,10 +109,23 @@ a {
   &_grey {
     background: $grey;
   }
+
+  &_black {
+    background: black;
+  }
 }
 
 .yellow {
   color: $yellow
+}
+
+.line_height_text {
+  line-height: 30px;
+}
+
+.page_link {
+  margin: 20px 0 10px;
+  font-size: 16px;
 }
 
 // FONTS

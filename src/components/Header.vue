@@ -1,32 +1,33 @@
 <template lang="html">
   <section id="header" class="header">
-    <div class="header__strawberry">
+    <!-- <div class="header__strawberry">
       <img src="@/assets/str.png" alt="" class="deco-img-home">
-    </div>
-    <div class="container">
-      <div class="header__tagline">
-        <h1>GUERRILLA STRAWBERRY</h1>
-        <h2>
-          LET'S CREATE
-          <br>
-          SOMETHING
-          <br>
-          AWESOME
-        </h2>
-        <hr class="tagline__underline tagline__underline_yellow tagline__underline_large">
-        </hr>
-        <div class="header__message">
-          <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
-              digital and real world strategies to get your users to <b>love</b>  you even more than
-            they already do.
-          </p>
-        </div>
+    </div> -->
+      <div class="content__container">
+        <div class="header__tagline">
+          <h1>GUERRILLA STRAWBERRY</h1>
+          <h2>
+            LET'S CREATE
+            <br>
+            SOMETHING
+            <br>
+            <span style="color: #fc3">AWESOME</span>
+          </h2>
+          <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          </hr>
+          <div class="header__message line_height_text">
+            <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
+                digital and real world strategies to get your users to <b>love</b>  you even more than
+              they already do.
+            </p>
+          </div>
 
-        <a href="#about">
-          <h6 class="yellow"> About us </h6>
-        </a>
-        <hr class="tagline__underline tagline__underline_grey">
-        </hr>
+          <a href="#about">
+            <h6 class="yellow page_link"> About us </h6>
+          </a>
+          <hr class="tagline__underline tagline__underline_grey">
+          </hr>
+        </div>
       </div>
         <!-- <div class="big-clickme">
        <div class="btn">
@@ -35,7 +36,6 @@
          </a>
        </div>
      </div> -->
-   </div>
  </section>
 </template>
 
@@ -73,22 +73,14 @@ h1 {
   font-family: TungstenNarrow-Semibold;
   letter-spacing: 2px;
   font-weight: 100;
-
-}
-
-h6 {
-  display: inline-block;
-  margin: 20px 0 10px;
-  font-size: 16px;
 }
 
 p {
-  line-height: 20px;
   letter-spacing: 1px;
 }
 
 .header {
-  background: black;
+  background-image: url('../assets/strawberry.jpg');
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -100,8 +92,6 @@ p {
 
 .header__tagline {
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .deco-img-home {
@@ -120,6 +110,13 @@ p {
   h1 {
     letter-spacing: 1px;
   }
+
+  .header {
+    background: none;
+    background-image: url('../assets/strawberry.jpg');
+    background-position: -5% 57%;
+  }
+
   .header__container {
     margin-left: 50px;
     margin-right: 50px;
@@ -132,7 +129,6 @@ p {
 
   .header__tagline {
     color: white;
-    margin-left: 20%;
     margin-right: 10%;
   }
 }

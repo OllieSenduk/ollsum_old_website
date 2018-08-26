@@ -1,26 +1,87 @@
 <template lang="html">
 
   <section section id="about" class="about">
-    <div class="container">
+      <div class="content__container">
+        <div class="about__tagline">
+          <h2>OUR SERVICES</h2>
+          <span class="about__quote">
+            HUSSLE
+            <br>
+            FOR THE
+            <br>
+            <b style="color: #fc3">WOW FACTOR</b>
+          </span>
+        </div>
+        <div class="about__message_container">
 
-      <div class="about__tagline">
-        <h2>hello world</h2>
-      </div>
-      <div class="about__message">
-        <div class="about__message_">
+          <div class="about__message_icon">
+            <img src="@/assets/teamwork.svg" alt="">
+          </div>
+          <div class="about__message">
+            BUSINESS SCAN
+            <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          </div>
+        </div>
+
+
+        <div class="about__message_text line_height_text">
+          We dive into the core of your business and your users.
+          Together we uncover the underlying problems you are facing and
+          what the desired outcome is. Think post-its, actionable steps and
+          competitive analysis.
+        </div>
+
+        <div class="about__message_container">
+
+          <div class="about__message_icon">
+            <img src="@/assets/solution.svg" alt="">
+          </div>
+          <div class="about__message">
+            PROBLEM-SOLUTION FIT
+
+            <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          </div>
+        </div>
+
+
+        <div class="about__message_text line_height_text">
+           Here at Guerrilla Strawberry we're fortunate enough
+           to work with a wide network of international superstars, varying
+           from designers to event mangers and developers to cinematographers.
+           This enables us to look at every case individually and pick the best approach
+           to reach your users.
+        </div>
+<!--  -->
+        <div class="about__message_container">
+
+          <div class="about__message_icon">
+            <img src="@/assets/startup.svg" alt="">
+          </div>
+          <div class="about__message">
+            GETTING SHIT DONE
+
+            <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          </div>
+        </div>
+
+
+        <div class="about__message_text line_height_text">
+          Our passion for creating top notch products and campaigns has brought us here,
+          and thus we will go above and beyond to get you the desired results.
+          We value relationships more then anything.
+          Therefor we are anything but a pump and dump studio.
+          We remain in close contact on the progress of you goals and
+          love to help out where needed.
 
         </div>
+        <a href="#about">
+          <h6 class="yellow page_link"> Contact </h6>
+        </a>
+        <hr class="tagline__underline tagline__underline_black">
+        </hr>
       </div>
-      <div class="about__message">
 
-      </div>
-      <div class="about__message">
 
-      </div>
-      <div class="about__message">
-
-      </div>
-    </div>
 
   </section>
 
@@ -46,15 +107,59 @@ export default {
 
   h2 {
     margin-top: 0px;
+    margin-bottom: 5px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-family: TungstenNarrow-Semibold;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #989898;
   }
 
   .about{
-    height: 100vh;
     width: 100vw;
-    background-color: pink;
+    background-color: white;
+    text-align: left;
   }
 
   .about__tagline {
     color: black;
+
+    span {
+      font-family: TungstenNarrow-Semibold;
+/* letter-spacing: 3px; */
+      font-weight: 500;
+      font-size: 80px;
+      margin-bottom: 20px;
+      line-height: 64px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // CARDS
+
+  .about__message_container {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+
+  .about__message {
+    font-family: TungstenNarrow-Semibold;
+    font-size: 35px;
+    vertical-align:middle;
+  }
+
+  .about__message_icon {
+    width: 60px;
+    vertical-align:middle;
+    margin-right: 20px;
+  }
+  @media only screen and (min-width : 800px) {
+    .about__message_text {
+      width: 50%;
+    }
   }
 </style>
