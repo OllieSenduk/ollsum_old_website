@@ -93,7 +93,7 @@ export default {
   }
 
   #flickerText {
-    padding: 100px;
+    // padding: 100px;
   }
 
   .glitch {

@@ -144,9 +144,16 @@ export default {
 
   .form__button {
     background: black;
-    color: white;
+    color: #fc3;
     margin-top: 10px;
     width: 82%;
+    font-family: Avenir;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+    margin-bottom: 1px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
   }
 
 
