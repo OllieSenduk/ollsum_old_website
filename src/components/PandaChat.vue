@@ -79,17 +79,19 @@ export default {
 
 
   .panda-container {
-    height: 50vh;
     background-color: #fc3;
     position: absolute;
+    bottom: 20px;
+    left: -2px;
   }
 
   .panda {
-    height: 182px;
-    width: 200px;
+    height: 281px;
+    width: 100vw;
     background-color: #fc3;
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     .ears-container {
       display: flex;

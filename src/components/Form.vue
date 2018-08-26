@@ -20,7 +20,6 @@
             Panda will make sure we get the message!
           </p>
         </div>
-
         <!-- FORM COMPONENT -->
         <div class="contact__form">
 
@@ -45,9 +44,8 @@
             </div>
             <input type="submit" value="Send" class="form__button">
           </form>
+          <appPandaChat/>
         </div>
-
-      <appPandaChat/>
     </div>
   </section>
 
