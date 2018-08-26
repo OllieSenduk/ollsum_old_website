@@ -13,7 +13,7 @@
           </span>
           <hr class="tagline__underline tagline__underline_black tagline__underline">
         </div>
-        <div class="header__message">
+        <div class="header__message line_height_text">
           <p>
             So let's have one! We operate out of Barcelona and Amsterdam.
             Drop a message down below and our trusted office

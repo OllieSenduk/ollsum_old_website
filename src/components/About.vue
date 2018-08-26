@@ -24,7 +24,7 @@
         </div>
 
 
-        <div class="about__message_text">
+        <div class="about__message_text line_height_text">
           We dive into the core of your business and your users.
           Together we uncover the underlying problems you are facing and
           what the desired outcome is. Think post-its, actionable steps and
@@ -44,7 +44,7 @@
         </div>
 
 
-        <div class="about__message_text">
+        <div class="about__message_text line_height_text">
            Here at Guerrilla Strawberry we're fortunate enough
            to work with a wide network of international superstars, varying
            from designers to event mangers and developers to cinematographers.
@@ -65,7 +65,7 @@
         </div>
 
 
-        <div class="about__message_text">
+        <div class="about__message_text line_height_text">
           Our passion for creating top notch products and campaigns has brought us here,
           and thus we will go above and beyond to get you the desired results.
           We value relationships more then anything.

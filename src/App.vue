@@ -119,6 +119,10 @@ a {
   color: $yellow
 }
 
+.line_height_text {
+  line-height: 30px;
+}
+
 // FONTS
 @font-face {
   font-family: 'LeagueGothic-Regular';

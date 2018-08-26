@@ -15,7 +15,7 @@
           </h2>
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
           </hr>
-          <div class="header__message">
+          <div class="header__message line_height_text">
             <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
                 digital and real world strategies to get your users to <b>love</b>  you even more than
               they already do.
@@ -82,7 +82,6 @@ h6 {
 }
 
 p {
-  line-height: 20px;
   letter-spacing: 1px;
 }
 
