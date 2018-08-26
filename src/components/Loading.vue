@@ -198,10 +198,6 @@ export default {
   }
 
   .space-guy__container {
-      width:60vw;
-      height:200vh;
-      margin: 0;
-      padding: 0;
       display: flex;
       align-items: center;
   }
