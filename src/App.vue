@@ -123,6 +123,11 @@ a {
   line-height: 30px;
 }
 
+.page_link {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
 // FONTS
 @font-face {
   font-family: 'LeagueGothic-Regular';

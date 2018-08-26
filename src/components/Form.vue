@@ -44,7 +44,9 @@
             </div>
             <input type="submit" value="Send" class="form__button">
           </form>
-          <appPandaChat/>
+          <div class="panda__component">
+            <appPandaChat/>
+          </div>
         </div>
     </div>
   </section>
@@ -137,6 +139,40 @@ export default {
   .contact__tagline {
     padding-top: 70px;
     color: white;
+  }
+
+  @media only screen and (min-width : 800px) {
+
+    input {
+      width: 80.2%;
+    }
+
+    .contact {
+      position: relative;
+      height: 180vh;
+    }
+
+    .header__message {
+      width: 50%;
+    }
+    .input_line {
+      width: 81%;
+    }
+
+    .panda__component {
+      position: absolute;
+      top: 205px;
+      right: 492px;
+      width: 0px;
+    }
+
+    .form__button {
+      background: black;
+      color: white;
+      margin-top: 40px;
+      width: 20%;
+    }
+
   }
 
 

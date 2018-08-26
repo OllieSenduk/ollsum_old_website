@@ -23,7 +23,7 @@
           </div>
 
           <a href="#about">
-            <h6 class="yellow"> About us </h6>
+            <h6 class="yellow page_link"> About us </h6>
           </a>
           <hr class="tagline__underline tagline__underline_grey">
           </hr>
@@ -73,12 +73,6 @@ h1 {
   font-family: TungstenNarrow-Semibold;
   letter-spacing: 2px;
   font-weight: 100;
-}
-
-h6 {
-  display: inline-block;
-  margin: 20px 0 10px;
-  font-size: 16px;
 }
 
 p {

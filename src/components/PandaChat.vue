@@ -34,7 +34,7 @@
         </div>
         <div class="PRlaptop">
           <div class="PRscreen">
-            <img src="https://i.ebayimg.com/images/g/Y54AAOSwD0lUiQuR/s-l1600.jpg" alt="macbook" class="macbook-img">
+            <!-- <img src="https://i.ebayimg.com/images/g/Y54AAOSwD0lUiQuR/s-l1600.jpg" alt="macbook" class="macbook-img"> -->
           </div>
           <div class="PRkeyboard">
           </div>
@@ -54,7 +54,7 @@ export default {
 
   @earsize: 20px;
   @pandawhite: #f5f5f5;
-  @laptop: #4f5b66;
+  @laptop: darkgrey;
 
 
 /* Extra Small Devices, Phones */
@@ -283,7 +283,7 @@ export default {
       width: 130px;
       border-radius: 8px;
       transform: skew(-18deg);
-      background: @laptop;
+      background: black;
       &::before{
         display: block;
         content: "";
@@ -293,7 +293,7 @@ export default {
         top: 38px;
         left: 56px;
         border-radius: 6px;
-        background: @laptop;
+        background:  #fc3;
       }
     }
     .PRkeyboard {
@@ -385,6 +385,12 @@ export default {
       width: 18px;
       height: 18px  px;
       background-color: black;
+    }
+  }
+
+  @media only screen and (min-width : 800px) {
+    .panda {
+      width: auto;
     }
   }
 </style>

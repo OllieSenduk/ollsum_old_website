@@ -74,7 +74,13 @@
           love to help out where needed.
 
         </div>
+        <a href="#about">
+          <h6 class="yellow page_link"> Contact </h6>
+        </a>
+        <hr class="tagline__underline tagline__underline_black">
+        </hr>
       </div>
+
 
 
   </section>
@@ -109,7 +115,6 @@ export default {
     font-weight: 100;
     color: #989898;
   }
-
 
   .about{
     width: 100vw;
