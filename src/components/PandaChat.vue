@@ -60,7 +60,6 @@ export default {
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 375px) {
   .panda-container {
-    width: 100vw;
   }
 }
 
@@ -81,14 +80,14 @@ export default {
 
   .panda-container {
     height: 50vh;
-    background-color: white;
+    background-color: #fc3;
     position: absolute;
   }
 
   .panda {
     height: 182px;
     width: 200px;
-    background-color: white;
+    background-color: #fc3;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);

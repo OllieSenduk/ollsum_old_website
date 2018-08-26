@@ -1,8 +1,8 @@
 <template lang="html">
   <section id="header" class="header">
-    <div class="header__strawberry">
+    <!-- <div class="header__strawberry">
       <img src="@/assets/str.png" alt="" class="deco-img-home">
-    </div>
+    </div> -->
       <div class="content__container">
         <div class="header__tagline">
           <h1>GUERRILLA STRAWBERRY</h1>
@@ -11,7 +11,7 @@
             <br>
             SOMETHING
             <br>
-            AWESOME
+            <span style="color: #fc3">AWESOME</span>
           </h2>
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
           </hr>
@@ -73,7 +73,6 @@ h1 {
   font-family: TungstenNarrow-Semibold;
   letter-spacing: 2px;
   font-weight: 100;
-
 }
 
 h6 {
@@ -88,7 +87,7 @@ p {
 }
 
 .header {
-  background: black;
+  background-image: url('../assets/strawberry.jpg');
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -100,7 +99,6 @@ p {
 
 .header__tagline {
   color: white;
-  margin-top: 140px;
 }
 
 .deco-img-home {
@@ -119,6 +117,13 @@ p {
   h1 {
     letter-spacing: 1px;
   }
+
+  .header {
+    background: none;
+    background-image: url('../assets/strawberry.jpg');
+    background-position: -5% 57%;
+  }
+
   .header__container {
     margin-left: 50px;
     margin-right: 50px;
@@ -132,7 +137,6 @@ p {
   .header__tagline {
     color: white;
     margin-right: 10%;
-    margin-top: 95px;
   }
 }
 

@@ -1,14 +1,15 @@
 <template lang="html">
 
   <section section id="about" class="about">
-    <div class="container">
       <div class="content__container">
         <div class="about__tagline">
           <h2>OUR SERVICES</h2>
           <span class="about__quote">
-            GOOD IS NICE
+            HUSSLE
             <br>
-            <b style="color: #fc3">WOW</b> IS BETTER
+            FOR THE
+            <br>
+            <b style="color: #fc3">WOW FACTOR</b>
           </span>
         </div>
         <div class="about__message_container">
@@ -65,17 +66,16 @@
 
 
         <div class="about__message_text">
-          Our passion for creating top notch products has brought us here,
+          Our passion for creating top notch products and campaigns has brought us here,
           and thus we will go above and beyond to get you the desired results.
           We value relationships more then anything.
           Therefor we are anything but a pump and dump studio.
           We remain in close contact on the progress of you goals and
-          love to help out where needed. 
+          love to help out where needed.
 
         </div>
       </div>
 
-    </div>
 
   </section>
 
@@ -107,6 +107,7 @@ export default {
     font-family: TungstenNarrow-Semibold;
     letter-spacing: 2px;
     font-weight: 100;
+    color: #989898;
   }
 
 
@@ -151,8 +152,9 @@ export default {
     vertical-align:middle;
     margin-right: 20px;
   }
-
-  .about__message_text {
-
+  @media only screen and (min-width : 800px) {
+    .about__message_text {
+      width: 50%;
+    }
   }
 </style>
