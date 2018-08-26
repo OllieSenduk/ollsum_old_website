@@ -32,13 +32,13 @@ export default {
   },
   data: function () {
     return {
-      isLoading: false
+      isLoading: true
     };
   },
   mounted () {
     setTimeout(() => {
       this.isLoading = false
-    }, 7500)
+    }, 9300)
   },
   methods: {
   },
@@ -126,6 +126,16 @@ a {
 .page_link {
   margin: 20px 0 10px;
   font-size: 16px;
+}
+
+.main_message {
+  font-size: 14px;
+}
+
+@media only screen and (min-width : 800px) {
+  .main_message {
+    font-size: 12px;
+  }
 }
 
 // FONTS

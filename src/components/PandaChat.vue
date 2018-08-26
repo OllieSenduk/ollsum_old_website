@@ -1,6 +1,5 @@
 <template lang="html">
-  <div class="">
-    <div class="panda-container">
+
       <div class="panda">
         <div class="ears-container">
           <div class="ear1">
@@ -21,8 +20,6 @@
           </div>
           <div class="nose">
           </div>
-          <!-- <div class="mouth">
-          </div> -->
         </div>
         <div class="panda-body">
           <div class="left-paw">
@@ -34,14 +31,11 @@
         </div>
         <div class="PRlaptop">
           <div class="PRscreen">
-            <!-- <img src="https://i.ebayimg.com/images/g/Y54AAOSwD0lUiQuR/s-l1600.jpg" alt="macbook" class="macbook-img"> -->
           </div>
           <div class="PRkeyboard">
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -57,24 +51,29 @@ export default {
   @laptop: darkgrey;
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 375px) {
-  .panda-container {
-  }
-}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  .panda-container {
-    width: 50vw;
-  }
-}
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width : 375px) {
+//   .panda-container {
+//   }
+// }
+//
+// /* Small Devices, Tablets */
+// @media only screen and (min-width : 768px) {
+//   .panda-container {
+//     width: 50vw;
+//   }
+// }
+//
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width : 992px) {
+//   .panda-container {
+//     left: 10%;
+//   }
+// }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  .panda-container {
-    left: 10%;
-  }
+.left {
+  position: absolute;
 }
 
 
@@ -86,13 +85,11 @@ export default {
   }
 
   .panda {
-    height: 281px;
-    width: 100vw;
-    background-color: #fc3;
+    max-width: 20vw;
+    max-height: 20vh;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    bottom: 128px;
+    left: -8px;
     .ears-container {
       display: flex;
     }
@@ -387,10 +384,10 @@ export default {
       background-color: black;
     }
   }
-
-  @media only screen and (min-width : 800px) {
-    .panda {
-      width: auto;
-    }
-  }
+  //
+  // @media only screen and (min-width : 800px) {
+  //   .panda {
+  //     width: auto;
+  //   }
+  // }
 </style>

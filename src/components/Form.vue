@@ -13,7 +13,7 @@
           </span>
           <hr class="tagline__underline tagline__underline_black tagline__underline">
         </div>
-        <div class="header__message line_height_text">
+        <div class="header__message line_height_text main_message">
           <p>
             So let's have one! We operate out of Barcelona and Amsterdam.
             Drop a message down below and our trusted office
@@ -162,6 +162,12 @@ export default {
     color: white;
   }
 
+  .panda__component {
+    // position: absolute;
+    // bottom: -46px;
+    // left: -20px;
+  }
+
   @media only screen and (min-width : 800px) {
 
     input {
@@ -182,8 +188,8 @@ export default {
 
     .panda__component {
       position: absolute;
-      top: 205px;
-      right: 492px;
+      top: 409px;
+      right: 560px;
       width: 0px;
     }
 
