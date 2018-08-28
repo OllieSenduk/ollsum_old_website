@@ -88,8 +88,8 @@ export default {
     max-width: 20vw;
     max-height: 20vh;
     position: absolute;
-    bottom: 128px;
-    left: -8px;
+    top: 10px;
+    left: -45px;
     .ears-container {
       display: flex;
     }

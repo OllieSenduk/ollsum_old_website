@@ -161,7 +161,7 @@ export default {
     width: 100vw;
     background-color: #fc3;
     text-align: left;
-    height: 150vh;
+    height: 220vh;
   }
 
   .contact__tagline {
@@ -170,7 +170,7 @@ export default {
   }
 
   .panda__component {
-    // position: absolute;
+    position: relative;
     // bottom: -46px;
     // left: -20px;
   }
