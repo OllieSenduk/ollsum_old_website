@@ -12,46 +12,55 @@
             <b style="color: #fc3">WOW FACTOR</b>
           </span>
         </div>
-        <div class="about__message_container">
+        <div class="about__blocks">
+          <div class="about__block">
 
-          <div class="about__message_icon">
-            <img src="@/assets/teamwork.svg" alt="">
+          <div class="about__message_container">
+
+            <div class="about__message_icon">
+              <img src="@/assets/solution.svg" alt="">
+            </div>
+            <div class="about__message">
+              PROBLEM-SOLUTION FIT
+
+              <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+            </div>
           </div>
-          <div class="about__message">
-            BUSINESS SCAN
-            <hr class="tagline__underline tagline__underline_yellow tagline__underline">
-          </div>
-        </div>
 
 
-        <div class="about__message_text line_height_text main_message">
-          We dive into the core of your business and your users.
-          Together we uncover the underlying problems you are facing and
-          what the desired outcome is. Think post-its, actionable steps and
-          competitive analysis.
-        </div>
-
-        <div class="about__message_container">
-
-          <div class="about__message_icon">
-            <img src="@/assets/solution.svg" alt="">
-          </div>
-          <div class="about__message">
-            PROBLEM-SOLUTION FIT
-
-            <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+          <div class="about__message_text line_height_text main_message">
+             Here at Guerrilla Strawberry we're fortunate enough
+             to work with a wide network of international superstars, varying
+             from designers to event mangers and developers to cinematographers.
+             This enables us to look at every case individually and pick the best approach
+             to reach your users.
           </div>
         </div>
+        <div class="about__block">
+          <div class="about__message_container">
+
+            <div class="about__message_icon">
+              <img src="@/assets/teamwork.svg" alt="">
+            </div>
+            <div class="about__message">
+              BUSINESS SCAN
+              <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+            </div>
+          </div>
 
 
-        <div class="about__message_text line_height_text main_message">
-           Here at Guerrilla Strawberry we're fortunate enough
-           to work with a wide network of international superstars, varying
-           from designers to event mangers and developers to cinematographers.
-           This enables us to look at every case individually and pick the best approach
-           to reach your users.
+          <div class="about__message_text line_height_text main_message">
+            We dive into the core of your business and your users.
+            Together we uncover the underlying problems you are facing and
+            what the desired outcome is. Think post-its, actionable steps and
+            competitive analysis.
+          </div>
         </div>
+    </div>
+
 <!--  -->
+      <div class="about__block">
+
         <div class="about__message_container">
 
           <div class="about__message_icon">
@@ -64,7 +73,6 @@
           </div>
         </div>
 
-
         <div class="about__message_text line_height_text main_message">
           Our passion for creating top notch products and campaigns has brought us here,
           and thus we will go above and beyond to get you the desired results.
@@ -74,15 +82,15 @@
           love to help out where needed.
 
         </div>
+      </div>
+
         <a href="#about">
           <h6 class="yellow page_link"> Contact </h6>
         </a>
         <hr class="tagline__underline tagline__underline_black">
         </hr>
       </div>
-
-
-
+    </div>
   </section>
 
 </template>
@@ -158,8 +166,17 @@ export default {
     margin-right: 20px;
   }
   @media only screen and (min-width : 800px) {
-    .about__message_text {
-      width: 50%;
+    // .about__message_text {
+    //   width: 50%;
+    // }
+
+    .about__blocks {
+      display: flex;
+    }
+
+    .about__block {
+      margin-right: 10vw;
+      max-width: 44%;
     }
   }
 </style>
