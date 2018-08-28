@@ -76,7 +76,6 @@ export default {
   position: absolute;
 }
 
-
   .panda-container {
     background-color: #fc3;
     position: absolute;
@@ -88,8 +87,6 @@ export default {
     max-width: 20vw;
     max-height: 20vh;
     position: absolute;
-    top: 10px;
-    left: -45px;
     .ears-container {
       display: flex;
     }
@@ -277,7 +274,7 @@ export default {
     z-index: 2;
     .PRscreen {
       height: 85px;
-      width: 130px;
+      width: 107px;
       border-radius: 8px;
       transform: skew(-18deg);
       background: black;
@@ -295,7 +292,7 @@ export default {
     }
     .PRkeyboard {
       height: 12px;
-      width: 132px;
+      width: 107px;
       position: relative;
       left: -14px;
       border-radius: 0 6px 6px 0;

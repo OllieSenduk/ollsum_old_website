@@ -44,9 +44,9 @@
             </div> -->
             <input type="submit" value="Send" class="form__button">
           </form>
-          <div class="panda__component">
-            <appPandaChat/>
-          </div>
+        </div>
+        <div class="panda__component">
+          <appPandaChat/>
         </div>
     </div>
   </section>
@@ -161,7 +161,6 @@ export default {
     width: 100vw;
     background-color: #fc3;
     text-align: left;
-    height: 220vh;
   }
 
   .contact__tagline {
@@ -171,8 +170,9 @@ export default {
 
   .panda__component {
     position: relative;
-    // bottom: -46px;
-    // left: -20px;
+    height: 240px;
+    margin-top: 13px;
+    left: -20px;
   }
 
   @media only screen and (min-width : 800px) {
@@ -195,8 +195,8 @@ export default {
 
     .panda__component {
       position: absolute;
-      top: 409px;
-      right: 560px;
+      top: 87px;
+      left: 70vw;
       width: 0px;
     }
 
