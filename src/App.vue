@@ -129,12 +129,12 @@ a {
 }
 
 .main_message {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 @media only screen and (min-width : 800px) {
   .main_message {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 

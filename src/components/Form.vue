@@ -121,7 +121,7 @@ export default {
       font-stretch: expanded;
       letter-spacing: 2px;
       margin-bottom: 1px;
-      font-size: 10px;
+      font-size: 17px;
       color: white;
       font-weight: bold;
     }
@@ -129,14 +129,14 @@ export default {
     input[type="text"]
     {
     font-size: 20px;
-    font-family: TungstenNarrow-Semibold;
+    // font-family: TungstenNarrow-Semibold;
     letter-spacing: 20px;
     letter-spacing: 3px;
     }
 
     textarea {
-      font-size: 20px;
-      font-family: TungstenNarrow-Semibold;
+      font-size: 17px;
+      // font-family: TungstenNarrow-Semibold;
       letter-spacing: 20px;
       letter-spacing: 3px;
     }

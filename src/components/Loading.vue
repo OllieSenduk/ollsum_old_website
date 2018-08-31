@@ -7,7 +7,6 @@
         <span class="dot"></span>
 
         <svg version="1.1" class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 600 600" xml:space="preserve">
-
           <defs>
             <path id="rocketClip" d="M300,465.7L300,465.7c-13.8,0-25-11.3-25-25V249.4c0-13.7,11.3-25,25-25h0c13.7,0,25,11.2,25,25v191.3
       			C325,454.5,313.8,465.7,300,465.7z" />

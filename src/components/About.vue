@@ -5,7 +5,7 @@
         <div class="about__tagline">
           <h2>OUR SERVICES</h2>
           <span class="about__quote">
-            HUSSLE
+            GOING
             <br>
             FOR THE
             <br>
@@ -21,7 +21,7 @@
               <img src="@/assets/solution.svg" alt="">
             </div>
             <div class="about__message">
-              PROBLEM-SOLUTION FIT
+              FINDING THE PERFECT FIT
 
               <hr class="tagline__underline tagline__underline_yellow tagline__underline">
             </div>
