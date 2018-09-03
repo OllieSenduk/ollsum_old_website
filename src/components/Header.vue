@@ -18,7 +18,7 @@
           <div class="header__message line_height_text main_message">
             <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
                 digital and real world strategies to get your users to love you even more than
-              they already do.
+                they already do.
             </p>
           </div>
 
