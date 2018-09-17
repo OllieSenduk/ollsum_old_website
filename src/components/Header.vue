@@ -16,9 +16,10 @@
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
           </hr>
           <div class="header__message line_height_text main_message">
-            <p> Guerrilla Strawberry is a young, fast paced agency that utilizes
-                digital and real world strategies to get your users to love you even more than
-                they already do.
+            <p>
+              Guerrilla Strawberry is a collective of freelance
+              and in-house superheroes
+              that partner with companies to build smashing MVP's and growth campaigns.<img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
             </p>
           </div>
 
@@ -28,6 +29,8 @@
           <hr class="tagline__underline tagline__underline_grey">
           </hr>
         </div>
+        <span><img src="@/assets/kitty.svg" alt="superhero_kitty" class="header__image"></span>
+
       </div>
         <!-- <div class="big-clickme">
        <div class="btn">
@@ -80,7 +83,7 @@ p {
 }
 
 .header {
-  background-image: url('../assets/strawberry.jpg');
+  background-color: black;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -94,6 +97,10 @@ p {
   color: white;
 }
 
+.content__container {
+  display: flex;
+}
+
 .deco-img-home {
   width: 100px;
   opacity: 0.6;
@@ -104,17 +111,22 @@ p {
   width: 90%;
 }
 
+.header__icon {
+  width: 30px;
+}
+
+.header__image {
+}
+
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 800px) {
+@media only screen and (min-width : 700px) {
 
   h1 {
     letter-spacing: 1px;
   }
 
   .header {
-    background: none;
-    background-image: url('../assets/strawberry.jpg');
-    background-position: -5% 57%;
+    background-color: none;
   }
 
   .header__container {
@@ -131,6 +143,15 @@ p {
     color: white;
     margin-right: 10%;
   }
+
+  .header__image {
+    width: 120px;
+  }
+
+  .header__icon {
+    display: none;
+  }
+
 }
 
 

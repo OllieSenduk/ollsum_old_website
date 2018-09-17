@@ -21,7 +21,7 @@
 export default {
   data: function () {
     return {
-      words: ["Campaigns", "That", "Wow"],
+      words: ["Experiences", "That", "Wow"],
       word: "Creating",
       wordCount: -1,
       flickerOn: false,
@@ -46,7 +46,7 @@ export default {
       for(var i=0; i < times; i++){
         setInterval(function(){
           self.flickerOn = !self.flickerOn
-        }, 250)
+        }, 200)
       }
     },
   },
@@ -113,6 +113,14 @@ export default {
     top: 5px;
     right: 5px;
   }
+  @media only screen and (min-width : 700px) {
+
+    .glitch {
+      color: black;
+      font-size: 150%;
+      font-family: 'Londrina Outline', cursive;
+    }
+}
 
 
 //
