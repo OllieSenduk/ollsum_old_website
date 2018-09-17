@@ -9,7 +9,6 @@
         <appAbout></appAbout>
         <appEmailForm></appEmailForm>
       </div>
-
   </div>
 </template>
 
@@ -19,6 +18,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Loading from './components/Loading'
 import TransitionText from './components/TransitionText'
+import Services from './components/Services'
 import Vue from 'vue';
 
 export default {
@@ -28,11 +28,12 @@ export default {
     appAbout: About,
     appLoading: Loading,
     appTransitionText: TransitionText,
-    appEmailForm: EmailForm
+    appEmailForm: EmailForm,
+    appServices: Services
   },
   data: function () {
     return {
-      isLoading: true
+      isLoading: true,
     };
   },
   mounted () {
@@ -57,6 +58,10 @@ $yellow: #fc3;
 
 $grey: #989898;
 
+html,body {
+    margin:0;
+    padding:0;
+}
 
 body {
     min-height: 100% !important;

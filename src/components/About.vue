@@ -9,7 +9,7 @@
             <br>
             FOR THE
             <br>
-            <b style="color: #fc3">WOW FACTOR</b>
+            <b style="color: #fc3">WOW</b>
           </span>
         </div>
         <div class="about__blocks">
