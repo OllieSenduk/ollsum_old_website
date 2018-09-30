@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <appNavbar></appNavbar>
 
             <router-view></router-view>
 
@@ -26,12 +27,14 @@ import Loading from './components/Loading'
 import TransitionText from './components/TransitionText'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
+import Navbar from './components/Navbar'
 import Vue from 'vue';
 
 export default {
   name: 'App',
   components: {
     appHeader: Header,
+    appNavbar: Navbar,
     appTestimonials: Testimonials,
     appAbout: About,
     appLoading: Loading,

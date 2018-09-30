@@ -1,5 +1,4 @@
 <template lang="html">
-
   <section section id="about" class="about">
       <div class="content__container">
         <div class="about__tagline">
