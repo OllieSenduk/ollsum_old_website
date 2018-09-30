@@ -15,9 +15,10 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "gsap": "^2.0.1",
+    "gsap": "^2.0.2",
     "vue": "^2.5.2",
     "vue-css-grid": "^1.0.1",
+    "vue-router": "^3.0.1",
     "vue2-animate": "^2.0.0"
   },
   "devDependencies": {

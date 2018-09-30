@@ -13,7 +13,7 @@
             <clipPath id="rainbowClip">
               <use xlink:href="#rocketClip" overflow="visible" />
             </clipPath>
-        
+
           </defs>
 
           <polygon class="star" opacity="0.5" fill="#ECB447" points="1.2,0 1.6,0.8 2.4,0.9 1.8,1.5 1.9,2.3 1.2,1.9 0.5,2.3 0.6,1.5 0,0.9 0.8,0.8 " />
@@ -243,6 +243,8 @@
 
         </svg>
       </div>
+      <a style="color: white"> OUR SLOGAN </a>
+      <a style="color: white"> GO TO HOME </a>
     </div>
   </div>
 </template>
@@ -261,9 +263,9 @@ export default {
     };
   },
   mounted () {
-    setTimeout(() => {
-      this.loaderDone = true
-    }, 4000)
+    // setTimeout(() => {
+    //   this.loaderDone = true
+    // }, 4000)
   },
 }
 </script>
@@ -298,7 +300,7 @@ export default {
     top: 50vh;
     left: 50%;
     transform: translate(-50%, 0);
-    -webkit-animation: growDot 9s 1 ease-in-out;
+    // -webkit-animation: growDot 9s 1 ease-in-out;
     -webkit-transform: scale(.01);
     -moz-transform: scale(.01);
     -ms-transform: scale(.01);
@@ -318,19 +320,19 @@ export default {
 
   .jetBubble1 {
     transform-origin: 50% 40%;
-    animation: scale 1s 3 ease-in-out;
+    animation: scale 1s infinite ease-in-out;
   }
   .jetBubble3 {
     transform-origin: 50% 40%;
-    animation: scale2 0.8s 3 ease-in-out;
+    animation: scale2 0.8s infinite ease-in-out;
   }
   .jetBubble2 {
     transform-origin: 50% 40%;
-    animation: scale3 1.3s 3 ease-in-out;
+    animation: scale3 1.3s infinite ease-in-out;
   }
 
   .rocketManSVG {
-    animation: flyUp 1s 3 ease-in-out;
+    // animation: flyUp 1s 3 ease-in-out;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -338,31 +340,31 @@ export default {
   }
 
   #speedLine0 {
-    animation: line-animation1 0.4s 8 ease-in-out;
+    animation: line-animation1 0.4s infinite ease-in-out;
   }
 
   #speedLine1 {
-    animation: line-animation2 0.4s 8 ease-in-out;
+    animation: line-animation2 0.4s infinite ease-in-out;
   }
 
   #speedLine2 {
-    animation: line-animation3 0.4s 8 ease-in-out;
+    animation: line-animation3 0.4s infinite ease-in-out;
   }
 
   #speedLine3 {
-    animation: line-animation1 0.4s 8 ease-in-out;
+    animation: line-animation1 0.4s infinite ease-in-out;
   }
 
   #speedLine4 {
-    animation: line-animation1 0.7s 8 ease-in-out;
+    animation: line-animation1 0.7s infinite ease-in-out;
   }
 
   #speedLine5 {
-    animation: line-animation1 0.4s 8 ease-in-out;
+    animation: line-animation1 0.4s infinite ease-in-out;
   }
 
   #speedLine6 {
-    animation: line-animation1 0.5s 8 ease-in-out;
+    animation: line-animation1 0.5s infinite ease-in-out;
   }
 
   @keyframes flyUp {

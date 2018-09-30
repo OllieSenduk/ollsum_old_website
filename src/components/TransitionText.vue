@@ -46,7 +46,7 @@ export default {
       for(var i=0; i < times; i++){
         setInterval(function(){
           self.flickerOn = !self.flickerOn
-        }, 200)
+        }, 235)
       }
     },
   },

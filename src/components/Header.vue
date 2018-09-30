@@ -7,19 +7,18 @@
         <div class="header__tagline">
           <h1>GUERRILLA STRAWBERRY</h1>
           <h2>
-            LET'S CREATE
+            THINK
             <br>
-            SOMETHING
+            OUTSIDE
             <br>
-            <span style="color: #fc3">AWESOME</span>
+            <span style="color: #fc3">THE BOX</span>
           </h2>
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
           </hr>
           <div class="header__message line_height_text main_message">
             <p>
-              Guerrilla Strawberry is a collective of freelance
-              and in-house superheroes
-              that partner with companies to build smashing MVP's and growth campaigns.<img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
+              Guerrilla Strawberry is a collective of creative superheroes
+              that partner with companies to build smashing Mimimal Viable Products and growth campaigns.<img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
             </p>
           </div>
 
@@ -127,6 +126,7 @@ p {
 
   .header {
     background-color: none;
+    height: 130vh;
   }
 
   .header__container {

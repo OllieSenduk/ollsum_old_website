@@ -1,14 +1,20 @@
 <template>
   <div id="app">
+
+            <router-view></router-view>
+
+</div>
+
       <!-- <appTransitionText></TransitionText> -->
-      <div v-if="isLoading">
+      <!-- <div v-if="isLoading">
         <appLoading v-if="isLoading"></appLoading>
       </div>
       <div v-else>
+        <appTestimonials></appTestimonials>
         <appHeader></appHeader>
         <appAbout></appAbout>
         <appEmailForm></appEmailForm>
-      </div>
+      </div> -->
   </div>
 </template>
 
@@ -19,12 +25,14 @@ import About from './components/About'
 import Loading from './components/Loading'
 import TransitionText from './components/TransitionText'
 import Services from './components/Services'
+import Testimonials from './components/Testimonials'
 import Vue from 'vue';
 
 export default {
   name: 'App',
   components: {
     appHeader: Header,
+    appTestimonials: Testimonials,
     appAbout: About,
     appLoading: Loading,
     appTransitionText: TransitionText,
@@ -33,7 +41,7 @@ export default {
   },
   data: function () {
     return {
-      isLoading: true,
+      isLoading: false,
     };
   },
   mounted () {
