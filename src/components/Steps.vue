@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="steps__container">
+    
     <div class="about__main-text">
       <h3 style="text-align: center;">What we do</h3>
       <p>

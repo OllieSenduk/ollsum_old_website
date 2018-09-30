@@ -1,0 +1,32 @@
+<template lang="html">
+      <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu__brand">
+          <a href=""><div class="logo"></div></a>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" class="menu__link">Work</a></li>
+          <li class="menu__item"><a href="" class="menu__link">About</a></li>
+          <li class="menu__item">
+            <a href="https://twitter.com/ettrics" target="_blank" class="menu__link menu__link--social"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li class="menu__item">
+            <a href="https://dribbble.com/ettrics" target="_blank" class="menu__link menu__link--social">
+              <i class="fa fa-dribbble"></i></a>
+          </li>
+        </ul>
+      </nav>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css">
+</style>

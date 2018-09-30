@@ -243,8 +243,9 @@
 
         </svg>
       </div>
-      <a style="color: white"> OUR SLOGAN </a>
-      <a style="color: white"> GO TO HOME </a>
+      <router-link to="/slogan">SLOGAN</router-link>
+      <router-link to="/startjourney"> GO TO HOME </router-link>
+
     </div>
   </div>
 </template>
