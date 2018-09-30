@@ -1,5 +1,6 @@
 <template lang="html">
   <section class="navbar" id="navbar">
+
       <div class="burger" v-on:click="activateNav">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -22,7 +23,6 @@
           </li>
         </ul>
       </nav>
-
 </navbar>
 </section>
 </template>
@@ -45,7 +45,6 @@ export default {
       var brand = document.querySelector('.menu__brand');
       var menuItems = document.querySelectorAll('.menu__item');
       var self = this
-
       if (self.active == false) {
        menu.classList.add('menu--active');
        menuList.classList.add('menu__list--active');
@@ -74,12 +73,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #38C5B9;
 
 @mixin easeOut {
-  transition: all .4s ease-in-out;
-
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
 }
+
+$yellow: #fc3;
 
 @mixin tablet {
   @media screen and (max-width: 768px) {
@@ -91,31 +90,23 @@ $primary-color: #38C5B9;
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  background: $primary-color;
-  font-family: 'Open Sans';
-  color: white;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+.navbar {
+ color: white;
 }
 
 .header {
   position: fixed;
-  z-index: 5;
+  z-index: 50;
   width: 100%;
-  @include easeOut;
-
 }
 
 .burger {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   right: 25px;
   top: 25px;
   cursor: pointer;
   transform: rotateY(0);
-  z-index: 12;
   @include easeOut;
 
   &__patty {
@@ -153,11 +144,10 @@ body {
   top: 0;
   width: 100%;
   visibility: hidden;
-  @include easeOut;
+  z-index: 12;
 
   &--active {
     visibility: visible;
-    z-index: 11;
   }
 
   &__brand,
@@ -170,15 +160,16 @@ body {
     width: 50%;
     height: 100vh;
     overflow: hidden;
-    @include easeOut;
   }
 
   &__list {
     margin: 0;
     padding: 0;
-    background: mix(black, $primary-color, 20);
+    // background: mix(black, $yellow, 20);
+    background: black;
     list-style-type: none;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
 
     &--active {
       transform: translate3d(0, 0, 0);
@@ -186,8 +177,9 @@ body {
   }
 
   &__brand {
-    background: $primary-color;
-    transform: translate3d(0, 0, 0);
+    background: $yellow;
+    @include easeOut;
+    transform: translate3d(0, 100%, 0);
 
     &--active {
       transform: translate3d(0, 0, 0);
@@ -223,6 +215,7 @@ body {
       height: 2px;
       background: white;
       transform: translateX(-50%);
+      @include easeOut;
     }
 
     &:hover {
@@ -235,7 +228,7 @@ body {
   // add delay to each menu item
   @for $x from 1 through 6 {
     .menu__item:nth-child(#{$x}) {
-      transition-delay: $x * .2s;
+      transition-delay: $x * .1s;
     }
   }
 }
@@ -256,26 +249,19 @@ body {
  .menu__list {
    height: 75vh;
    transform: translate3d(-100%, 0, 0);
-   @include easeOut;
  }
 
  .menu__link {
    font-size: 24px;
-   @include easeOut;
-
  }
 
  .menu__brand {
    height: 25vh;
    transform: translate3d(100%, 0, 0);
-   @include easeOut;
-
 
    .logo {
      width: 90px;
      height: 90px;
-     @include easeOut;
-
    }
  }
 }
@@ -286,8 +272,6 @@ body {
   height: 200px;
   background: lighten(black, 10);
   border-radius: 50%;
-  @include easeOut;
-
 }
 
 h1, h2, h3, p {
@@ -314,7 +298,5 @@ main {
   position: fixed;
   bottom: 24px;
   color: rgba(black, 0.6);
-  @include easeOut;
-
 }
 </style>
