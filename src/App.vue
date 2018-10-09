@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <appNavbar></appNavbar>
-
-            <router-view></router-view>
-
+      <router-view></router-view>
 </div>
 
       <!-- <appTransitionText></TransitionText> -->

@@ -1,6 +1,10 @@
 <template lang="html">
   <section class="navbar" id="navbar">
 
+      <div class="brand">
+        Guerrilla Strawberry
+      </div>
+
       <div class="burger" v-on:click="activateNav">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -12,15 +16,11 @@
           <a href=""><div class="logo"></div></a>
         </div>
         <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link">Work</a></li>
-          <li class="menu__item"><a href="" class="menu__link">About</a></li>
-          <li class="menu__item">
-            <a href="https://twitter.com/ettrics" target="_blank" class="menu__link menu__link--social"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li class="menu__item">
-            <a href="https://dribbble.com/ettrics" target="_blank" class="menu__link menu__link--social">
-              <i class="fa fa-dribbble"></i></a>
-          </li>
+          <li></li>
+          <router-link tag="li" class="menu__item menu__link" to="/startjourney" v-on:click.native="activateNav"> Home2 </router-link>
+          <router-link tag="li" class="menu__item menu__link" to="/contact" v-on:click.native="activateNav"> Contact </router-link>
+          <router-link tag="li" class="menu__item menu__link" to="/slogan" v-on:click.native="activateNav"> Slogan </router-link>
+          <router-link tag="li" class="menu__item menu__link" to="/home" v-on:click.native="activateNav"> Home </router-link>
         </ul>
       </nav>
 </navbar>
@@ -75,7 +75,7 @@ export default {
 <style lang="scss" scoped>
 
 @mixin easeOut {
-  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+  transition: all .8s cubic-bezier(0.23, 1, 0.32, 1)
 }
 
 $yellow: #fc3;
@@ -98,6 +98,15 @@ $yellow: #fc3;
   position: fixed;
   z-index: 50;
   width: 100%;
+}
+
+.brand {
+  position: absolute;
+  z-index: 100;
+  left: 25px;
+  top: 25px;
+  cursor: pointer;
+  font-family: TungstenNarrow-Semibold;
 }
 
 .burger {
@@ -225,6 +234,16 @@ $yellow: #fc3;
     }
   }
 
+  // Router link active classes
+
+  .router-link-active {
+    z-index: 13;
+    &:before {
+      width: 100%;
+      height: 10px;
+      background: $yellow;
+    }
+  }
   // add delay to each menu item
   @for $x from 1 through 6 {
     .menu__item:nth-child(#{$x}) {
@@ -286,12 +305,12 @@ main {
   justify-content: center;
   padding: 8vw;
 
-  h1 > a {
-    color: white;
-    text-decoration: none;
-    font-size: 48px;
-    font-weight: 300;
-  }
+  // h1 > a {
+  //   color: white;
+  //   text-decoration: none;
+  //   font-size: 48px;
+  //   font-weight: 300;
+  // }
 }
 
 .support {

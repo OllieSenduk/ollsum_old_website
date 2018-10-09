@@ -18,17 +18,17 @@
           <div class="header__message line_height_text main_message">
             <p>
               Guerrilla Strawberry is a collective of creative superheroes
-              that partner with companies to build smashing Mimimal Viable Products and growth campaigns.<img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
+              that partner with companies to build smashing end-to-end campaigns.
             </p>
           </div>
 
           <a href="#about">
-            <h6 class="yellow page_link"> About us </h6>
+            <h6 class="yellow page_link"> About us <img src="@/assets/kitty.svg" alt="rocket" class="header__icon"></h6>
           </a>
           <hr class="tagline__underline tagline__underline_grey">
           </hr>
         </div>
-        <span><img src="@/assets/kitty.svg" alt="superhero_kitty" class="header__image"></span>
+        <!-- <span><img src="@/assets/kitty.svg" alt="superhero_kitty" class="header__image"></span> -->
 
       </div>
         <!-- <div class="big-clickme">
@@ -56,8 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 h2 {
   font-family: TungstenNarrow-Semibold;
   /* letter-spacing: 3px; */
@@ -68,7 +66,6 @@ h2 {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
 h1 {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -78,85 +75,57 @@ h1 {
   letter-spacing: 2px;
   font-weight: 100;
 }
-
 p {
   letter-spacing: 1px;
 }
-
 .header {
-  background-color: black;
+  background-image: url('../assets/strawberry.jpg');
   height: 100vh;
   width: 100vw;
   display: flex;
   text-align: left;
   flex-direction: row;
   animation: pageEnter 1.3s ease forwards;
-
 }
-
 .header__tagline {
   color: white;
 }
-
-.content__container {
-  display: flex;
-}
-
 .deco-img-home {
   width: 100px;
   opacity: 0.6;
   position: absolute;
 }
-
 .header__message {
   width: 90%;
 }
 
 .header__icon {
-  width: 30px;
+  height: 35px;
 }
-
-.header__image {
-}
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 700px) {
-
   h1 {
     letter-spacing: 1px;
   }
-
   .header {
-    background-color: none;
-    height: 130vh;
+    background: none;
+    background-image: url('../assets/strawberry.jpg');
+    background-position: -5% 57%;
   }
-
   .header__container {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 6%;
   }
-
   .header__message {
     width: 400px;
   }
-
   .header__tagline {
     color: white;
     margin-right: 10%;
+    max-width: 40vw;
   }
-
-  .header__image {
-    width: 120px;
-  }
-
-  .header__icon {
-    display: none;
-  }
-
 }
-
-
   @keyframes pageEnter {
   	50% {
   		-webkit-transform: translateZ(90px) rotateY(90deg);
@@ -169,7 +138,6 @@ p {
       // opacity: .7;
     }
     83% {
-
     }
   	100% {
   		-webkit-transform: translateZ(-500px) rotateY(0deg);

@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
   // ES6 routes: routes
-  routes
+  routes,
 })
 
 Vue.use(VueRouter);

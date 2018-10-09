@@ -3,7 +3,6 @@
     <appTransitionText v-if="loaderDone"></appTransitionText>
 
     <div v-else class="space-page__container">
-      <div class="space-guy__container">
         <span class="dot"></span>
 
         <svg class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 600 600" xml:space="preserve">
@@ -245,8 +244,6 @@
       </div>
       <router-link to="/slogan">SLOGAN</router-link>
       <router-link to="/startjourney"> GO TO HOME </router-link>
-
-    </div>
   </div>
 </template>
 
@@ -277,7 +274,7 @@ export default {
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-color:#1d1d1d;
+    background-color: black;
     overflow:hidden;
     display: flex;
     justify-content: center;
@@ -285,10 +282,6 @@ export default {
     animation-delay: 2s;
   }
 
-  .space-guy__container {
-      display: flex;
-      align-items: center;
-  }
 
   .dot {
     height: 100px;
@@ -337,7 +330,7 @@ export default {
     animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    height: 500px;
+    height: 400px;
   }
 
   #speedLine0 {
