@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <appNavbar></appNavbar>
-      <router-view></router-view>
+    <router-view></router-view>
 </div>
 
       <!-- <appTransitionText></TransitionText> -->
@@ -20,7 +20,6 @@
 <script>
 import EmailForm from './components/Form'
 import Header from './components/Header'
-import About from './components/About'
 import Loading from './components/Loading'
 import TransitionText from './components/TransitionText'
 import Services from './components/Services'
@@ -34,7 +33,6 @@ export default {
     appHeader: Header,
     appNavbar: Navbar,
     appTestimonials: Testimonials,
-    appAbout: About,
     appLoading: Loading,
     appTransitionText: TransitionText,
     appEmailForm: EmailForm,
@@ -100,7 +98,8 @@ a {
 .content__container {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 70px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .tagline__underline {

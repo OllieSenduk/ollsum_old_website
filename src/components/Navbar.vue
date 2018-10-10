@@ -1,9 +1,9 @@
 <template lang="html">
   <section class="navbar" id="navbar">
-
+<!-- 
       <div class="brand">
         Guerrilla Strawberry
-      </div>
+      </div> -->
 
       <div class="burger" v-on:click="activateNav">
         <div class="burger__patty"></div>
