@@ -1,339 +1,215 @@
 <template lang="html">
-  <section id=timeline>
+  <section id="timeline__section" class="timeline__section">
+    <div class="timeline__container">
+      <div class="timeline__header">
+        <div class="timeline__title">
+          <span style="color: white"> THE </span>PROCESS
+          <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+        </div>
+      </div>
 
-  	<div class="demo-card-wrapper">
-  		<div class="demo-card demo-card--step1">
-  			<div class="head">
-  				<div class="number-box">
-  					<span>01</span>
-  				</div>
-  				<h2><span class="small">Subtitle</span> Technology</h2>
-  			</div>
-  			<div class="body">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-  				<img src="http://placehold.it/1000x500" alt="Graphic">
-  			</div>
-  		</div>
-
-  		<div class="demo-card demo-card--step2">
-  			<div class="head">
-  				<div class="number-box">
-  					<span>02</span>
-  				</div>
-  				<h2><span class="small">Subtitle</span> Confidence</h2>
-  			</div>
-  			<div class="body">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-  				<img src="http://placehold.it/1000x500" alt="Graphic">
-  			</div>
-  		</div>
-
-  		<div class="demo-card demo-card--step3">
-  			<div class="head">
-  				<div class="number-box">
-  					<span>03</span>
-  				</div>
-  				<h2><span class="small">Subtitle</span> Adaptation</h2>
-  			</div>
-  			<div class="body">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-
-  			</div>
-  		</div>
-
-  		<div class="demo-card demo-card--step4">
-  			<div class="head">
-  				<div class="number-box">
-  					<span>04</span>
-  				</div>
-  				<h2><span class="small">Subtitle</span> Consistency</h2>
-  			</div>
-  			<div class="body">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-  				<img src="http://placehold.it/1000x500" alt="Graphic">
-  			</div>
-  		</div>
-
-  		<div class="demo-card demo-card--step5">
-  			<div class="head">
-  				<div class="number-box">
-  					<span>05</span>
-  				</div>
-  				<h2><span class="small">Subtitle</span> Conversion</h2>
-  			</div>
-  			<div class="body">
-  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-  				<img src="http://placehold.it/1000x500" alt="Graphic">
-  			</div>
-  		</div>
-
-  	</div>
+      <ul class="timeline">
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h3> 0 Measurement of Success</h3>
+            <!-- <h4>Where we define what outcome you're looking for</h4> -->
+            <p>Before we dive head first into creating something, we always want to know what
+              is it that we want to achieve together. Maybe the strategy you had before can be tweeked or
+              made better.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h3>Strategy</h3>
+            <!-- <h4>Where we find the best way to reach your audience</h4> -->
+            <p>Do we need to reach a few people very personally, or should our aim be virality? Would an app be good to reach the crowd, or maybe we can host an event.</p>
+          </div>
+        </li>
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h3>Getting it Done</h3>
+            <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this still wow your audience. If the answer is yes,
+            we're on the right track</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
+  data: function () {
+    return {
+      color: 'blue'
+    };
+  },
+  methods: {
+    changeIcon: function() {
+      const config = {
+      	sceneDuration: 900,
+      	baseCssClass: 'circle',
+      	targetElement: document.querySelector(".circle"),
+      	animationClasses: ["zero", "two","three", "four","five"]
+      };
+
+      const setElemClass = (element, animationClass) => element.className = `${config.baseCssClass} ${animationClass}`;
+
+      const setClassesHandler = (index=0) => {
+      	const {animationClasses, targetElement, sceneDuration} = config;
+      	setTimeout( () => {
+      		setElemClass(targetElement, animationClasses[index])
+        	index >= animationClasses.length -1 ? setClassesHandler() : setClassesHandler(++index)
+      	}, sceneDuration )
+      }
+      setClassesHandler();
+    }
+  },
+  mounted () {
+    this.changeIcon()
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-/* Media Queries */
 
-@mixin mq-xs {
-  @media (min-width: 320px) {
-    @content;
-  }
+/* Variables */
+$color-1: black;
+$color-2: white;
+$color-3: rgb(168, 50, 121);
+$yellow: #fc3;
+
+
+.timeline__section {
+  background-color: black;
+  height: auto;
+  padding-top: 60px;
 }
 
-@mixin mq-sm {
-  @media (min-width: 480px) {
-    @content;
-  }
+.timeline__container {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-@mixin mq-md {
-  @media (min-width: 720px) {
-    @content;
-  }
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
 }
 
-@mixin mq-lg {
-  @media (min-width: 1000px) {
-    @content;
-  }
+.timeline__title {
+  font-family: TungstenNarrow-Semibold;
+/* letter-spacing: 3px; */
+  font-weight: 200;
+  font-size: 80px;
+  line-height: 64px;
+  margin-top: 5px;
+  color: $yellow;
+  max-width: 40px;
 }
 
-$background: black;
-$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
-$border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 5;
-$rows: ceil($items/2);
+ul {
+  list-style: none;
+}
 
-/* Card sizing */
+/* Styling */
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
 
-$card-height: 400px;
-$card-width: 450px;
-$inner-margin: 15px;
-$number-size: 35px;
-$stagger: 180px;
-$outer-margin: 90px;
-$marker-size: 9px;
-
-/* Colors */
-
-$steps: #46b8e9;
-$colors: #FFCC33,
-#FFCC33,
-#FFCC33,
-#FFCC33;
-$timeline: #bdbdbd;
-
-/* Calculations */
-
-$container-height: $rows * ($card-height + $outer-margin) + $stagger;
-$container-width: $card-width*2 + $outer-margin*3;
-$head-height: $number-size + 50;
-$body-height: $card-height - $head-height;
-$marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
-
-/* Placeholders */
-
-@include mq-lg {
-  %arrow {
+  &:before {
+    background-color: white;
+    content: '';
+    margin-left: -1px;
     position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-  }
-  %marker {
-    position: absolute;
-    content: "";
-    width: $marker-size;
-    height: $marker-size;
-    background-color: $timeline;
-    border-radius: $marker-size;
-    box-shadow: 0px 0px 2px 8px $background;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
   }
 }
 
+.timeline-event {
+  position: relative;
+  text-align: left;
 
-/* Some Cool Stuff */
+  &:hover {
 
-$counter: $items - $rows + 2;
-@for $i from 1 through $rows {
-  .demo-card:nth-child(#{$i*2-1})   { order: $i }
-  .demo-card:nth-child(#{$i*2})     { order: $counter }
-  $counter: $counter + 1;
+    .timeline-event-icon {
+      transform: rotate(-45deg);
+      background-color: $yellow;
+    }
+
+    .timeline-event-thumbnail {
+      box-shadow: 10em 0 0 0 $yellow;
+    }
+    h3 {
+      color: white;
+    }
+  }
 }
 
-/* Border Box */
+.timeline-event-copy {
+  position: relative;
+  left: 4em;
+  width: 60%;
 
-* {
-  box-sizing: border-box;
-}
-
-/* Fonts */
-
-body {
-  font-family: Roboto;
-}
-
-#timeline {
-  padding: 100px 0;
-  background: $background;
-  border-top: $border;
-  border-bottom: $border;
-  h1 {
-    text-align: center;
-    font-size: 3rem;
+  h3 {
+    font-size: 1.75em;
+    font-family: TungstenNarrow-Semibold;
     font-weight: 200;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    color: $yellow;
   }
-  p.leader {
-    text-align: center;
-    max-width: 90%;
-    margin: auto;
-    margin-bottom: 45px;
+
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+    margin-top: 1.2em;
+    color: $yellow;
+    font-style: italic;
   }
-  .demo-card-wrapper {
-    position: relative;
-    margin: auto;
-    @include mq-lg {
-      display: flex;
-      flex-flow: column wrap;
-      width: $container-width;
-      height: $container-height;
-      margin: 0 auto;
-    }
-    &::after {
-      z-index: 1;
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      border-left: $border;
-      @include mq-lg {
-        border-left: 1px solid $timeline;
-      }
-    }
+
+  strong {
+    font-weight: 700;
   }
-  .demo-card {
-    position: relative;
-    display: block;
-    margin: 10px auto 80px;
-    max-width: 94%;
-    z-index: 2;
-    @include mq-sm {
-      max-width: 60%;
-      box-shadow: $box-shadow;
-    }
-    @include mq-md {
-      max-width: 40%;
-    }
-    @include mq-lg {
-      max-width: $card-width;
-      height: $card-height;
-      margin: $outer-margin;
-      margin-top: $outer-margin/2;
-      margin-bottom: $outer-margin/2;
-      &:nth-child(odd) {
-        margin-right: $outer-margin/2;
-        .head::after {
-          @extend %arrow;
-          border-left-width: 15px;
-          border-left-style: solid;
-          left: 100%;
-        }
-        .head::before {
-          @extend %marker;
-          left: $marker-dist + 1;
-        }
-      }
-      &:nth-child(even) {
-        margin-left: $outer-margin/2;
-        .head::after {
-          @extend %arrow;
-          border-right-width: 15px;
-          border-right-style: solid;
-          right: 100%;
-        }
-        .head::before {
-          @extend %marker;
-          right: $marker-dist - 1;
-        }
-      }
-      &:nth-child(2) {
-        margin-top: $stagger;
-      }
-    }
-    .head {
-      position: relative;
-      display: flex;
-      align-items: center;
-      color: #fff;
-      font-weight: 400;
-      .number-box {
-        display: inline;
-        float: left;
-        margin: $inner-margin;
-        padding: 10px;
-        font-size: $number-size;
-        line-height: $number-size;
-        font-weight: 600;
-        background: rgba(0, 0, 0, 0.17);
-      }
-      h2 {
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        font-weight: inherit;
-        letter-spacing: 2px;
-        margin: 0;
-        padding-bottom: 6px;
-        line-height: 1rem;
-        @include mq-sm {
-          font-size: 165%;
-          line-height: 1.2rem;
-        }
-        span {
-          display: block;
-          font-size: 0.6rem;
-          margin: 0;
-          @include mq-sm {
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-    .body {
-      background: #fff;
-      border: $border;
-      border-top: 0;
-      padding: $inner-margin;
-      @include mq-lg {
-        height: $body-height;
-      }
-      p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: $inner-margin;
-      }
-      img {
-        display: block;
-        width: 100%;
-      }
-    }
-    @for $i from 1 through $items {
-      &--step#{$i} {
-        $color: nth($colors, ((($i - 1) % 4) + 1));
-        background-color: $color;
-        .head::after {
-          border-color: $color;
-        }
-      }
-    }
+
+  p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+    color: white;
+    margin-top: 0px;
   }
 }
+
+.timeline-event-icon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+
+  background-color: $color-1;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 0;
+  left: -7px;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: $color-2;
+  font-size: 0.75em;
+
+  background-color: $color-1;
+  box-shadow: 0 0 0 0em #ef795a;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
+
 </style>

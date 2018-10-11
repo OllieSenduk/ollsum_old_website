@@ -151,14 +151,14 @@ export default {
       width: 60px;
     }
   }
-  @media only screen and (min-width : 800px) {
+  @media only screen and (min-width : 700px) {
     // .about__message_text {
     //   width: 50%;
     // }
 
     .about__blocks {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     .about__block {
