@@ -2,7 +2,7 @@
   <section class="services" id="services">
     <div class="services__container">
 
-    <blockquote class="brooks">
+    <blockquote class="quote">
       WE BUILD JAW-DROPPING <span style="color: white;">END-TO-END CAMPAIGNS</span> WITH BRANDS WE LOVE.
     </blockquote>
   </div>
@@ -36,7 +36,7 @@ $base-line-height: 1.5em;
 
   padding-top: 10%;
 }
-.brooks {
+.quote {
   font-family: TungstenNarrow-Semibold;
     /* letter-spacing: 3px; */
   font-weight: 500;
@@ -73,7 +73,7 @@ $base-line-height: 1.5em;
     margin-right: 50px;
   }
 
-  .brooks {
+  .quote {
 
       &:before {
       top: 0.4em;

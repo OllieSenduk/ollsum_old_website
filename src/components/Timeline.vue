@@ -3,7 +3,7 @@
     <div class="timeline__container">
       <div class="timeline__header">
         <div class="timeline__title">
-          <span style="color: white"> THE </span>PROCESS
+          <span style="color: white"> T </span>PROCESS
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
         </div>
       </div>
@@ -49,29 +49,29 @@ export default {
     };
   },
   methods: {
-    changeIcon: function() {
-      const config = {
-      	sceneDuration: 900,
-      	baseCssClass: 'circle',
-      	targetElement: document.querySelector(".circle"),
-      	animationClasses: ["zero", "two","three", "four","five"]
-      };
-
-      const setElemClass = (element, animationClass) => element.className = `${config.baseCssClass} ${animationClass}`;
-
-      const setClassesHandler = (index=0) => {
-      	const {animationClasses, targetElement, sceneDuration} = config;
-      	setTimeout( () => {
-      		setElemClass(targetElement, animationClasses[index])
-        	index >= animationClasses.length -1 ? setClassesHandler() : setClassesHandler(++index)
-      	}, sceneDuration )
-      }
-      setClassesHandler();
-    }
+    // changeIcon: function() {
+  //     const config = {
+  //     	sceneDuration: 900,
+  //     	baseCssClass: 'circle',
+  //     	targetElement: document.querySelector(".circle"),
+  //     	animationClasses: ["zero", "two","three", "four","five"]
+  //     };
+  //
+  //     const setElemClass = (element, animationClass) => element.className = `${config.baseCssClass} ${animationClass}`;
+  //
+  //     const setClassesHandler = (index=0) => {
+  //     	const {animationClasses, targetElement, sceneDuration} = config;
+  //     	setTimeout( () => {
+  //     		setElemClass(targetElement, animationClasses[index])
+  //       	index >= animationClasses.length -1 ? setClassesHandler() : setClassesHandler(++index)
+  //     	}, sceneDuration )
+  //     }
+  //     setClassesHandler();
+  //   }
   },
-  mounted () {
-    this.changeIcon()
-  },
+  // mounted () {
+  //   this.changeIcon()
+  // },
 }
 </script>
 

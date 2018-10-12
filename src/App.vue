@@ -36,7 +36,8 @@ export default {
     appLoading: Loading,
     appTransitionText: TransitionText,
     appEmailForm: EmailForm,
-    appServices: Services
+    appServices: Services,
+    appTestimonials: Testimonials
   },
   data: function () {
     return {
