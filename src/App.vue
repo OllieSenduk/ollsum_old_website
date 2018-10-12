@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <appNavbar></appNavbar>
-    <router-view></router-view>
-</div>
-
+    <!-- <router-view></router-view> -->
+      <appIntro></appIntro>
       <!-- <appTransitionText></TransitionText> -->
       <!-- <div v-if="isLoading">
         <appLoading v-if="isLoading"></appLoading>
       </div>
       <div v-else>
-        <appTestimonials></appTestimonials>
         <appHeader></appHeader>
+
+        <appTestimonials></appTestimonials>
         <appAbout></appAbout>
         <appEmailForm></appEmailForm>
       </div> -->
@@ -25,11 +25,14 @@ import TransitionText from './components/TransitionText'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Navbar from './components/Navbar'
+import Intro from './components/Intro'
+
 import Vue from 'vue';
 
 export default {
   name: 'App',
   components: {
+    appIntro: Intro,
     appHeader: Header,
     appNavbar: Navbar,
     appTestimonials: Testimonials,
@@ -41,7 +44,7 @@ export default {
   },
   data: function () {
     return {
-      isLoading: false,
+      isLoading: true,
     };
   },
   mounted () {

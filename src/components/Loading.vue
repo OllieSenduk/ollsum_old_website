@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
-    <appTransitionText v-if="loaderDone"></appTransitionText>
-
+    <!-- <appTransitionText v-if="loaderDone"></appTransitionText> -->
+    <appIntro v-if="loaderDone"></appIntro>
     <div v-else class="space-page__container">
       <div class="space-guy__container">
         <span class="dot"></span>
@@ -164,9 +164,12 @@
 
 <script>
 import TransitionText from './TransitionText'
+import Intro from './Intro'
+
 export default {
   components: {
-    appTransitionText: TransitionText
+    appTransitionText: TransitionText,
+    appIntro: Intro
   },
   data: function () {
     return {
@@ -177,7 +180,7 @@ export default {
     setTimeout(() => {
       this.loaderDone = true
     }, 4000)
-  },
+  }
 }
 </script>
 
