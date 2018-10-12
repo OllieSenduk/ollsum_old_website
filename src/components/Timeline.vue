@@ -12,7 +12,7 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <h3> 0 Measurement of Success</h3>
+              <h3> Measurement of Success</h3>
             <!-- <h4>Where we define what outcome you're looking for</h4> -->
             <p>Before we dive head first into creating something, we always want to know what
               is it that we want to achieve together. Maybe the strategy you had before can be tweeked or
@@ -85,12 +85,15 @@ $yellow: #fc3;
 
 
 .timeline__section {
-  background-color: black;
+  background: black;
   height: auto;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .timeline__container {
+  background: url('../assets/background_dark.png');
+  background-size: cover;
+  height: 100%;
   margin-right: 10%;
   margin-left: 10%;
 }

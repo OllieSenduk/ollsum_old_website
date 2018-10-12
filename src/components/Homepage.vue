@@ -4,6 +4,7 @@
       <appServiceQuote></appServiceQuote>
       <appServices></appServices>
       <appTimeline></appTimeline>
+      <appTestimonials></appTestimonials>
     </section>
 </template>
 
@@ -12,13 +13,15 @@ import ServiceQuote from './ServiceQuote'
 import Header from './Header'
 import Services from './Services'
 import Timeline from './Timeline'
+import Testimonials from './Testimonials'
 
 export default {
   components: {
     appServiceQuote: ServiceQuote,
     appHeader: Header,
     appServices: Services,
-    appTimeline: Timeline
+    appTimeline: Timeline,
+    appTestimonials: Testimonials
   }
 }
 </script>
