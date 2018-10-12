@@ -1,10 +1,6 @@
 <template lang="html">
   <section class="testimonials" id="testimonials">
-    <!-- <div class="timeline__header">
-      <div class="testimonials__title">
-        <span style="color: black"> THE </span>PROCESS
-        <hr class="tagline__underline tagline__underline_yellow tagline__underline">
-      </div>
+1>
     </div> -->
 
     <div class="wrap">
