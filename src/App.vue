@@ -2,10 +2,9 @@
   <div id="app">
     <appNavbar></appNavbar>
     <!-- <router-view></router-view> -->
-      <appIntro></appIntro>
-      <!-- <appTransitionText></TransitionText> -->
-      <!-- <div v-if="isLoading">
-        <appLoading v-if="isLoading"></appLoading>
+      <div v-if="isLoading">
+        <!-- <appLoading v-if="isLoading"></appLoading> -->
+        <appIntro></appIntro>
       </div>
       <div v-else>
         <appHeader></appHeader>
@@ -13,7 +12,8 @@
         <appTestimonials></appTestimonials>
         <appAbout></appAbout>
         <appEmailForm></appEmailForm>
-      </div> -->
+      </div>
+
   </div>
 </template>
 
@@ -49,7 +49,7 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      this.isLoading = false
+      this.isLoading = true
     }, 9300)
   },
   methods: {

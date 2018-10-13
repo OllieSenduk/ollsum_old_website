@@ -15,7 +15,7 @@ export default {
     fireShooter: function() {
       var self = this
       var container = self.$el.querySelector("#shooter"),
-      _sentenceEndExp = /(\.|\?|!)$/g; 
+      _sentenceEndExp = /(\.|\?|!)$/g;
       function buildChunks(text, maxLength) {
         if (maxLength === undefined) {
           return text.split(" ");
@@ -74,7 +74,7 @@ export default {
           }
       }
 
-      machineGun("Campaigns of Tomorrow.", 4);
+      machineGun("WE BUILD CAMPAIGNS THAT STICK", 9);
   }
   /* learn more about the GreenSock Animation Platfrom (GSAP) for JS
 
@@ -100,27 +100,39 @@ export default {
   }
 
   #shooter{
-    position:relative;
-    width:100vw;
-    height:100vh;
-    background-color:#000;
-    margin:auto;
-    overflow:hidden;
-    background-color:#111;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    margin: auto;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
 
   }
 
   h3 {
     position:absolute;
     font-family: 'Asap', sans-serif;
-    font-weight:700;
-    margin:0;
-    padding:0;
-    width:600px;
+    font-weight: 700;
     color: white;
-    text-align:center;
+    /* text-align:center; */
     visibility:hidden;
-    font-size:200px;
-    top:65px;
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30vh;
+    /* transform: translate(-50%, -50%); */
+
+  }
+
+  @media (max-width: 900px) {
+    h3 {
+      font-size:70px;
+    }
   }
 </style>
