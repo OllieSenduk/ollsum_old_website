@@ -2,8 +2,8 @@
   <section class="services" id="services">
     <div class="services__container">
 
-    <blockquote class="quote">
-      WE BUILD JAW-DROPPING <span style="color: white;">END-TO-END CAMPAIGNS</span> WITH BRANDS WE LOVE.
+    <blockquote class="quote" >
+      <span data-aos="zoom-in-up">WE BUILD JAW-DROPPING <span style="color: white;">END-TO-END CAMPAIGNS</span> WITH BRANDS WE LOVE.</span>
     </blockquote>
   </div>
 

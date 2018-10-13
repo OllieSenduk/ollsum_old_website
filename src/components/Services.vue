@@ -13,7 +13,7 @@
         </div> -->
         <div class="about__blocks">
 
-          <div class="about__block">
+          <div class="about__block" data-aos="fade-up-right">
 
             <div class="about__message_container">
 
@@ -33,7 +33,7 @@
               Ranging from designers to programmers, cinematographers to event planners.
             </div>
           </div>
-          <div class="about__block">
+          <div class="about__block" data-aos="fade-up-left">
 
           <div class="about__message_container">
 
@@ -78,12 +78,8 @@
 
 <script>
 
-import Steps from './Steps'
-
 export default {
-  components: {
-    appSteps: Steps,
-  },
+
 
   data: function () {
     return {

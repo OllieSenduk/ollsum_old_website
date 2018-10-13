@@ -1,6 +1,6 @@
 <template lang="html">
 
-      <div class="panda">
+      <div class="panda" data-aos="zoom-in-left">
         <div class="ears-container">
           <div class="ear1">
           </div>

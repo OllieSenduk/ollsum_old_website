@@ -11,7 +11,7 @@
       <ul class="timeline">
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
+          <div class="timeline-event-copy" data-aos="zoom-in-up">
               <h3> Measurement of Success</h3>
             <!-- <h4>Where we define what outcome you're looking for</h4> -->
             <p>Before we dive head first into creating something, we always want to know what
@@ -22,7 +22,7 @@
         </li>
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
+          <div class="timeline-event-copy" data-aos="zoom-in-up">
             <h3>Strategy</h3>
             <!-- <h4>Where we find the best way to reach your audience</h4> -->
             <p>Do we need to reach a few people very personally, or should our aim be virality? Would an app be good to reach the crowd, or maybe we can host an event.</p>
@@ -30,7 +30,7 @@
         </li>
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
+          <div class="timeline-event-copy" data-aos="zoom-in-up">
             <h3>Getting it Done</h3>
             <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this still wow your audience. If the answer is yes,
             we're on the right track</p>
