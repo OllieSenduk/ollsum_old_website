@@ -10,7 +10,6 @@
         v-bind:css="false"
         appear
         > -->
-        <appIntro></appIntro>
       <!-- </transition> -->
       </div>
       <div v-else>

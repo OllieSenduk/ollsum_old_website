@@ -241,7 +241,7 @@ export default {
          top: 70px;
          left: 29px;
          border-radius: 12px;
-         animation: 9s LeftType infinite;
+         animation: 6s LeftType infinite;
          background: black;
        }
        .right-paw {
@@ -251,7 +251,7 @@ export default {
          top: 45px;
          left: 75px;
          border-radius: 12px;
-         animation: 9s RightType infinite;
+         animation: 6s RightType infinite;
          background: black;
        }
      }
@@ -346,7 +346,7 @@ export default {
   }
 
   @keyframes pandaRead {
-    55% {transform: none}
+    30% {transform: none}
     62% {transform: translateX(-2px)}
     70% {
       transition-timing-function: ease-out;

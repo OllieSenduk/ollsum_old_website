@@ -1,8 +1,5 @@
 <template lang="html">
   <section class="testimonials" id="testimonials">
-1>
-    </div> -->
-
     <div class="wrap">
       <p class="split">
       </p>
@@ -85,6 +82,11 @@ $yellow: #fc3;
 
 .wrap {
 	height: 50vh;
+  max-width: 80vw;
+	margin: 0 auto;
+  background-color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
 
@@ -95,11 +97,7 @@ $yellow: #fc3;
 	font-family: Open sans;
 	max-width: 80vw;
 	margin: 0 auto;
-}
-
-.wrap {
-	max-width: 80vw;
-	margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 p {
@@ -109,30 +107,10 @@ p {
 	padding: 0 20px;
 	transform: translateY(-50%);
 	font-weight: 300;
-	color: black;
+	color: white;
 	span {
 		opacity: 0;
 	}
 }
 
-.testimonials__title {
-  color: black;
-  font-family: TungstenNarrow-Semibold;
-  font-weight: 200;
-  font-size: 80px;
-  margin-top: 5px;
-  color: $yellow;
-  max-width: 40px;
-
-  h4 {
-    margin-bottom: 2px;
-    margin-top: 55px;
-  }
-}
-
-.box {
-  height: 60px;
-  width: 60px;
-  background: red;
-}
 </style>

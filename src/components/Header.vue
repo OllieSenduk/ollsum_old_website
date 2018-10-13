@@ -132,7 +132,7 @@ p {
 
   }
   .header__container {
-    margin-left: 50px;
+    margin-left: 10%;
     margin-right: 50px;
     margin-top: 6%;
   }

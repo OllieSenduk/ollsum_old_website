@@ -1,5 +1,6 @@
 <template lang="html">
-  <div>
+  <section class="loading">
+    <div>
     <!-- <appTransitionText v-if="loaderDone"></appTransitionText> -->
     <appIntro v-if="loaderDone"></appIntro>
     <div v-else class="space-page__container">
@@ -160,6 +161,8 @@
       </div>
     </div>
   </div>
+</section>
+
 </template>
 
 <script>
