@@ -1,6 +1,5 @@
 <template lang="html">
   <section>
-      <appHeader></appHeader>
       <appServiceQuote></appServiceQuote>
       <appServices></appServices>
       <appTimeline></appTimeline>
@@ -25,6 +24,8 @@ export default {
     appTimeline: Timeline,
     appTestimonials: Testimonials,
     appContact: Contact
+  },
+  methods: {
   }
 }
 </script>

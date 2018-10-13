@@ -3,7 +3,7 @@
     <div class="timeline__container">
       <div class="timeline__header">
         <div class="timeline__title">
-          <span style="color: white"> T </span>PROCESS
+          <span style="color: white"> THE </span>PROCESS
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
         </div>
       </div>
@@ -88,6 +88,7 @@ $yellow: #fc3;
   background: black;
   height: auto;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .timeline__container {

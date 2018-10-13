@@ -98,7 +98,7 @@ p {
   display: flex;
   text-align: left;
   flex-direction: row;
-  animation: pageEnter 1.3s ease forwards;
+  // animation: pageEnter 1.3s ease forwards;
 }
 .header__tagline {
   color: white;

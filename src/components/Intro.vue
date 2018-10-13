@@ -40,7 +40,7 @@ export default {
           chunks = buildChunks(chunks, maxLength);
         }
 
-        var tl = new TimelineMax({delay:0.6, repeat:1, repeatDelay:4}),
+        var tl = new TimelineMax({delay:0.6, repeat:0, repeatDelay:4}),
             time = 0,
             chunk, element, duration, isSentenceEnd, i;
 
@@ -69,7 +69,7 @@ export default {
       		 	  .to(element, duration, {autoAlpha:1, ease:SlowMo.ease.config(0.25, 0.9, true)}, time);
             time += duration - 0.05;
             if (isSentenceEnd) {
-              time += 0.6; //at the end of a sentence, add a pause for dramatic effect.
+              time += 0.9; //at the end of a sentence, add a pause for dramatic effect.
             }
           }
       }

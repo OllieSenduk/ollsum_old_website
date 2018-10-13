@@ -3,15 +3,27 @@
     <appNavbar></appNavbar>
     <!-- <router-view></router-view> -->
       <div v-if="isLoading">
-        <!-- <appLoading v-if="isLoading"></appLoading> -->
+        <appLoading ></appLoading>
+        <!-- <transition
+        v-on:enter="enter"
+        v-on:leave="leave"
+        v-bind:css="false"
+        appear
+        > -->
         <appIntro></appIntro>
+      <!-- </transition> -->
       </div>
       <div v-else>
-        <appHeader></appHeader>
+        <transition
+        v-on:enter="enterUp"
+        v-on:leave="leaveUp"
+        v-bind:css="false"
+        appear
+        >
+          <appHeader></appHeader>
+        </transition>
+        <appHomepage></appHomepage>
 
-        <appTestimonials></appTestimonials>
-        <appAbout></appAbout>
-        <appEmailForm></appEmailForm>
       </div>
 
   </div>
@@ -26,6 +38,7 @@ import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
+import Homepage from './components/Homepage'
 
 import Vue from 'vue';
 
@@ -40,7 +53,8 @@ export default {
     appTransitionText: TransitionText,
     appEmailForm: EmailForm,
     appServices: Services,
-    appTestimonials: Testimonials
+    appTestimonials: Testimonials,
+    appHomepage: Homepage
   },
   data: function () {
     return {
@@ -49,10 +63,62 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      this.isLoading = true
+      this.isLoading = false
     }, 9300)
   },
   methods: {
+    enter(el, done) {
+        const tl = new TimelineMax({
+            onComplete: done
+        })
+
+        tl.set(el, {
+            autoAlpha: 0,
+            scale: 2,
+            transformOrigin: '50% 50%'
+        })
+
+        tl.to(el, 1, {
+            autoAlpha: 1,
+            scale: 1,
+            ease: Power4.easeOut
+        })
+    },
+    leave(el, done) {
+        TweenMax.to(el, 1, {
+            scale: 0,
+            ease: Power4.easeOut,
+            onComplete: done
+        });
+    },
+    enterUp(el, done) {
+      const tl = new TimelineMax({
+          onComplete: done
+      })
+
+      tl.set(el, {
+          y: window.innerWidth * 1.5,
+          scale: 0.8,
+          transformOrigin: '50% 50%'
+      })
+
+      tl.to(el, 0.5, {
+          y: 0,
+          ease: Power4.easeOut
+      });
+
+      tl.to(el, 1, {
+          scale: 1,
+          ease: Power4.easeOut
+      });
+    },
+    leaveUp(el, done) {
+      TweenMax.to(el, 1, {
+         y: window.innerHeight * -1.5,
+         ease: Power4.easeOut,
+         onComplete: done
+     });
+    }
   },
   computed: {
 
