@@ -1,10 +1,14 @@
 <template lang="html">
-  <div class="testimonial__header_container">
-    <div class="testimonial__header">
-      <div class="testimonial__title">
-        PRAISE FOR THE<span style="color: black">BERRIES</span>
-        <hr class="tagline__underline tagline__underline_yellow tagline__underline">
-      </div>
+  <div class="content__container">
+    <div class="about__tagline">
+      <h2>TESTIMONIALS</h2>
+      <span class="about__quote">
+        PRAISES
+        <br>
+        FOR OUR
+        <br>
+        <b style="color: #fc3">BERRIES</b>
+      </span>
     </div>
   </div>
 </template>
@@ -28,16 +32,37 @@ $yellow: #fc3;
 }
 
 
-.testimonial__title {
-  text-align: left;
-  font-family: TungstenNarrow-Semibold;
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-family: TungstenNarrow-Semibold;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #989898;
+  }
+
+  .about{
+    width: 100vw;
+    background-color: white;
+    text-align: left;
+  }
+
+  .about__tagline {
+    color: black;
+
+    span {
+      font-family: TungstenNarrow-Semibold;
 /* letter-spacing: 3px; */
-  font-weight: 200;
-  font-size: 80px;
-  line-height: 64px;
-  margin-top: 5px;
-  color: $yellow;
-  max-width: 40px;
-}
+      font-weight: 500;
+      font-size: 80px;
+      margin-bottom: 20px;
+      line-height: 64px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
 
 </style>

@@ -15,16 +15,18 @@
           </h2>
           <hr class="tagline__underline tagline__underline_yellow tagline__underline">
           </hr>
-          <!-- <div class="header__message line_height_text main_message">
+          <div class="header__message line_height_text main_message">
             <p>
-              Guerrilla Strawberry is a creative & digital agency of creative superheroes
-            </p>
-          </div> -->
+              Guerrilla Strawberry is a creative & digital agency of superheroes.
+              <img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
 
-          <!-- <a href="#about">
-            <h6 class="yellow page_link"> About us <img src="@/assets/kitty.svg" alt="rocket" class="header__icon"></h6>
-          </a>
-          <hr class="tagline__underline tagline__underline_grey">
+            </p>
+          </div>
+
+           <!-- <a href="#about">
+            <h6 class="yellow page_link"> About us </h6>
+          </a> -->
+          <!-- <hr class="tagline__underline tagline__underline_grey">
           </hr> -->
         </div>
         <!-- <span><img src="@/assets/kitty.svg" alt="superhero_kitty" class="header__image"></span> -->
@@ -92,8 +94,8 @@ p {
 
 .header {
   background-image: url('../assets/strawberry.jpg');
-  background-position: 22% 20%;
-  height: 70vh;
+  background-position: 32% 140%;
+  height: 90vh;
   width: 100vw;
   display: flex;
   text-align: left;
