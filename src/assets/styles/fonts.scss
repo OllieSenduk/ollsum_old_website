@@ -1,0 +1,36 @@
+
+// FONTS
+@font-face {
+  font-family: 'LeagueGothic-Regular';
+  src: url('../fonts/LeagueGothic-Regular.otf');
+  // src: url('./assets/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+  //   url('./assets/fonts/CircularStd-Book.woff') format('woff'),
+  //   url('./assets/fonts/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Sifonn-Basic';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/SIFONN_BASIC.otf');
+}
+
+@font-face {
+  font-family: 'TungstenNarrow-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/TungstenNarrow-bold.otf');
+}
+
+@font-face {
+  font-family: 'TungstenNarrow-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/TungstenNarrow-Semibold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');

@@ -1,7 +1,7 @@
 <template lang="html">
   <section section id="about" class="about">
     <div class="content__container">
-        <div class="about__tagline">
+        <!-- <div class="about__tagline">
           <h2>OUR VALUES</h2>
           <span class="about__quote">
             GOING
@@ -10,7 +10,7 @@
             <br>
             <b style="color: #fc3">WOW</b>
           </span>
-        </div>
+        </div> -->
         <div class="about__blocks">
 
           <div class="about__block" data-aos="fade-up-right">

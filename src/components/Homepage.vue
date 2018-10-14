@@ -1,11 +1,13 @@
 <template lang="html">
   <section>
-      <appServiceQuote></appServiceQuote>
-      <appServices></appServices>
-      <appTimeline></appTimeline>
-      <appTestimonialHeader></appTestimonialHeader>
-      <appTestimonials></appTestimonials>
-      <appContact></appContact>
+      <div class="page__container">
+        <appServiceQuote></appServiceQuote>
+        <appServices></appServices>
+        <appTimeline></appTimeline>
+        <appTestimonialHeader></appTestimonialHeader>
+        <appTestimonials></appTestimonials>
+        <appContact></appContact>
+      </div>
     </section>
 </template>
 

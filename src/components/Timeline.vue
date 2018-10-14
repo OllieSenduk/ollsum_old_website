@@ -216,4 +216,12 @@ ul {
   padding: 0.25em 1em 0.2em 1em;
 }
 
+
+@media (max-width: 900px) {
+  .timeline__title {
+    font-size: 70px;
+    line-height: 75px;
+  }
+}
+
 </style>
