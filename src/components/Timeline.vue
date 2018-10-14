@@ -77,11 +77,10 @@ export default {
 
 <style lang="scss" scoped>
 
-/* Variables */
-$color-1: black;
-$color-2: white;
-$color-3: rgb(168, 50, 121);
-$yellow: #fc3;
+// $color-1: black;
+// $color-2: white;
+// $color-3: rgb(168, 50, 121);
+// $yellow: #fc3;
 
 
 .timeline__section {

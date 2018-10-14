@@ -22,6 +22,49 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  function generateLoaders(loader, loaderOptions) {
+    var loaders = [cssLoader]
+    if (loader) {
+      loaders.push({
+        loader: loader + '-loader',
+        options: Object.assign({}, loaderOptions, {sourceMap: options.sourceMap})
+      })
+    }
+    if (options.extract) {
+			return ExtractTextPlugin.extract({use: loaders, fallback: 'vue-style-loader'})
+		} else {
+			return ['vue-style-loader'].concat(loaders)
+		}
+	}
+
+
+	function resolveResouce(fileName) {
+		return path.resolve(__dirname, '../src/assets/styles/' + fileName)
+	}
+
+
+	function generateSassResourceLoader() {
+		var loaders = [
+			cssLoader,
+			'sass-loader', {
+				loader: 'sass-resources-loader',
+				options: {
+					resources: [
+						resolveResouce('variables.scss'),
+					]
+				}
+			}
+		];
+		if (options.extract) {
+			return ExtractTextPlugin.extract({
+				use: loaders,
+				fallback: 'vue-style-loader'
+			})
+		} else {
+			return ['vue-style-loader'].concat(loaders)
+		}
+	}
+
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -29,38 +72,14 @@ exports.cssLoaders = function (options) {
     }
   }
 
-  // generate loader string to be used with extract text plugin
-  function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
-
-    if (loader) {
-      loaders.push({
-        loader: loader + '-loader',
-        options: Object.assign({}, loaderOptions, {
-          sourceMap: options.sourceMap
-        })
-      })
-    }
-
-    // Extract CSS when that option is specified
-    // (which is the case during production build)
-    if (options.extract) {
-      return ExtractTextPlugin.extract({
-        use: loaders,
-        fallback: 'vue-style-loader'
-      })
-    } else {
-      return ['vue-style-loader'].concat(loaders)
-    }
-  }
 
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
-    sass: generateLoaders('sass', { indentedSyntax: true, includePaths: [path.resolve(__dirname, '../node_modules/compass-mixins/lib')] }),
-    scss: generateLoaders('sass'),
+    sass: generateSassResourceLoader(),
+	  scss: generateSassResourceLoader(),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
