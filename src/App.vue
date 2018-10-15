@@ -1,19 +1,13 @@
 <template>
   <div id="app" class="app">
-    <appNavbar></appNavbar>
+    <!-- <appNavbar></appNavbar> -->
     <!-- <router-view></router-view> -->
       <div v-if="isLoading">
         <appLoading ></appLoading>
       </div>
       <div v-else>
-        <transition
-        v-on:enter="enterUp"
-        v-on:leave="leaveUp"
-        v-bind:css="false"
-        appear
-        >
+
           <appHeader></appHeader>
-        </transition>
         <appHomepage></appHomepage>
 
       </div>

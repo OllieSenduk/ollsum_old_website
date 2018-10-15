@@ -26,7 +26,6 @@ $base-line-height: 1.5em;
 .services {
   background-color: rgb(255, 204, 51);
   z-index: -2;
-  height: 35vh;
   position: relative;
 }
 
