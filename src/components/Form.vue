@@ -156,9 +156,9 @@ export default {
     font-weight: bold;
   }
 
-
   .contact {
     width: 100vw;
+    height: 100%;
     background-color: #fc3;
     text-align: left;
   }
