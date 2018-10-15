@@ -7,7 +7,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 // Routes
-import { routes } from './routes';
 
 // Assets
 import "./assets/styles/headers.scss"
