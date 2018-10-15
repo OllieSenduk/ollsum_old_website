@@ -27,7 +27,7 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
-              <h3> Measurement of Success</h3>
+              <div class="title"> Measurement of Success</div>
             <p>Before we diving in head first, it's vital that we both crystalize what it is
               that we want to achieve together. A clear-cut goal can greatly help define the route
               to success.
@@ -37,7 +37,7 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
-            <h3>Strategy</h3>
+            <div class="title">Strategy</div>
             <p>We do an extensive audit of your users, product and current metrics. With these
               results we devise a gameplan.
             </p>
@@ -46,7 +46,7 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
-            <h3>Getting it Done</h3>
+            <div class="title">Getting it Done</div>
             <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this wow your audience. If the answer is yes,
             we're on the right track</p>
           </div>
@@ -164,7 +164,7 @@ ul {
   left: 4em;
   width: 60%;
 
-  h3 {
+  .title {
     font-size: 1.75em;
     font-family: TungstenNarrow-Semibold;
     font-weight: 200;
