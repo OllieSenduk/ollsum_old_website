@@ -1,10 +1,25 @@
 <template lang="html">
   <section id="timeline__section" class="timeline__section">
-    <div class="timeline__container">
-      <div class="timeline__header">
-        <div class="timeline__title">
-          <span style="color: white"> THE </span>PROCESS
-          <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+    <div class="section__container timeline__background">
+      <div class="header timeline__header">
+        <div class="tagline">
+          <h1>THE PROCESS</h1>
+        </div>
+        <h2>
+          WORK
+          <br>
+          GRIND
+          <br>
+          <span style="color: #fc3">HUSSLE</span>
+        </h2>
+        <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+        </hr>
+        <div class="header__message line_height_text main_message">
+          <p>
+            Here at Guerrila Strawberry, we have created lean and effecient processes to
+            skip through the nonsense and go straight to what's important: creating value for
+            your users.
+          </p>
         </div>
       </div>
 
@@ -14,9 +29,9 @@
           <div class="timeline-event-copy" data-aos="zoom-in-up">
               <h3> Measurement of Success</h3>
             <!-- <h4>Where we define what outcome you're looking for</h4> -->
-            <p>Before we dive head first into creating something, we always want to know what
-              is it that we want to achieve together. Maybe the strategy you had before can be tweeked or
-              made better.
+            <p>Before we diving in head first, it's vital that we both crystalize what it is
+              that we want to achieve together. A clear-cut goal can greatly help define the route
+              to success.
             </p>
           </div>
         </li>
@@ -24,15 +39,16 @@
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
             <h3>Strategy</h3>
-            <!-- <h4>Where we find the best way to reach your audience</h4> -->
-            <p>Do we need to reach a few people very personally, or should our aim be virality? Would an app be good to reach the crowd, or maybe we can host an event.</p>
+            <p>We do an extensive audit of your users, product and current metrics. With these
+              results we devise a gameplan.
+            </p>
           </div>
         </li>
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
             <h3>Getting it Done</h3>
-            <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this still wow your audience. If the answer is yes,
+            <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this wow your audience. If the answer is yes,
             we're on the right track</p>
           </div>
         </li>
@@ -77,17 +93,17 @@ export default {
 
 <style lang="scss" scoped>
 
-// $color-1: black;
-// $color-2: white;
-// $color-3: rgb(168, 50, 121);
-// $yellow: #fc3;
-
-
 .timeline__section {
   background: black;
   height: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  background: black;
+  padding-bottom: 40px;
+}
+
+.timeline__background {
+  background: url('../assets/background_dark.png');
+  background-size: cover;
+  height: 100%;
 }
 
 .timeline__container {
@@ -99,8 +115,18 @@ export default {
 }
 
 .timeline__header {
-  display: flex;
-  justify-content: space-between;
+  h1 {
+    color: white;
+    opacity: 0.7;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .header__message {
+    color: white;
+  }
 }
 
 .timeline__title {
@@ -192,7 +218,7 @@ ul {
   transition: transform 0.2s ease-in;
   transform: rotate(45deg);
 
-  background-color: $color-1;
+  background-color: $black;
   outline: 10px solid white;
   display: block;
   margin: 0.5em 0.5em 0.5em -0.5em;
@@ -205,10 +231,10 @@ ul {
 
 .timeline-event-thumbnail {
   transition: box-shadow 0.5s ease-in 0.1s;
-  color: $color-2;
+  color: $white;
   font-size: 0.75em;
 
-  background-color: $color-1;
+  background-color: $black;
   box-shadow: 0 0 0 0em #ef795a;
   display: inline-block;
   margin-bottom: 1.2em;

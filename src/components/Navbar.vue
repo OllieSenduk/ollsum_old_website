@@ -78,8 +78,6 @@ export default {
   transition: all .8s cubic-bezier(0.23, 1, 0.32, 1)
 }
 
-$yellow: #fc3;
-
 @mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
@@ -92,6 +90,8 @@ $yellow: #fc3;
 
 .navbar {
  color: white;
+ padding-top: 0px;
+ padding-bottom: 0px;
 }
 
 .header {

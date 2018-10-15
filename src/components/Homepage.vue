@@ -4,7 +4,6 @@
         <appServiceQuote></appServiceQuote>
         <appServices></appServices>
         <appTimeline></appTimeline>
-        <appTestimonialHeader></appTestimonialHeader>
         <appTestimonials></appTestimonials>
         <appContact></appContact>
       </div>
@@ -18,7 +17,6 @@ import Services from './Services'
 import Timeline from './Timeline'
 import Testimonials from './Testimonials'
 import Contact from './Form'
-import TestimonialHeader from "./TestimonialHeader";
 
 export default {
   components: {
@@ -26,7 +24,6 @@ export default {
     appHeader: Header,
     appServices: Services,
     appTimeline: Timeline,
-    appTestimonialHeader: TestimonialHeader,
     appTestimonials: Testimonials,
     appContact: Contact
   },

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <appNavbar></appNavbar>
     <!-- <router-view></router-view> -->
       <div v-if="isLoading">
@@ -129,4 +129,13 @@ export default {
 
 <style lang="scss" scoped>
 
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    position: relative;
+  }
+  
 </style>

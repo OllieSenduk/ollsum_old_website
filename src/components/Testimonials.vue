@@ -1,8 +1,33 @@
 <template lang="html">
   <section class="testimonials" id="testimonials">
-    <div class="wrap">
-      <p class="split">
-      </p>
+    <div class="section__container testimonials__background">
+      <div class="header testimonials__header">
+        <div class="tagline tagline__black">
+          <h1>TESTIMONIALS</h1>
+        </div>
+        <h2>
+          LOVE
+          <br>
+          FOR
+          <br>
+          <span style="color: #fc3">STRAWBERRY</span>
+        </h2>
+        <hr class="tagline__underline tagline__underline_yellow tagline__underline">
+        </hr>
+        <div class="header__message line_height_text main_message">
+          <p>
+            We are blessed to have worked with some amazing individuals and companies.
+            Here's what some had to say about working
+            with our team members.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial__wrapper">
+      <div class="wrap">
+        <p class="split">
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -96,21 +121,38 @@ $yellow: #fc3;
 	color: white;
 	font-family: Open sans;
 	max-width: 80vw;
-	margin: 0 auto;
   margin-bottom: 80px;
 }
 
-p {
-	position: relative;
-	perspective: 500px;
-	top: 50%;
-	padding: 0 20px;
-	transform: translateY(-50%);
-	font-weight: 300;
-	color: white;
-	span {
-		opacity: 0;
-	}
+.testimonial__wrapper {
+  width: 100%;
+  margin: auto 0
+}
+
+.testimonials__header {
+
+  h2 {
+    color: $black;
+  }
+
+  p {
+    color: $black;
+  }
+}
+
+.testimonial__wrapper {
+  p {
+  	position: relative;
+  	perspective: 500px;
+  	top: 50%;
+  	padding: 0 20px;
+  	transform: translateY(-50%);
+  	font-weight: 300;
+  	color: white;
+  	span {
+  		opacity: 0;
+  	}
+  }
 }
 
 </style>
