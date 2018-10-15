@@ -64,7 +64,6 @@ h1 {
 .header {
   background-image: url('../assets/strawberry.jpg');
   background-position: 32% 140%;
-  height: 90vh;
   width: 100vw;
   display: flex;
   text-align: left;
