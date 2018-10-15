@@ -16,16 +16,16 @@ import "./assets/styles/colors.scss"
 
 Vue.config.productionTip = false
 
-const router = new VueRouter({
-  // ES6 routes: routes
-  routes,
-})
+// const router = new VueRouter({
+//   // ES6 routes: routes
+//   routes,
+// })
 
 Vue.use(VueRouter);
 
 new Vue({
   el: '#app',
-  router,
+  // router,
   created () {
     AOS.init()
   },
