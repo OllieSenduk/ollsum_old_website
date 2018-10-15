@@ -76,6 +76,18 @@ $default: #fff;
 $defaultTextColor: #222222;
 $defaultSecondaryTextColor: #eee;
 
+h1 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+  font-size: 20px;
+  font-family: TungstenNarrow-Semibold;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: #989898;
+}
+
+
 .container {
   max-width: 800px;
   margin: 80px auto;
