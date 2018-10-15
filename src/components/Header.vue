@@ -133,6 +133,15 @@ h1 {
   }
 }
 
+@media only screen and (max-width : 700px) {
+  .header {
+    background: none;
+    background-image: url('../assets/strawberry.jpg');
+    background-position: 14% 140%;
+    height: 100vh;
+  }
+}
+
   @keyframes MoveUpDown {
     0%, 100% {
       bottom: 30px;

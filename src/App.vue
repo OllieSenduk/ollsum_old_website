@@ -3,11 +3,24 @@
     <!-- <appNavbar></appNavbar> -->
     <!-- <router-view></router-view> -->
       <div v-if="isLoading">
+        <!-- <transition
+       v-on:leave="enterUp"
+       v-bind:css="false"
+       appear
+       > -->
         <appLoading ></appLoading>
+      <!-- </transition> -->
       </div>
       <div v-else>
-
+        <transition
+         v-on:enter="enterUp"
+         v-on:leave="leaveUp"
+         v-bind:css="false"
+         appear
+         >
           <appHeader></appHeader>
+        </transition>
+
         <appHomepage></appHomepage>
 
       </div>
@@ -44,7 +57,7 @@ export default {
   },
   data: function () {
     return {
-      isLoading: false,
+      isLoading: true,
     };
   },
   mounted () {

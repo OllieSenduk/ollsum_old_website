@@ -16,11 +16,11 @@
           <a href=""><div class="logo"></div></a>
         </div>
         <ul class="menu__list">
-          <li></li>
-          <router-link tag="li" class="menu__item menu__link" to="/startjourney" v-on:click.native="activateNav"> Home2 </router-link>
-          <router-link tag="li" class="menu__item menu__link" to="/contact" v-on:click.native="activateNav"> Contact </router-link>
-          <router-link tag="li" class="menu__item menu__link" to="/slogan" v-on:click.native="activateNav"> Slogan </router-link>
-          <router-link tag="li" class="menu__item menu__link" to="/home" v-on:click.native="activateNav"> Home </router-link>
+          <li class="menu__item menu__link">Animation</li>
+          <li class="menu__item menu__link">Home</li>
+          <li class="menu__item menu__link">Process</li>
+          <li class="menu__item menu__link">Testimonials</li>
+          <li class="menu__item menu__link">Contact</li>
         </ul>
       </nav>
 </navbar>
@@ -215,17 +215,17 @@ export default {
     color: white;
     @include easeOut;
 
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 10px;
-      height: 2px;
-      background: white;
-      transform: translateX(-50%);
-      @include easeOut;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 50%;
+    //   width: 10px;
+    //   height: 2px;
+    //   background: white;
+    //   transform: translateX(-50%);
+    //   @include easeOut;
+    // }
 
     &:hover {
       &:before {

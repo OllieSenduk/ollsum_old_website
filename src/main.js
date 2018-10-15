@@ -24,7 +24,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouter);
 
 new Vue({
-  el: '#app',
+  el: '#gs_app',
   // router,
   created () {
     AOS.init()
