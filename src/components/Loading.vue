@@ -187,7 +187,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .space-page__container {
     height: 100vh;
     width: 100vw;

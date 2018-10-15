@@ -57,7 +57,7 @@ export default {
   },
   data: function () {
     return {
-      isLoading: false,
+      isLoading: true,
     };
   },
   mounted () {
@@ -137,5 +137,5 @@ export default {
     color: #2c3e50;
     position: relative;
   }
-  
+
 </style>
