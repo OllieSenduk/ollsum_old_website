@@ -22,13 +22,14 @@
           </p>
         </div>
       </div>
-    </div>
     <div class="testimonial__wrapper">
       <div class="wrap">
         <p class="split">
         </p>
       </div>
     </div>
+  </div>
+
   </section>
 </template>
 
@@ -42,7 +43,7 @@ export default {
   data: function () {
     return {
       quotes: [
-      	"“Wisdom is not a product of schooling but of the lifelong attempt to acquire it.”  <br><br>— Albert Einstein",
+      	"“They understand what it means to run campaigns in todays world. Their creativity and ability to execute is amazing.”  <br><br>—  Jules de Blecourt",
       	"“Live as if you were to die tomorrow. Learn as if you were to live forever.” <br><br>—  Mahatma Gandhi",
       	"“Tell me and I forget, teach me and I may remember, involve me and I learn.” <br><br>— Benjamin Franklin",
       	"“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”<br><br>— Richard Feynman",
@@ -102,18 +103,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-$yellow: #fc3;
-
-.wrap {
-	height: 50vh;
-  max-width: 80vw;
-	margin: 0 auto;
-  background-color: black;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
 
 .testimonials {
 	background: white;
@@ -148,7 +137,19 @@ $yellow: #fc3;
   	padding: 0 20px;
   	transform: translateY(-50%);
   	font-weight: 300;
-  	color: white;
+  	color: black;
+    font-family: TungstenNarrow-Semibold;
+      /* letter-spacing: 3px; */
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 64px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: black;
+    margin-left: 3px;
+    z-index: 1;
+    word-spacing: 5px;
   	span {
   		opacity: 0;
   	}

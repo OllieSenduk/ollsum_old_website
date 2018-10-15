@@ -15,7 +15,7 @@ import ServiceQuote from './ServiceQuote'
 import Header from './Header'
 import Services from './Services'
 import Timeline from './Timeline'
-import Testimonials from './Testimonials'
+import Testimonials from './Testimonialss'
 import Contact from './Form'
 
 export default {

@@ -12,7 +12,28 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width : 900px) {
 
+    .quote__container {
+      margin-left: 6%;
+      blockquote {
+        width: 80vw;
+      }
+    }
+
+    .quote-card {
+      margin-bottom: 70px;
+
+      img {
+        opacity: 0.8;
+      }
+    }
+
+    p {
+      max-width: 70%;
+    }
+
+  }
 // GLOBAL CSS
 
 .section__container {
