@@ -4,13 +4,6 @@
     <!-- <router-view></router-view> -->
       <div v-if="isLoading">
         <appLoading ></appLoading>
-        <!-- <transition
-        v-on:enter="enter"
-        v-on:leave="leave"
-        v-bind:css="false"
-        appear
-        > -->
-      <!-- </transition> -->
       </div>
       <div v-else>
         <transition

@@ -28,7 +28,6 @@
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
               <h3> Measurement of Success</h3>
-            <!-- <h4>Where we define what outcome you're looking for</h4> -->
             <p>Before we diving in head first, it's vital that we both crystalize what it is
               that we want to achieve together. A clear-cut goal can greatly help define the route
               to success.
@@ -65,29 +64,7 @@ export default {
     };
   },
   methods: {
-    // changeIcon: function() {
-  //     const config = {
-  //     	sceneDuration: 900,
-  //     	baseCssClass: 'circle',
-  //     	targetElement: document.querySelector(".circle"),
-  //     	animationClasses: ["zero", "two","three", "four","five"]
-  //     };
-  //
-  //     const setElemClass = (element, animationClass) => element.className = `${config.baseCssClass} ${animationClass}`;
-  //
-  //     const setClassesHandler = (index=0) => {
-  //     	const {animationClasses, targetElement, sceneDuration} = config;
-  //     	setTimeout( () => {
-  //     		setElemClass(targetElement, animationClasses[index])
-  //       	index >= animationClasses.length -1 ? setClassesHandler() : setClassesHandler(++index)
-  //     	}, sceneDuration )
-  //     }
-  //     setClassesHandler();
-  //   }
   },
-  // mounted () {
-  //   this.changeIcon()
-  // },
 }
 </script>
 
