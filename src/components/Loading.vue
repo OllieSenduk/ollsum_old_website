@@ -182,7 +182,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.loaderDone = true
-    }, 4000)
+    }, 3700)
   }
 }
 </script>

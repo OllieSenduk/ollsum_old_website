@@ -63,7 +63,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.isLoading = false
-    }, 9300)
+    }, 9000)
   },
   methods: {
     enter(el, done) {

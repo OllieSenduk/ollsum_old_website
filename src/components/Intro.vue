@@ -57,9 +57,9 @@ export default {
           // console.log(header)
           // element = header
           // console.log(header)
-            duration = Math.max(1, chunk.length * 0.3); //longer words take longer to read, so adjust timing. Minimum of 0.5 seconds.
+            duration = Math.max(1, chunk.length * 0.15); //longer words take longer to read, so adjust timing. Minimum of 0.5 seconds.
             if (isSentenceEnd) {
-              duration += 0.4; //if it's the last word in a sentence, drag out the timing a bit for a dramatic pause.
+              duration += 0.6; //if it's the last word in a sentence, drag out the timing a bit for a dramatic pause.
             }
             //set opacity and scale to 0 initially. We set z to 0.01 just to kick in 3D rendering in the browser which makes things render a bit more smoothly.
           TweenLite.set(element, {autoAlpha:0, scale:0, z:0.01});
