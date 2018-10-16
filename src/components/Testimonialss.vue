@@ -238,10 +238,13 @@ h1 {
 
     .crudd {
       height: 200px;
+      opacity: 0.4;
     }
 
     .canon {
       height: 100px;
+      opacity: 0.4;
+
     }
 
 

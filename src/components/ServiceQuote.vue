@@ -3,7 +3,7 @@
     <div class="services__container">
 
     <blockquote class="quote" >
-      <span data-aos="zoom-in-up">WE BUILD JAW-DROPPING <span style="color: white;">END-TO-END CAMPAIGNS</span> WITH BRANDS WE LOVE.</span>
+      <span>WE BUILD JAW-DROPPING <span style="color: white;">END-TO-END CAMPAIGNS</span> WITH BRANDS WE LOVE.</span>
     </blockquote>
   </div>
 
