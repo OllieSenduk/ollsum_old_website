@@ -16,7 +16,7 @@
         </hr>
         <div class="header__message line_height_text main_message">
           <p>
-            Here at Guerrila Strawberry, we have created lean and effecient processes to
+            Here at Guerrila Strawberry, we have created lean and efficient processes to
             skip through the nonsense and go straight to what's important: creating value for
             your users.
           </p>
@@ -28,7 +28,7 @@
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
               <div class="title"> Measurement of Success</div>
-            <p>Before we diving in head first, it's vital that we both crystalize what it is
+            <p>A good start is half the battle. That's why we start with crystalizing what it is
               that we want to achieve together. A clear-cut goal can greatly help define the route
               to success.
             </p>
@@ -47,7 +47,7 @@
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy" data-aos="zoom-in-up">
             <div class="title">Getting it Done</div>
-            <p>We work agile: fast-paced and as lean as possible. At every step of the process we stop and think: will this wow your audience. If the answer is yes,
+            <p>We work in an agile fashion: fast-paced and as lean as possible. At every step of the process we stop and think: will this wow your audience. If the answer is yes,
             we're on the right track</p>
           </div>
         </li>

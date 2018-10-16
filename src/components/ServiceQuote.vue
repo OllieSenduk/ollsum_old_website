@@ -34,6 +34,8 @@ $base-line-height: 1.5em;
   margin-right: 10%;
 
   padding-top: 10%;
+  padding-bottom: 10%;
+
 }
 
 .quote {
@@ -84,9 +86,8 @@ $base-line-height: 1.5em;
   }
 }
 
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 860px) {
   .services__container {
-    padding-bottom: 60;
   }
 }
 
