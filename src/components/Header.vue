@@ -106,7 +106,6 @@ h1 {
     background: none;
     background-image: url('../assets/strawberry.jpg');
     background-position: 11% 57%;
-    height: 100vh;
 
   }
   .header__container {
@@ -138,7 +137,6 @@ h1 {
     background: none;
     background-image: url('../assets/strawberry.jpg');
     background-position: 14% 140%;
-    height: 100vh;
   }
 }
 

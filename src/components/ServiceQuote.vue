@@ -35,6 +35,7 @@ $base-line-height: 1.5em;
 
   padding-top: 10%;
 }
+
 .quote {
   font-family: TungstenNarrow-Semibold;
     /* letter-spacing: 3px; */
@@ -80,6 +81,12 @@ $base-line-height: 1.5em;
       color: #e7e6e4;
       font-size: 19em;
     }
+  }
+}
+
+@media only screen and (max-width : 900px) {
+  .services__container {
+    padding-bottom: 60;
   }
 }
 

@@ -16,15 +16,14 @@
           <div class="about__block" data-aos="fade-up-right">
 
             <div class="about__message_container">
-
+              <div class="about__message_icon">
+                <img src="@/assets/startup.svg" alt="">
+              </div>
 
               <div class="about__message">
                 TEAM OF SUPERHEROES
 
                 <hr class="tagline__underline tagline__underline_yellow tagline__underline">
-              </div>
-              <div class="about__message_icon">
-                <img src="@/assets/startup.svg" alt="">
               </div>
             </div>
 
@@ -37,15 +36,15 @@
 
           <div class="about__message_container">
 
-
+            <div class="about__message_icon">
+              <img src="@/assets/solution.svg" alt="">
+            </div>
             <div class="about__message">
               THE PERFECT FIT
 
               <hr class="tagline__underline tagline__underline_yellow tagline__underline">
             </div>
-            <div class="about__message_icon">
-              <img src="@/assets/solution.svg" alt="">
-            </div>
+
           </div>
 
 
@@ -130,6 +129,8 @@ export default {
     -ms-flex-align: center;
     margin-top: 55px;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .about__message {

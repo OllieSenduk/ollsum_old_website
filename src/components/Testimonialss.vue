@@ -29,6 +29,7 @@
           They understand what it means to run campaigns in todays world.
           Their creativity and ability to execute is amazing.
         </p>
+        <br>
 
         <cite>
           Jules de Blecout, <br>Business Development @ RIPLEYS
@@ -42,9 +43,10 @@
           and had a great way of making complex situations simple. I loved his personal
           style and would recommend him to everybody!
         </p>
+        <br>
 
         <cite>
-          Joscha Koepke, <br>Global Product Lead @ GOOGLE
+          Joscha Koepke, <br>Global Product Lead @ <span class="company"> GOOGLE</span>
         </cite>
         <img src="@/assets/google.png" alt="" class="google">
       </blockquote>
@@ -55,9 +57,12 @@
           Praise the berry!
         </p>
 
+        <br>
+
         <cite>
           Inou Ridder, <br> Head Teacher @ LE WAGON
         </cite>
+
         <img src="@/assets/lewagon.png" alt="" class="lewagon">
       </blockquote>
     </div>
@@ -157,7 +162,17 @@ h1 {
   }
 
   cite {
-    color: $grey
+    display: block;
+    margin-top: 0.75em;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #c2c8cb;
+  }
+
+  .company {
+
   }
 
 
