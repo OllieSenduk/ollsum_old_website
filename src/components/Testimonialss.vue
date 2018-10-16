@@ -39,7 +39,7 @@
 
       <blockquote class="quote-card">
         <p>
-          Ollie <span style="color: grey; font-style: italic;">[founder]</span> was amazing. Always completely dedicated
+          <span style="color: grey; font-style: italic;">[About Oliver Senduk, co-founder]</span> He was amazing. Always completely dedicated
           and had a great way of making complex situations simple. I loved his personal
           style and would recommend him to everybody!
         </p>
@@ -65,6 +65,37 @@
 
         <img src="@/assets/lewagon.png" alt="" class="lewagon">
       </blockquote>
+
+      <blockquote class="quote-card">
+        <p>
+            They worked on producing film content for the
+            events at Krudd.
+            Their speed and initiative to create this content was
+            immense and we'd happily work with them again
+        </p>
+        <br>
+
+        <cite>
+          KRUDD EVENTS, <br> Music Label with a reach of over 20’000
+        </cite>
+        <img src="@/assets/krudd.png" alt="" class="crudd">
+      </blockquote>
+
+      <blockquote class="quote-card">
+        <p>
+          <span style="color: grey; font-style: italic;">[About Sam Smith, co-founder]</span> A progressive style of cinematography
+           and project marketing.
+           A passion to be diverse and we are looking forward to his future in the
+           industry.
+        </p>
+        <br>
+
+        <cite>
+          Rob Thomas, <br> Marketing Director @ <span class="company"> CANON EUROPE </span>
+        </cite>
+        <img src="@/assets/canon3.png" alt="" class="canon">
+      </blockquote>
+
     </div>
 
   </section>
@@ -176,10 +207,16 @@ h1 {
   }
 
 
-  @media(max-width: 640px) {
+
+
+  @media(max-width: 800px) {
     &:after {
       font-size: 22em;
       right: -25px;
+    }
+
+    .canon {
+      height: 70px;
     }
 
   }
@@ -197,6 +234,14 @@ h1 {
 
     .google {
       opacity: 0.4;
+    }
+
+    .crudd {
+      height: 200px;
+    }
+
+    .canon {
+      height: 100px;
     }
 
 
