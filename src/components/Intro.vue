@@ -118,6 +118,7 @@ export default {
     font-family: 'Asap', sans-serif;
     font-weight: 700;
     color: black;
+    width: 100%;
     /* text-align:center; */
     visibility:hidden;
     font-size: 100px;
@@ -132,7 +133,7 @@ export default {
 
   @media (max-width: 900px) {
     h3 {
-      font-size:70px;
+      font-size:50px;
     }
   }
 </style>
