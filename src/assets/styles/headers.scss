@@ -46,7 +46,7 @@ a {
     }
 
     p {
-      max-width: 70%;
+      max-width: 90%;
     }
 
   }
@@ -114,7 +114,7 @@ a {
 
   .header__message {
     text-align: left;
-    max-width: 400px;
+    // max-width: 900px;
   }
 }
 
@@ -131,6 +131,35 @@ a {
   font-size: 17px;
 }
 
+@media only screen and (min-width: 1366px) and (max-width : 1919px)  {
+
+  .testimonials {
+    .testimonials__header {
+      padding-bottom: 70px;
+    }
+
+    .quote__container {
+    }
+  }
+
+  .header {
+    .header__message {
+      text-align: left;
+      width: 800px;
+    }
+  }
+  .main_message {
+    font-size: 22px;
+    // line-height: 80px;
+
+    p {
+      line-height: 35px;
+      letter-spacing: 3px;
+      width: 650px;
+    }
+  }
+}
+
 @media only screen and (min-width : 1920px) {
 
   .section__container {
@@ -141,9 +170,9 @@ a {
     line-height: 80px;
 
     p {
-      line-height: 60px;
-      letter-spacing: 7px;
-      width: 500px;
+      line-height: 80px;
+      letter-spacing: 3px;
+      // width: 1400px;
     }
   }
 
@@ -152,7 +181,7 @@ a {
     .header__message {
       text-align: left;
       max-width: 800px;
-      width: 700px;
+      width: 1400px;
     }
 
     h2 {

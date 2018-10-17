@@ -215,22 +215,47 @@ ul {
   padding: 0.25em 1em 0.2em 1em;
 }
 
-@media only screen and (min-width : 1920px) {
-
-    .timeline__header {
-      margin-bottom: 200px;
-    }
+@media only screen and (min-width: 1366px) and (max-width : 1919px)  {
   .timeline {
     max-width: 100%;
     padding-bottom: 80px;
 
     .title {
-      font-size: 90px;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 60px;
+    }
+
+    p:not(.timeline-event-thumbnail) {
+      padding-bottom: 2em;
+
+    }
+  }
+}
+
+@media only screen and (min-width : 1920px) {
+
+  .timeline__header {
+    margin-bottom: 200px;
+  }
+  .timeline {
+    max-width: 100%;
+    padding-bottom: 80px;
+
+    .title {
+      font-size: 70px;
     }
 
     p {
       font-size: 40px;
-      line-height: 60px;
+      line-height: 80px;
+    }
+
+    p:not(.timeline-event-thumbnail) {
+      padding-bottom: 2em;
     }
   }
 }

@@ -247,8 +247,50 @@ h1 {
     }
   }
 
+  @media only screen and (min-width: 1366px) and (max-width : 1919px)  {
+
+
+        .ripleys {
+          height: 200px;
+          opacity: 0.4;
+        }
+
+        .lewagon {
+          height: 200px;
+          opacity: 0.4;
+        }
+
+        .google {
+          height: 250px;
+          opacity: 0.4;
+        }
+
+        .crudd {
+          height: 350px;
+          opacity: 0.4;
+        }
+
+        .canon {
+          height: 150px;
+          opacity: 0.4;
+        }
+
+        p {
+          font-size: 25px;
+          line-height: 60px;
+        }
+
+        cite {
+          font-size: 20px;
+        }
+      }
+
 
   @media only screen and (min-width : 1920px) {
+
+        .testimonials__header {
+          margin-bottom: 500px;
+        }
         .ripleys {
           height: 300px;
           opacity: 0.4;
@@ -275,11 +317,12 @@ h1 {
         }
 
         p {
-          font-size: 40px;
+          font-size: 30px;
+          line-height: 2;
         }
 
         cite {
-          font-size: 30px;
+          font-size: 20px;
         }
   }
 }

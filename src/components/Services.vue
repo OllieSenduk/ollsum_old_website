@@ -162,6 +162,29 @@ export default {
       max-width: 33%;
     }
   }
+
+  @media only screen and (min-width: 1366px) and (max-width : 1919px)  {
+    .about__message_icon {
+      img {
+        width: 110px;
+      }
+    }
+    .about__message {
+      font-size: 40px;
+    }
+
+    .main_message {
+      font-size: 20px;
+      line-height: 60px;
+    }
+
+
+    .about__message_container {
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+  }
+
   @media only screen and (min-width : 1920px) {
     .about {
       margin-top: 150px;

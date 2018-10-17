@@ -224,6 +224,13 @@ export default {
 
   }
 
+  @media only screen and (min-width: 1366px) and (max-width : 1919px)  {
+
+        .header__message {
+          width: 100%;
+        }
+  }
+
 
     @media only screen and (min-width : 1920px) {
       h2 {

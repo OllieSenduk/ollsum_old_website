@@ -65,6 +65,8 @@ $base-line-height: 1.5em;
    }
 }
 
+
+
 @media only screen and (min-width : 700px) {
 
   .services__container {
@@ -83,10 +85,19 @@ $base-line-height: 1.5em;
   }
 }
 
-@media only screen and (min-width: 1366px)  {
+@media only screen and (min-width: 1366px) and (max-width : 1919px)  {
 .quote {
-    font-size: 5em;
+    font-size: 4em;
     line-height: 180px;
+  }
+
+  blockquote {
+    margin-bottom: 2em;
+  }
+
+  .services__container {
+    padding-bottom: 7%;
+    padding-top: 7%;
   }
 }
 

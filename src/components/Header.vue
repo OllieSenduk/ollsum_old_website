@@ -120,6 +120,12 @@ export default {
   }
 }
 
+@media only screen and (min-width : 1920px) {
+  .header {
+    background-position: -20% 57%;
+  }
+}
+
   @keyframes MoveUpDown {
     0%, 100% {
       bottom: 30px;
