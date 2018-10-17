@@ -175,7 +175,7 @@ export default {
     .main_message {
       line-height: 60px;
       letter-spacing: 7px;
-      width: 800px;
+      width: 600px;
     }
 
     .about__message {

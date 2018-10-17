@@ -65,6 +65,10 @@ export default {
 
 <style lang="scss" scoped>
 
+  .contact {
+    height: 160vh;
+  }
+
   h2 {
     margin-top: 0px;
     margin-bottom: 5px;
@@ -175,7 +179,7 @@ export default {
     left: -20px;
   }
 
-  @media only screen and (min-width : 800px) {
+  @media only screen and (min-width : 700px) {
     .contact__form {
 
       input[type="text"] {

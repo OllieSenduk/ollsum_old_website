@@ -67,9 +67,6 @@ $base-line-height: 1.5em;
 
 @media only screen and (min-width : 700px) {
 
-  .services {
-    height: 50vh;
-  }
   .services__container {
     margin-left: 50px;
     margin-right: 50px;
@@ -86,9 +83,16 @@ $base-line-height: 1.5em;
   }
 }
 
+@media only screen and (min-width: 1366px)  {
+.quote {
+    font-size: 5em;
+    line-height: 180px;
+  }
+}
+
 @media only screen and (min-width : 1920px) {
 .quote {
-    font-size: 7em;
+    font-size: 6em;
   }
 }
 

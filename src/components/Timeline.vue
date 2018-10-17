@@ -122,7 +122,7 @@ ul {
 .timeline {
   margin: 4em auto;
   position: relative;
-  max-width: 46em;
+  // max-width: 46em;
 
   &:before {
     background-color: white;
