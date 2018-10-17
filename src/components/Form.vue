@@ -194,7 +194,7 @@ export default {
 
     .contact {
       position: relative;
-      height: 180vh;
+      height: 100%;
     }
 
     .header__message {

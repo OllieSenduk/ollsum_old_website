@@ -249,7 +249,6 @@ h1 {
 
 
   @media only screen and (min-width : 1920px) {
-
         .ripleys {
           height: 300px;
           opacity: 0.4;
