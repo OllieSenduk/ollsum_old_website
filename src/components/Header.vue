@@ -46,20 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 
-p {
-  letter-spacing: 1px;
-}
 
-h1 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  opacity: 0.7;
-  font-size: 20px;
-  font-family: TungstenNarrow-Semibold;
-  letter-spacing: 2px;
-  font-weight: 100;
-  color: #989898;
-}
 
 .header {
   background-image: url('../assets/strawberry.jpg');
@@ -99,25 +86,10 @@ h1 {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 900px) {
-  h1 {
-    letter-spacing: 1px;
-  }
   .header {
     background: none;
     background-image: url('../assets/strawberry.jpg');
     background-position: 11% 57%;
-
-  }
-  .header__container {
-    padding-top: 10%;
-  }
-  .header__message {
-    width: 400px;
-  }
-  .header__tagline {
-    margin-right: 10%;
-    max-width: 40vw;
-    width: 40vw;
   }
 
   .header__cta {
@@ -129,6 +101,14 @@ h1 {
     margin: 0 auto;
     bottom: 30px;
     animation: MoveUpDown 1s linear infinite;
+  }
+}
+@media only screen and (min-width : 900px) {
+
+  .header__container {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
   }
 }
 

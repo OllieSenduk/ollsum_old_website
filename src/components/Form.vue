@@ -176,9 +176,22 @@ export default {
   }
 
   @media only screen and (min-width : 800px) {
+    .contact__form {
 
-    input {
-      width: 80.2%;
+      input[type="text"] {
+        width: 80%;
+        height: 120px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+
+      input[type="submit"] {
+        height: 120px;
+
+        font-size: 30px;
+      }
     }
 
     .contact {
@@ -208,6 +221,20 @@ export default {
     }
 
   }
+
+
+    @media only screen and (min-width : 1200px) {
+      h2 {
+        font-size: 80px;
+        line-height: 150px;
+      }
+
+      .contact__quote {
+        font-size: 160px;
+        line-height: 150px;
+      }
+    }
+
 
 
 </style>

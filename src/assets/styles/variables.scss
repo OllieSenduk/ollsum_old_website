@@ -5,4 +5,20 @@ $white: white;
 $grey: #989898;
 
 
-// headers
+// breakpoints
+$breakpoints: (
+    tiny: '(max-width: 374px)',
+    palm: '(max-width: 639px)',
+    lap: '(min-width: 640px) and (max-width: 1023px)',
+    portable: '(max-width: 1023px)',
+    lap-and-up: '(min-width: 640px)',
+    desk: '(min-width: 1024px)',
+    desk-wide: '(min-width: 1200px)',
+);
+@mixin media-query($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+
+  @media screen and #{$value} {
+      @content;
+  }
+}

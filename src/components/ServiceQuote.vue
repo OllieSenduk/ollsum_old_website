@@ -86,11 +86,11 @@ $base-line-height: 1.5em;
   }
 }
 
-@media only screen and (max-width : 860px) {
-  .services__container {
+@media only screen and (min-width : 1200px) {
+.quote {
+    font-size: 7em;
   }
 }
-
 
 blockquote {
   margin-bottom: 3em;

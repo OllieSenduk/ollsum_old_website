@@ -244,83 +244,46 @@ h1 {
     .canon {
       height: 100px;
       opacity: 0.4;
-
     }
-
-
   }
 
+
+  @media only screen and (min-width : 1200px) {
+
+        .ripleys {
+          height: 300px;
+          opacity: 0.4;
+        }
+
+        .lewagon {
+          height: 300px;
+          opacity: 0.4;
+        }
+
+        .google {
+          height: 300px;
+          opacity: 0.4;
+        }
+
+        .crudd {
+          height: 350px;
+          opacity: 0.4;
+        }
+
+        .canon {
+          height: 200px;
+          opacity: 0.4;
+        }
+
+        p {
+          font-size: 40px;
+        }
+
+        cite {
+          font-size: 30px;
+        }
+  }
 }
 
-
-//
-// .testimonials {
-// 	background: white;
-// 	overflow: hidden;
-// 	color: white;
-// 	font-family: Open sans;
-//   margin-bottom: 80px;
-// }
-//
-// .testimonial__wrapper {
-//   width: 100%;
-//   margin: auto 0
-// }
-//
-// .testimonials__header {
-//
-//   h2 {
-//     color: $black;
-//   }
-//
-//   p {
-//     color: $black;
-//   }
-// }
-//
-// .testimonial__cards {
-//   width: 100vw;
-//   max-width: 100vw;
-//   position: relative;
-// }
-//
-// .card__content {
-//   max-width: 90%;
-// }
-// .card {
-//   height: 120%;
-//   width: 90vw;
-//   margin: 0 auto;
-//   background-color: white;
-//   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-//   margin-top: 10%;
-//   display: flex;
-//   text-align: left;
-//   flex-direction: column;
-//   overflow: hidden;
-//
-//   .testimonial__card_name {
-//     color: $grey
-//   }
-//
-//   .testimonial__card_job_title {
-//     color: $yellow;
-//   }
-//
-//   p {
-//     position: relative;
-//   	font-weight: 300;
-//   	color: black;
-//     font-family: TungstenNarrow-Semibold;
-//       /* letter-spacing: 3px; */
-//     font-weight: 500;
-//     font-size: 30px;
-//     font-style: italic;
-//     color: black;
-//     word-spacing: 5px;
-//   	span {
-//   	}
-//   }
-// }
 
 </style>

@@ -84,8 +84,8 @@ export default {
   }
 
   .panda {
-    max-width: 20vw;
-    max-height: 20vh;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     .ears-container {
       display: flex;
@@ -381,10 +381,10 @@ export default {
       background-color: black;
     }
   }
-  //
-  // @media only screen and (min-width : 800px) {
-  //   .panda {
-  //     width: auto;
-  //   }
-  // }
+
+  @media only screen and (min-width : 800px) {
+    .panda {
+      width: auto;
+    }
+  }
 </style>

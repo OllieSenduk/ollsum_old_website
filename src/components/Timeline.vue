@@ -92,16 +92,7 @@ export default {
 }
 
 .timeline__header {
-  h1 {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    opacity: 0.7;
-    font-size: 20px;
-    font-family: TungstenNarrow-Semibold;
-    letter-spacing: 2px;
-    font-weight: 100;
-    color: #989898;
-  }
+
 
   h2 {
     color: white;
@@ -224,7 +215,25 @@ ul {
   padding: 0.25em 1em 0.2em 1em;
 }
 
+@media only screen and (min-width : 1200px) {
 
+    .timeline__header {
+      margin-bottom: 200px;
+    }
+  .timeline {
+    max-width: 100%;
+    padding-bottom: 80px;
+
+    .title {
+      font-size: 90px;
+    }
+
+    p {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+}
 @media (max-width: 900px) {
   .timeline__title {
     font-size: 70px;
