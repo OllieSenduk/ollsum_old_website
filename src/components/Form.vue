@@ -180,17 +180,15 @@ export default {
 
       input[type="text"] {
         width: 80%;
-        height: 120px;
       }
 
       p {
-        font-size: 30px;
+        font-size: 15px;
       }
 
       input[type="submit"] {
-        height: 120px;
 
-        font-size: 30px;
+        font-size: 15px;
       }
     }
 
@@ -232,6 +230,23 @@ export default {
       .contact__quote {
         font-size: 160px;
         line-height: 150px;
+      }
+      .contact__form {
+
+        input[type="text"] {
+          width: 80%;
+          height: 120px;
+        }
+
+        p {
+          font-size: 30px;
+        }
+
+        input[type="submit"] {
+          height: 120px;
+
+          font-size: 30px;
+        }
       }
     }
 
