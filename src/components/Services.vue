@@ -162,7 +162,7 @@ export default {
       max-width: 33%;
     }
   }
-  @media only screen and (min-width : 1200px) {
+  @media only screen and (min-width : 1920px) {
     .about {
       margin-top: 150px;
       margin-bottom: 150px;

@@ -86,7 +86,7 @@ $base-line-height: 1.5em;
   }
 }
 
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 1920px) {
 .quote {
     font-size: 7em;
   }

@@ -221,7 +221,7 @@ export default {
   }
 
 
-    @media only screen and (min-width : 1200px) {
+    @media only screen and (min-width : 1920px) {
       h2 {
         font-size: 80px;
         line-height: 150px;

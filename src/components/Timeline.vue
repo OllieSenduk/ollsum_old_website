@@ -215,7 +215,7 @@ ul {
   padding: 0.25em 1em 0.2em 1em;
 }
 
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : 1920px) {
 
     .timeline__header {
       margin-bottom: 200px;
