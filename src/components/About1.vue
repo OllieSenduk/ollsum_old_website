@@ -1,4 +1,4 @@
-<template lang="html">
+<!-- <template lang="html">
   <section class="about" id="about">
     <div class="about__container">
 
@@ -67,7 +67,7 @@ export default {
 
     h3 {
       color: #FBE1C1;
-      font-family: Sifonn-Basic;
+      font-family: x;
       margin-bottom: 20px;
     }
 
@@ -201,4 +201,4 @@ export default {
       display: none;
     }
   }
-</style>
+</style> -->
