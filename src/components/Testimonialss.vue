@@ -18,7 +18,7 @@
           <p>
             We are blessed to have worked with some amazing individuals and companies.
             Here's what some had to say about
-            Guerrilla Strawberry and its founders.
+            Ollsum and its founders.
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@
       <blockquote class="quote-card">
         <p>
           Pure skills. Combine inventive thinking with high technical capabilities and you've
-          got Guerrilla Strawberry.
+          got Ollsum.
           Praise the berry!
         </p>
 

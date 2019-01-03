@@ -16,7 +16,7 @@
         </hr>
         <div class="header__message line_height_text main_message">
           <p>
-            Here at Guerrila Strawberry, we have created lean and efficient processes to
+            Here at Ollsum we have created lean and efficient processes to
             skip through the nonsense and go straight to what's important: creating value for
             your users.
           </p>

@@ -2,7 +2,7 @@
   <section id="header" class="header">
       <div class="header__container">
         <div class="tagline tagline_black">
-          <h1>GUERRILLA STRAWBERRY</h1>
+          <h1>OLLSUM</h1>
           <h2>
             LET'S CREATE
             <br>
@@ -14,7 +14,7 @@
           </hr>
           <div class="header__message line_height_text main_message">
             <p>
-              Guerrilla Strawberry is a creative & digital agency of superheroes.
+              Ollsum is a creative & digital agency of superheroes.
               <img src="@/assets/kitty.svg" alt="rocket" class="header__icon">
 
             </p>
